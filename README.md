@@ -1,1 +1,1 @@
-# This is Clone of Bluemercury.com
+# Clone of Bluemercury.com
