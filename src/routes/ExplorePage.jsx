@@ -1,5 +1,6 @@
 import React from 'react'
 import SliderOne from '../components/Slicker/SliderOne';
+import SliderTwo from '../components/Slicker/SliderTwo';
 import "./ExplorePage.css";
 
 const ExplorePage = () => {
@@ -46,7 +47,13 @@ const ExplorePage = () => {
           <p>In honor of National Hispanic Heritage Month, we're spotlighting the Hispanic founders and co-
         founders of our favorite beauty brands. We believe that they bring unique perspectives to our
         industry, and we're so happy to be able to feature them and their fabulous products!</p>
+        <a href="" style={{color:"rgb(0, 75, 145)"}}>Explore</a>
         </div>
+        
+      </div>
+      
+      <div>
+        <SliderTwo/>
       </div>
     </div>
   )
