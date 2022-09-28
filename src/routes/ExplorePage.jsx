@@ -40,7 +40,13 @@ const ExplorePage = () => {
       </div>
 
       <div className='section_two'>
-        
+        <div><h2>NATIONAL HISPANIC HERITAGE MONTH 2022</h2></div>
+        <div><h1>CELEBRATING HISPANIC FOUNDERS</h1></div>
+        <div className='section_two_p'>
+          <p>In honor of National Hispanic Heritage Month, we're spotlighting the Hispanic founders and co-
+        founders of our favorite beauty brands. We believe that they bring unique perspectives to our
+        industry, and we're so happy to be able to feature them and their fabulous products!</p>
+        </div>
       </div>
     </div>
   )

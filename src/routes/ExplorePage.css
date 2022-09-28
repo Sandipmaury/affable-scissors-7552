@@ -13,9 +13,57 @@
 }
 
 .section_two{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 70%;
-    height: 300px;
+    height: 200px;
     position: relative;
-    top: 12rem;
+    top: 10rem;
+    left: 12rem;
 }
+
+.section_two  h2{
+    /* width: 98%; */
+    margin-left: 20rem;
+    font-size: 18px;
+    font-family: Montserrat Semi Bold, sans-serif; 
+    letter-spacing: 0.05em; 
+    line-height: 1;
+
+}
+
+.section_two  h1{
+    font-size: 55px;
+    font-family: Playfair Display, serif;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 0.25em;
+    margin-top: 0;
+    /* font-size: inherit; */
+    font-weight: inherit;
+    position: relative;
+    left: 6.5rem;
+    margin-top: 1rem;
+}
+
+.section_two_p{
+    display: block;
+    max-width: 45rem;
+    margin: 0 auto 1rem;
+    padding: 0 1rem;
+    font-size: 16px;
+    color: #a9b0be;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.section_two_p {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+
