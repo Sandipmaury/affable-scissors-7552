@@ -1,0 +1,35 @@
+.container {
+    padding: 40px;
+    background: #419be0;
+  }
+  
+  .slick-slide img {
+    margin: auto;
+  }
+
+  .sliderdiv {
+    width: 98%;
+    height: 100%;
+    position: relative;
+    left: 1rem;
+  }
+
+  .sliderdiv img{
+    width: 100%;
+  }
+
+  .parent1{
+    position: relative;
+
+  }
+
+  .image2{
+    /* position: absolute; */
+    background-color: transparent;
+  }
+
+  .image3{
+    position: absolute;
+    /* background-color: white; */
+
+  }
