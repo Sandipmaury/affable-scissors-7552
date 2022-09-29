@@ -19,9 +19,14 @@
     "react-redux": "^8.0.4",
     "react-router-dom": "^6.4.1",
     "react-scripts": "5.0.1",
+<<<<<<< HEAD
     "react-star-ratings-component": "^1.0.1",
+=======
+    "react-slick": "^0.29.0",
+>>>>>>> eccb5f5bc7d6adfd677941e69d542e0e1cbbf9a8
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.1",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
