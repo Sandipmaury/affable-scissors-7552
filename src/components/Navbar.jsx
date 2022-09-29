@@ -1,9 +1,11 @@
 import {
   Box,
+  Button,
   Collapse,
   Flex,
   Grid,
   Hide,
+  Icon,
   Image,
   Show,
   Slide,
@@ -11,19 +13,36 @@ import {
   Text,
   useDisclosure,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { logo, lowerNav, navData } from "../Utils/Constants";
 import { DropDown } from "./DropDown";
 import { NavSidebar } from "./NavSidebar";
+import { dropDownShop, dropDownNew } from "../Utils/Constants";
+import { VscLocation } from "react-icons/vsc";
 
 export const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
+  const [arrIndex, setArrIndex] = useState(0);
+  const arr = [
+    dropDownShop,
+    dropDownNew,
+    dropDownShop,
+    dropDownNew,
+    dropDownShop,
+    dropDownNew,
+    dropDownShop,
+  ];
+
+  const onHoverHandler = (index) => {
+    if (!isOpen) onToggle();
+    setArrIndex(index);
+  };
 
   return (
     <Stack
       direction="column"
-      w={["100vw", "1350px", "1350px"]}
+      w={["100%", "1350px", "1350px"]}
       margin="auto"
       color="#647ea1"
       position={["sticky", "static", "static"]}
@@ -50,8 +69,16 @@ export const Navbar = () => {
                 alignItems="center"
                 gap="10px"
               >
-                <span className="material-symbols-outlined">location_on</span>
-                <Text>STORE & SPA LOCATOR</Text>
+                <Button
+                  leftIcon={<Icon as={VscLocation} boxSize="25px" />}
+                  letterSpacing="1px"
+                  fontSize="12px"
+                  variant="ghost"
+                  _hover="white"
+                  color="#647ea1"
+                >
+                  STORE & SPA LOCATOR
+                </Button>
               </Flex>
             </NavLink>
           </Box>
@@ -67,7 +94,7 @@ export const Navbar = () => {
           <Box>
             <Flex gap="20px" h="auto" justifyContent="flex-end">
               {navData?.map((item, index) => (
-                <NavLink to="#" key={index}>
+                <NavLink to={item.pathName} key={index}>
                   <Flex alignItems="center" justifyContent="start" gap="10px">
                     <span className="material-symbols-outlined">
                       {item.iconName}
@@ -80,16 +107,18 @@ export const Navbar = () => {
           </Box>
         </Grid>
         {/* lower navbar */}
-        <Box w="100%" h="40px">
+        <Box w="100%" border="1px solid red" h="40px" onMouseLeave={onToggle}>
           <Flex
             w="70%"
             h="100%"
             alignItems="center"
             justifyContent="space-around"
+            // gap="30px"
             margin="auto"
+            border="1px solid red"
           >
             {lowerNav?.map((item, index) => (
-              <NavLink key={index} to="#">
+              <NavLink key={index} to={item.pathName}>
                 {({ isActive }) =>
                   isActive ? (
                     <Text
@@ -97,29 +126,27 @@ export const Navbar = () => {
                         borderBottom: "2px solid #1c2838",
                         transition: "0.3s",
                       }}
-                      color="black"
+                      color="#647ea1"
+                      fontWeight="medium"
                       borderBottom="2px solid transparent"
-                      onMouseOver={onToggle}
-                      onMouseLeave={onToggle}
+                      onMouseOver={() => onHoverHandler(index)}
                     >
-                      {item.toUpperCase()}
+                      {item.title.toUpperCase()}
                     </Text>
                   ) : (
-                    <Text
-                      color="blue"
-                      onMouseOver={onToggle}
-                      onMouseLeave={onToggle}
-                    >
-                      {item.toUpperCase()}
+                    <Text onMouseOver={() => onHoverHandler(index)}>
+                      {item.title.toUpperCase()}
                     </Text>
                   )
                 }
               </NavLink>
             ))}
           </Flex>
-          <Collapse in={isOpen}>
-            <DropDown />
-          </Collapse>
+          {arr?.map((el, i) => (
+            <Collapse in={isOpen}>
+              <DropDown arr={arr[arrIndex]} />
+            </Collapse>
+          ))}
         </Box>
       </Hide>
       {/* nav for the small screens */}
@@ -129,7 +156,6 @@ export const Navbar = () => {
           p="10px"
           fontSize="12px"
           fontWeight="medium"
-          border="1px solid red"
           templateColumns="repeat(3, 1fr)"
           templateRows="auto"
           position="sticky"

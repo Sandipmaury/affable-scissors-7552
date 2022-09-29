@@ -6,7 +6,7 @@ import { AllRoutes } from "./routes/AllRoutes";
 
 function App() {
   return (
-    <Stack direction="column" w="100vw" h="auto">
+    <Stack direction="column" w="100%" h="auto">
       <Navbar />
       <AllRoutes />
       <Footer />
