@@ -1,0 +1,44 @@
+.tataharper_heading {
+    margin-top: 3rem;
+      
+}
+
+.makeflex{
+    /* position: absolute; */
+    /* left: 0px; */
+    /* transform: translateX(200%); */
+    
+}
+.sliderdiv{
+    /* height: 100px; */
+}
+.thirdImageWrapper{
+    display: inline-block;
+    height: 100%;
+    padding-top: unset;
+    width: 50%;
+    vertical-align: top;
+    position: relative;
+
+}
+
+body {
+    font-family: Montserrat Light,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #12284c;
+    background: #fff;
+    line-height: 1.65;
+    overflow-x: hidden;
+}
+/* 
+.thirdTextWrapper{
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    vertical-align: top;
+    padding: 54px 60px;
+    white-space: normal;
+} */

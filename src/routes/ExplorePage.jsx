@@ -1,5 +1,6 @@
 import React from 'react'
 import SliderOne from '../components/Slicker/SliderOne';
+import SliderThree from '../components/Slicker/SliderThree';
 import SliderTwo from '../components/Slicker/SliderTwo';
 import "./ExplorePage.css";
 
@@ -52,8 +53,16 @@ const ExplorePage = () => {
         
       </div>
       
-      <div>
-        <SliderTwo/>
+      <div className='section_three'>
+        <SliderTwo />
+      </div>
+      
+      <div className='sectionFour_text'>
+      <div><h1>SALUTING MORE HISPANIC CREATORS!</h1></div>
+        <div className='section_two_p1'>
+          <p>While we’re super in love with the Hispanic founders of the beauty brands we carry (see above), we also wanted to shine a light on six fantastic Hispanic female founders of lines we don't sell.</p>
+        <a href="" style={{color:"rgb(0, 75, 145)"}}>Explore</a>
+        </div>
       </div>
     </div>
   )

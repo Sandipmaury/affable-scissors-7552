@@ -77,5 +77,55 @@ a {
     text-align: center;
 }
 
+.section_three{
+    padding-top: 20rem;
+}
 
+.sectionFour_text{
+    /* border: 2px solid red; */
+    width: 75%;
+    /* height: 200px; */
+    position: relative;
+    top: 8rem;
+    left: 14rem;
+}
 
+.sectionFour_text  h1{
+    font-size: 55px;
+    font-family: Playfair Display, serif;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 0.25em;
+    margin-top: 0;
+    /* font-size: inherit; */
+    font-weight: inherit;
+    position: relative;
+    left: 5rem;
+    margin-top: 1rem;
+
+}
+
+.section_two_p1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.section_two_p1{
+    display: block;
+    max-width: 50rem;
+    margin: 0 auto 1rem;
+    padding: 0 1rem;
+    font-size: 18px;
+    color: #a9b0be;
+    /* font-weight: 500; */
+}
+
+.section_two_p1 a{
+    display: inline-block;
+    font-family: Montserrat Semi Bold,sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: 2px solid #12284c;
+    margin-top: 1rem;
+}
