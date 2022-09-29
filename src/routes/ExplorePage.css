@@ -134,10 +134,45 @@ a {
 }
 
 .sectionFive_text{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 75%;
-    height: 200px;
     position: relative;
-    top: 8rem;
+    top: 14rem;
     left: 14rem;
+}
+
+.sectionFive_text img{
+    width: 65%;
+    position: relative;
+    left: 10rem;
+
+}
+
+.section_two_p2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.section_two_p2{
+    display: block;
+    max-width: 30rem;
+    margin: 0 auto 1rem;
+    padding: 0 1rem;
+    font-size: 18px;
+    color: #a9b0be;
+    /* font-weight: 500; */
+}
+
+.section_two_p2 a{
+    display: inline-block;
+    font-family: Montserrat Semi Bold,sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: 2px solid #12284c;
+    margin-top: 1rem;
+}
+
+.section_six_slider{
+    padding-top: 20rem;
 }

@@ -64,8 +64,17 @@ const ExplorePage = () => {
         <a href="" style={{color:"rgb(0, 75, 145)"}}>Explore</a>
         </div>
       </div>
-      <div className='sectionFive_text'>
 
+      <div className='sectionFive_text'>
+      <div><img src='https://cdn.shopify.com/s/files/1/0283/0185/2747/files/showusyourbag-center.svg?v=1641353270' alt='' /></div>
+        <div className='section_two_p2'>
+          <p>We believe beauty is for everyone. If you agree, join us in celebrating the uniqueness in all individuals.</p>
+        <a href="" style={{color:"rgb(0, 75, 145)"}}>Explore</a>
+        </div>
+      </div>
+
+      <div className='section_six_slider'>
+        <SliderThree />
       </div>
     </div>
   )
