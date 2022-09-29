@@ -11,7 +11,7 @@ export const AllRoutes = () => {
       <Route path="/cart" element={<CartPage />} />
 
       <Route path="*" element={<ErrorPage />} />
-      <Route path="/explore" element={<ExplorePage />} />
+      <Route path="/explore" element={<ExplorePage/>} />
     </Routes>
   );
 };
