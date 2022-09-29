@@ -1,6 +1,7 @@
 
 import React from 'react'
 import SliderOne from '../components/Slicker/SliderOne';
+import SliderThree from '../components/Slicker/SliderThree';
 import SliderTwo from '../components/Slicker/SliderTwo';
 
 import "./ExplorePage.css";
@@ -58,9 +59,54 @@ const ExplorePage = () => {
         
       </div>
       
-      <div>
-        <SliderTwo/>
+      <div className='section_three'>
+        <SliderTwo />
       </div>
+      
+      <div className='sectionFour_text'>
+      <div><h1>SALUTING MORE HISPANIC CREATORS!</h1></div>
+        <div className='section_two_p1'>
+          <p>While we’re super in love with the Hispanic founders of the beauty brands we carry (see above), we also wanted to shine a light on six fantastic Hispanic female founders of lines we don't sell.</p>
+        <a href="" style={{color:"rgb(0, 75, 145)"}}>Explore</a>
+        </div>
+      </div>
+
+      <div className='sectionFive_text'>
+      <div><img src='https://cdn.shopify.com/s/files/1/0283/0185/2747/files/showusyourbag-center.svg?v=1641353270' alt='' /></div>
+        <div className='section_two_p2'>
+          <p>We believe beauty is for everyone. If you agree, join us in celebrating the uniqueness in all individuals.</p>
+        <a href="" style={{color:"rgb(0, 75, 145)"}}>Explore</a>
+        </div>
+      </div>
+
+      <div className='section_six_slider'>
+        <SliderThree />
+      </div>
+
+      <div className='section_seven_text'>
+      <div><img src='https://cdn.shopify.com/s/files/1/0283/0185/2747/files/blue-notes-center_c5d1f372-3a08-4ff7-8cbb-ca2f7dfaf774.svg?v=1647534726' alt='' /></div>
+        <div className='section_two_p3'>
+          <p>Nothing evokes a mood or a memory quite like the perfect perfume. Whether you're searching for your signature scent or prefer to mix it up moment to moment, you'll discover plenty of options among our curated offerings.</p>
+        <a href="" style={{color:"rgb(0, 75, 145)"}}>Explore</a>
+        </div>
+      </div>
+
+      <div className='section_eight'>
+        <div style={{width:'50%', height:'50%'}}>
+          <img src='https://cdn.shopify.com/s/files/1/0283/0185/2747/files/blue-notes-2022-jan-tabbed-content_65055229-4635-4555-9991-00f1001d479b_x650.jpg?v=1647534797%20[(max-width:%20640px)]%20|%20//cdn.shopify.com/s/files/1/0283/0185/2747/files/blue-notes-2022-jan-tabbed-content_65055229-4635-4555-9991-00f1001d479b_1000x.jpg?v=1647534797' alt='' />
+        </div>
+
+        <div className='section_two_p4' style={{width:'50%', height:'50%'}}>
+          <div><h1>Blue Notes</h1></div>
+          <div className='section_two_p'>
+            <p>Bluemercury's destination for all things olfactory. Take our quiz to figure out your perfume personality!</p>
+            <a href="" style={{color:"rgb(0, 75, 145)"}}>FIND YOUR FRAGRANCE</a>
+          </div>
+        </div>
+        
+      </div>
+
+
     </div>
   )
 }

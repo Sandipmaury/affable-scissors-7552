@@ -2,7 +2,7 @@
     /* position: absolute; */
 }
 
-.tataharper_heading h3{
+.tataharper_heading_Three h3{
     /* margin-top: 3rem; */
     font-family:Montserrat Medium,sans-serif;
     font-weight: 450;
@@ -13,10 +13,10 @@
     top: 12rem;
 }
 
-.tataharper_heading h2{
+.tataharper_heading_Three h2{
     font-family:Montserrat Medium,sans-serif;
     font-weight: 450;
-    font-size: 33px;
+    font-size: 20px;
     line-height: 25px;
     text-align: center;
     position: relative;
@@ -26,7 +26,7 @@
     /* line-height: 30px; */
 }
 
-.tataharper_heading a {
+.tataharper_heading_Three a {
     font-family:Montserrat Medium,sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -39,20 +39,20 @@
 
 }
 
-.tataharper_heading h4{
+.tataharper_heading_Three h4{
     /* margin-top: 3rem; */
     color: #12284c;
     letter-spacing: 1px;
     font-family:Montserrat Medium,sans-serif;
     font-weight: 450;
-    font-size: 16px;
+    font-size: 33px;
     line-height: 25px;
     text-align: center;
     position: relative;
     top: 12rem;
 }
 
-.tataharper_heading p{
+.tataharper_heading_Three p{
     /* margin-top: 3rem; */
     font-family:Montserrat Medium,sans-serif;
     font-weight: 00;
@@ -70,13 +70,13 @@
     
 /* } */
 
-.sliderone{
+.sliderone_Three{
     display: flex !important;
 }
-.slidertwo{
+.slidertwo_Three{
     display: flex !important;
 }
-.sliderthree{
+.sliderthree_Three{
     display: flex !important;
 }
 
@@ -85,7 +85,7 @@
     /* border: 2px solid red; */
     /* display: flex; */
 /* } */
-.thirdImageWrapper{
+.thirdImageWrapper_Three{
     display: inline-block;
     height: 100%;
     padding-top: unset;
