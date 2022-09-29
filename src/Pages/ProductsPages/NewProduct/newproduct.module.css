@@ -1,0 +1,42 @@
+.imageContainer{
+    position:  relative !important;
+    width: 100%;
+    border: 2px solid black;
+}
+.productImage,.productViewButton{
+  
+
+}
+.productImage{
+    left: 0;
+    width: 100%;
+
+}
+.productViewButton{
+    box-sizing: border-box;
+    border: 1px solid red;
+    position: absolute !important;
+    padding: 12px 24px;
+    left: 0;
+    bottom: -50px;
+    background-color: #fff;
+    transform: translate(50%,0);
+    opacity: 0;
+    /* animation: button 5s ease; */
+    
+}
+.productViewButton:hover{
+    animation: button 5s ease;
+}
+@keyframes button {
+    from {
+        bottom: -50px;
+    }
+    to{
+        bottom: 0;
+    }
+}
+.ProductTextContainer{
+    /* z-index:6 !important;
+    background-color: white !important; */
+}
