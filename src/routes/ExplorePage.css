@@ -176,3 +176,43 @@ a {
 .section_six_slider{
     padding-top: 20rem;
 }
+
+.section_seven_text{
+    /* border: 2px solid red; */
+    width: 75%;
+    position: relative;
+    top: 10rem;
+    left: 14rem;
+}
+
+.section_seven_text img{
+    width: 65%;
+    position: relative;
+    left: 10rem;
+
+}
+
+.section_two_p3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.section_two_p3{
+    display: block;
+    max-width: 43rem;
+    margin: 0 auto 1rem;
+    padding: 0 1rem;
+    font-size: 18px;
+    color: #a9b0be;
+    /* font-weight: 500; */
+}
+
+.section_two_p3 a{
+    display: inline-block;
+    font-family: Montserrat Semi Bold,sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: 2px solid #12284c;
+    margin-top: 1rem;
+}

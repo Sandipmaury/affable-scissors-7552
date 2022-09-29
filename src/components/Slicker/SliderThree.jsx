@@ -16,7 +16,7 @@ const SliderThree = () =>  {
       };
       return (
         <div className="sliderdiv_Three">
-          {/* <div style={{border:"2px solid black"}}> */}
+         
           <Slider {...settings}>
             
                 <div className='sliderone_Three'>
@@ -59,7 +59,7 @@ const SliderThree = () =>  {
 
            
           </Slider>
-                {/* </div> */}
+              
         </div>
       );
   }

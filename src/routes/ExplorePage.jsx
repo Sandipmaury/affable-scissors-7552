@@ -76,6 +76,14 @@ const ExplorePage = () => {
       <div className='section_six_slider'>
         <SliderThree />
       </div>
+
+      <div className='section_seven_text'>
+      <div><img src='https://cdn.shopify.com/s/files/1/0283/0185/2747/files/blue-notes-center_c5d1f372-3a08-4ff7-8cbb-ca2f7dfaf774.svg?v=1647534726' alt='' /></div>
+        <div className='section_two_p3'>
+          <p>Nothing evokes a mood or a memory quite like the perfect perfume. Whether you're searching for your signature scent or prefer to mix it up moment to moment, you'll discover plenty of options among our curated offerings.</p>
+        <a href="" style={{color:"rgb(0, 75, 145)"}}>Explore</a>
+        </div>
+      </div>
     </div>
   )
 }
