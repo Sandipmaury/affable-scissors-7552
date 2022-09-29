@@ -1,0 +1,9 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;   
+}
+.login_div{
+    height: 443px;
+    background-color: white;
+}
