@@ -1,6 +1,66 @@
-.tataharper_heading {
-    margin-top: 3rem;
-      
+.tataharper_heading{
+    /* position: absolute; */
+}
+
+.tataharper_heading h3{
+    /* margin-top: 3rem; */
+    font-family:Montserrat Medium,sans-serif;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    position: relative;
+    top: 12rem;
+}
+
+.tataharper_heading h2{
+    font-family:Montserrat Medium,sans-serif;
+    font-weight: 450;
+    font-size: 33px;
+    line-height: 25px;
+    text-align: center;
+    position: relative;
+    top: 13rem;
+    color: #12284c;
+    /* letter-spacing: 1px; */
+    /* line-height: 30px; */
+}
+
+.tataharper_heading a {
+    font-family:Montserrat Medium,sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    /* text-align: center; */
+    border-bottom: 2px solid #12284c;
+    position: relative;
+    top: 15rem;
+    left: 17.5rem;
+
+}
+
+.tataharper_heading h4{
+    /* margin-top: 3rem; */
+    color: #12284c;
+    letter-spacing: 1px;
+    font-family:Montserrat Medium,sans-serif;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    position: relative;
+    top: 12rem;
+}
+
+.tataharper_heading p{
+    /* margin-top: 3rem; */
+    font-family:Montserrat Medium,sans-serif;
+    font-weight: 00;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    position: relative;
+    top: 14rem;
 }
 
 .makeflex{
@@ -9,8 +69,21 @@
     /* transform: translateX(200%); */
     
 }
+
+.sliderone{
+    display: flex !important;
+}
+.slidertwo{
+    display: flex !important;
+}
+.sliderthree{
+    display: flex !important;
+}
+
 .sliderdiv{
     /* height: 100px; */
+    border: 2px solid red;
+    /* display: flex; */
 }
 .thirdImageWrapper{
     display: inline-block;
