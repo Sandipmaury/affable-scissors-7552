@@ -127,7 +127,7 @@ export const Navbar = () => {
                         transition: "0.3s",
                       }}
                       color="#647ea1"
-                      fontWeight="bold"
+                      fontWeight="medium"
                       borderBottom="2px solid transparent"
                       onMouseOver={() => onHoverHandler(index)}
                     >

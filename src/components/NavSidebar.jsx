@@ -42,13 +42,7 @@ export const NavSidebar = ({ onToggle, isOpen }) => {
         </span>
       </Flex>
       {/* ************************** */}
-      <Box
-        p="10px"
-        overflowY="auto"
-        border="1px solid red"
-        scrollBehavior="smooth"
-        h="93vh"
-      >
+      <Box p="10px" overflowY="auto" scrollBehavior="smooth" h="93vh">
         <Accordion allowMultiple>
           <Link to="#">
             <Text marginLeft="1rem">HISPANIC HERITAGE MONTH</Text>

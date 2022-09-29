@@ -23,7 +23,7 @@ export const DropDown = ({ arr }) => {
         {arr?.map((item, i) => (
           <Flex
             w="200px"
-            fontWeight={i === index ? "bold" : "normal"}
+            fontWeight={i === index ? "medium" : "normal"}
             justifyContent="space-between"
             my="4px"
           >
@@ -37,7 +37,7 @@ export const DropDown = ({ arr }) => {
       <Flex gap="20px">
         {arr[index]?.data?.map((item, index) => (
           <Box>
-            <Text fontWeight="bold">{item.title}</Text>
+            <Text fontWeight="medium">{item.title}</Text>
             {item.data?.map((el, i) => (
               <Link to="#">
                 <Text my="5px">{el}</Text>
