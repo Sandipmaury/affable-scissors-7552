@@ -1,3 +1,14 @@
 {
-    "products":[]
+  "products": [],
+  "cart": [
+    {
+      "id": 1,
+      "ProductCard__ImageWrapper href": "https://bluemercury.com/products/chantecaille-anti-aging-face-tint",
+      "ProductCard__Image src": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-635494263008-1_450x.jpg",
+      "ProductCard__Brand": "Skinceuticals",
+      "ProductCard__Title": "C E Ferulic",
+      "ProductCard__Price": "$169",
+      "quantity": 1
+    }
+  ]
 }
