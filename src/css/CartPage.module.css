@@ -1,0 +1,15 @@
+*{
+    font-family: Montserrat;
+}
+.cart_main_container{
+    font-style: normal;
+    margin: 30px;
+    margin-left: 30px;
+    margin-right: 10%;
+    /* border: 1px solid */
+    
+    
+}
+.cart_sub_container{
+    margin-top: 70px;
+}

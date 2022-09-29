@@ -1,10 +1,13 @@
+
 import React from 'react'
 import SliderOne from '../components/Slicker/SliderOne';
 import SliderTwo from '../components/Slicker/SliderTwo';
+
 import "./ExplorePage.css";
 
 const ExplorePage = () => {
   return (
+
     <div className='maindiv'>
       <h3>ExplorePage</h3>
       <div>
@@ -22,6 +25,7 @@ const ExplorePage = () => {
             <a href="">HISPANIC HERITAGE</a>
           </li>
           
+
           <li>
             <a href="">#SHOWUSYOURBAG</a>
           </li>
@@ -30,6 +34,7 @@ const ExplorePage = () => {
           </li>
           <li>
             <a href=''>BLUE NOTES</a>
+
           </li>
           <li>
             <a href="">BYUING GUIDES</a>
@@ -39,6 +44,7 @@ const ExplorePage = () => {
           </li>
         </ul>
       </div>
+
 
       <div className='section_two'>
         <div><h2>NATIONAL HISPANIC HERITAGE MONTH 2022</h2></div>
@@ -60,3 +66,4 @@ const ExplorePage = () => {
 }
 
 export default ExplorePage
+
