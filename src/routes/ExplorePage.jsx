@@ -64,6 +64,9 @@ const ExplorePage = () => {
         <a href="" style={{color:"rgb(0, 75, 145)"}}>Explore</a>
         </div>
       </div>
+      <div className='sectionFive_text'>
+
+      </div>
     </div>
   )
 }

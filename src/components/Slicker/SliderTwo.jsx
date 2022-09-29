@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from "react-slick";
-import "./SliderTwo.css"
+import "./SliderTwo.css";
+
 const SliderTwo = () =>  {
   
     const settings = {

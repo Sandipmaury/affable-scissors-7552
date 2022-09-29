@@ -129,3 +129,12 @@ a {
     border-bottom: 2px solid #12284c;
     margin-top: 1rem;
 }
+
+.sectionFive_text{
+    border: 2px solid red;
+    width: 75%;
+    height: 200px;
+    position: relative;
+    top: 8rem;
+    left: 14rem;
+}
