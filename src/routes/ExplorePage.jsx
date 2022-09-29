@@ -84,6 +84,23 @@ const ExplorePage = () => {
         <a href="" style={{color:"rgb(0, 75, 145)"}}>Explore</a>
         </div>
       </div>
+
+      <div className='section_eight'>
+        <div style={{width:'50%', height:'50%'}}>
+          <img src='https://cdn.shopify.com/s/files/1/0283/0185/2747/files/blue-notes-2022-jan-tabbed-content_65055229-4635-4555-9991-00f1001d479b_x650.jpg?v=1647534797%20[(max-width:%20640px)]%20|%20//cdn.shopify.com/s/files/1/0283/0185/2747/files/blue-notes-2022-jan-tabbed-content_65055229-4635-4555-9991-00f1001d479b_1000x.jpg?v=1647534797' alt='' />
+        </div>
+
+        <div className='section_two_p4' style={{width:'50%', height:'50%'}}>
+          <div><h1>Blue Notes</h1></div>
+          <div className='section_two_p'>
+            <p>Bluemercury's destination for all things olfactory. Take our quiz to figure out your perfume personality!</p>
+            <a href="" style={{color:"rgb(0, 75, 145)"}}>FIND YOUR FRAGRANCE</a>
+          </div>
+        </div>
+        
+      </div>
+
+
     </div>
   )
 }

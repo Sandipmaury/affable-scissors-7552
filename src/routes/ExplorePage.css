@@ -216,3 +216,17 @@ a {
     border-bottom: 2px solid #12284c;
     margin-top: 1rem;
 }
+
+.section_eight{
+    display: flex;
+    width: 75%;
+    position: relative;
+    top: 18rem;
+    left: 14rem;
+    border: 2px solid black;
+}
+
+.section_eight img{
+    /* width: 50%; */
+
+}
