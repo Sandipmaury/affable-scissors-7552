@@ -1,191 +1,114 @@
-import {
-  Box,
-  Button,
-  Collapse,
-  Flex,
-  Grid,
-  Hide,
-  Icon,
-  Image,
-  Show,
-  Slide,
-  Stack,
-  Text,
-  useDisclosure,
-} from "@chakra-ui/react";
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { logo, lowerNav, navData } from "../Utils/Constants";
-import { DropDown } from "./DropDown";
-import { NavSidebar } from "./NavSidebar";
-import { dropDownShop, dropDownNew } from "../Utils/Constants";
-import { VscLocation } from "react-icons/vsc";
+import { Box, Flex, Grid, Hide, Stack, useDisclosure } from "@chakra-ui/react";
+import { navData } from "../Utils/Constants";
+import { Logo } from "./navbarComponents/Logo";
+import { NavLeft } from "./navbarComponents/NavLeft";
+import { NavRight } from "./navbarComponents/NavRight";
+import { SecondBar } from "./navbarComponents/SecondBar";
 
 export const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
-  const [arrIndex, setArrIndex] = useState(0);
-  const arr = [
-    dropDownShop,
-    dropDownNew,
-    dropDownShop,
-    dropDownNew,
-    dropDownShop,
-    dropDownNew,
-    dropDownShop,
-  ];
-
-  const onHoverHandler = (index) => {
-    if (!isOpen) onToggle();
-    setArrIndex(index);
-  };
 
   return (
     <Stack
-      direction="column"
-      w={["100%", "1350px", "1350px"]}
-      margin="auto"
-      color="#647ea1"
-      position={["sticky", "static", "static"]}
       top="0px"
-      style={{ zIndex: 7 }}
       bg="white"
+      color="#647ea1"
+      direction="column"
+      style={{ zIndex: 7 }}
+      border="1px solid red"
+      w="100%"
+      position={["sticky", "sticky", "sticky", "static"]}
+      onMouseLeave={isOpen ? onToggle : null}
     >
-      {/* upper navbar */}
-      <Hide below="md">
-        <Grid
-          w="100%"
-          h="60px"
-          pt="5px"
-          fontSize="12px"
-          fontWeight="medium"
-          templateColumns="repeat(3, 1fr)"
-          templateRows="auto"
-        >
-          <Box>
-            <NavLink to="#">
-              <Flex
-                border="1px solid blue"
-                width="200px"
-                alignItems="center"
-                gap="10px"
-              >
-                <Button
-                  leftIcon={<Icon as={VscLocation} boxSize="25px" />}
-                  letterSpacing="1px"
-                  fontSize="12px"
-                  variant="ghost"
-                  _hover="white"
-                  color="#647ea1"
-                >
-                  STORE & SPA LOCATOR
-                </Button>
-              </Flex>
-            </NavLink>
-          </Box>
-          {/* ************** */}
-          <Box alignSelf="end">
-            <Flex justifyContent="center" h="40px">
-              <NavLink to="/">
-                <Image h="100%" src={logo} alt="logo" />
-              </NavLink>
-            </Flex>
-          </Box>
-          {/* ************** */}
-          <Box>
-            <Flex gap="20px" h="auto" justifyContent="flex-end">
-              {navData?.map((item, index) => (
-                <NavLink to={item.pathName} key={index}>
-                  <Flex alignItems="center" justifyContent="start" gap="10px">
-                    <span className="material-symbols-outlined">
-                      {item.iconName}
-                    </span>
-                    <Text>{item.title.toUpperCase()}</Text>
-                  </Flex>
-                </NavLink>
-              ))}
-            </Flex>
-          </Box>
-        </Grid>
-        {/* lower navbar */}
-        <Box w="100%" border="1px solid red" h="40px" onMouseLeave={onToggle}>
-          <Flex
-            w="70%"
-            h="100%"
-            alignItems="center"
-            justifyContent="space-around"
-            // gap="30px"
-            margin="auto"
+      <Box margin="auto" w={["100%", "100%", "100%", "1350px"]}>
+        <Hide below="1024px">
+          <Grid
+            w="100%"
+            h="60px"
+            pt="5px"
+            fontSize="12px"
+            fontWeight="medium"
+            templateRows="auto"
             border="1px solid red"
+            templateColumns="repeat(3, 1fr)"
           >
-            {lowerNav?.map((item, index) => (
-              <NavLink key={index} to={item.pathName}>
-                {({ isActive }) =>
-                  isActive ? (
-                    <Text
-                      _hover={{
-                        borderBottom: "2px solid #1c2838",
-                        transition: "0.3s",
-                      }}
-                      color="#647ea1"
-                      fontWeight="medium"
-                      borderBottom="2px solid transparent"
-                      onMouseOver={() => onHoverHandler(index)}
-                    >
-                      {item.title.toUpperCase()}
-                    </Text>
-                  ) : (
-                    <Text onMouseOver={() => onHoverHandler(index)}>
-                      {item.title.toUpperCase()}
-                    </Text>
-                  )
-                }
-              </NavLink>
-            ))}
-          </Flex>
-          {arr?.map((el, i) => (
-            <Collapse in={isOpen}>
-              <DropDown arr={arr[arrIndex]} />
-            </Collapse>
-          ))}
-        </Box>
-      </Hide>
-      {/* nav for the small screens */}
-      <Show below="md">
+            <Box>
+              <NavLeft text={"STORE & SPA LOCATOR"} />
+            </Box>
+            <Box alignSelf="end">
+              <Logo />
+            </Box>
+            <Box>
+              <Flex gap="15px" flexDirection="row-reverse">
+                {navData
+                  ?.map((item, index) => (
+                    <Box key={index}>
+                      <NavRight
+                        iconName={item.iconName}
+                        title={item.title}
+                        pathName={item.pathName}
+                      />
+                    </Box>
+                  ))
+                  .reverse()}
+              </Flex>
+            </Box>
+          </Grid>
+          <SecondBar isOpen={isOpen} onToggle={onToggle} />
+        </Hide>
+      </Box>
+    </Stack>
+  );
+};
+
+{
+  /* nav for the small screens */
+}
+{
+  /* <Show below="1024px">
         <Grid
           w="100%"
-          p="10px"
           fontSize="12px"
+          h="50px"
           fontWeight="medium"
           templateColumns="repeat(3, 1fr)"
           templateRows="auto"
           position="sticky"
           top="0px"
+          border="1px solid red"
+          alignItems="center"
         >
-          <Box>
+          <Box px="10px">
             <span onClick={onToggle} className="material-symbols-outlined">
               menu
             </span>
           </Box>
           <Box>
-            <Flex justifyContent="center">
+            <Flex h="100%" w="200px" alignItems="center" margin="auto">
               <NavLink to="/">
-                <Image h="100%" src={logo} alt="logo" />
+                <Image h="100%" w="100%" src={logo} alt="logo" />
               </NavLink>
             </Flex>
           </Box>
-          <Flex flexDirection="row-reverse" gap="10px">
-            <NavLink to="#">
-              <span className="material-symbols-outlined">shopping_bag</span>
-            </NavLink>
-            <NavLink to="#">
-              <span className="material-symbols-outlined">favorite</span>
-            </NavLink>
-          </Flex>
+          <Box px="10px">
+            <Flex gap="20px" h="auto" justifyContent="flex-end">
+              <Hide below="768">
+                {navData?.map((item, index) => (
+                  <NavLink to={item.pathName} key={index}>
+                    <Flex alignItems="center" justifyContent="start" gap="10px">
+                      <span className="material-symbols-outlined">
+                        {item.iconName}
+                      </span>
+                    </Flex>
+                  </NavLink>
+                ))}
+              </Hide>
+              
+            </Flex>
+          </Box>
         </Grid>
         <Slide direction="left" in={isOpen} style={{ zIndex: 10 }}>
           <NavSidebar isOpen={isOpen} onToggle={onToggle} />
         </Slide>
-      </Show>
-    </Stack>
-  );
-};
+      </Show> */
+}

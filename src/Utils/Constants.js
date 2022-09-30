@@ -727,3 +727,117 @@ export const dropDownNew = [
     ],
   },
 ];
+
+export const footerData = [
+  {
+    header: "BLUEMERCURY",
+    data: [
+      {
+        title: "Our Company",
+        link: "#",
+      },
+      {
+        title: "Store Locator",
+        link: "#",
+      },
+      {
+        title: "In Store & Online Events",
+        link: "#",
+      },
+      {
+        title: "Spa Menu",
+        link: "#",
+      },
+      {
+        title: "Careers",
+        link: "#",
+      },
+      {
+        title: "Vendor Submissions",
+        link: "#",
+      },
+      {
+        title: "Diversity & Inclusion",
+        link: "#",
+      },
+    ],
+  },
+  {
+    header: "MY ACCOUNT",
+    data: [
+      {
+        title: "My Account",
+        link: "#",
+      },
+      {
+        title: "BlueRewards",
+        link: "#",
+      },
+      {
+        title: "Gift Card Balance Checker",
+        link: "#",
+      },
+    ],
+  },
+
+  {
+    header: "CUSTOMER SERVICE",
+    data: [
+      {
+        title: "Contact Us",
+        link: "#",
+      },
+      {
+        title: "Help & FAQ",
+        link: "#",
+      },
+      {
+        title: "Shipping, Returns & Exchanges",
+        link: "#",
+      },
+      {
+        title: "Gift Cards",
+        link: "#",
+      },
+      {
+        title: "Offers & Promotions",
+        link: "#",
+      },
+      {
+        title: "Klarna",
+        link: "#",
+      },
+    ],
+  },
+
+  {
+    header: "RESOURCES",
+
+    data: [
+      {
+        title: "Terms & Conditions",
+        link: "#",
+      },
+      {
+        title: "Privacy Notice",
+        link: "#",
+      },
+      {
+        title: "Do Not Sell My Personal Information",
+        link: "#",
+      },
+      {
+        title: "CA Privacy Rights",
+        link: "#",
+      },
+      {
+        title: "Accessibility",
+        link: "#",
+      },
+      {
+        title: "Affiliate Program",
+        link: "#",
+      },
+    ],
+  },
+];
