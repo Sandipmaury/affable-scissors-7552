@@ -4,11 +4,7 @@ import {
   Image,
   Button,
   Stack,
-  Flex,
-  Center,
-  Square,
   Box,
-  TagLabel,
   HStack,
 } from "@chakra-ui/react";
 import { useState } from "react";
