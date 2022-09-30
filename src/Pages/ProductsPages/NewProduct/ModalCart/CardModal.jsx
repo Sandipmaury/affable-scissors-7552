@@ -6,7 +6,8 @@ import { ChevronDownIcon } from '@chakra-ui/icons';
 import { RiDislikeLine } from "react-icons/ri";
 import { BsFillBagPlusFill } from "react-icons/bs";
 const CardModal = ({props}) => {
-    const [data,setData] = useState()
+    const [data,setData] = useState();
+    const [countInc,setCountInc] = useState(0)
     // const CartData = JSON.parse(localStorage.getItem('BlueMercurycart')) || [];
     // localStorage.setItem('BlueMercurycart', JSON.stringify(data));
 
@@ -17,7 +18,6 @@ const CardModal = ({props}) => {
     console.log(props)
 
     const handleAddtoCart=(item)=>{
-      // alert('alert')
       let tempObj={
           itemId:item.id,
           quantity:0

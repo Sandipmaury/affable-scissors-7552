@@ -146,7 +146,7 @@ const FilterNew = () => {
           </AccordionButton>
         </h2>
         <AccordionPanel color="#7D899D" pb={4}>
-           <Checkbox >Anti Oxidents</Checkbox><br></br>
+           <Checkbox  >Anti Oxidents</Checkbox><br></br>
           <Checkbox >Biton</Checkbox><br></br>
           <Checkbox > Free grance Free</Checkbox><br></br>
           <Checkbox >Gulten Free</Checkbox><br></br>
