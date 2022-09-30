@@ -10,7 +10,6 @@ export const NavRight = ({ iconName, title, pathName }) => {
         alignItems="center"
         justifyContent="start"
         gap="6px"
-        border="1px solid red"
       >
         <span className="material-symbols-outlined">{iconName}</span>
         {title ? <Text>{title?.toUpperCase()}</Text> : null}

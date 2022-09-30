@@ -6,10 +6,10 @@ import { logo } from "../../Utils/Constants";
 
 export const Logo = () => {
   return (
-    <Box border="1px solid red">
-      <Flex justifyContent="center" h="40px">
+    <Box w="100%">
+      <Flex justifyContent="center" w="100%">
         <NavLink to="/">
-          <Image h="100%" src={logo} alt="logo" />
+          <Image w="100%" src={logo} alt="logo" />
         </NavLink>
       </Flex>
     </Box>

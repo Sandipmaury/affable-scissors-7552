@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 export const NavLeft = ({ text }) => {
   return (
-    <Stack direction="row" border="1px solid red">
+    <Stack direction="row">
       <NavLink to="#">
         <Flex alignItems="center" gap="5px">
           <Icon as={VscLocation} boxSize="25px" />

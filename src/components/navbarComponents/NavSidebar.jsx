@@ -22,7 +22,6 @@ export const NavSidebar = ({ onToggle, isOpen }) => {
       }
       bg="white"
       w="90%"
-      marginTop="-10px"
       h="auto"
     >
       <Flex

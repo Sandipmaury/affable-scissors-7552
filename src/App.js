@@ -6,10 +6,10 @@ import { AllRoutes } from "./routes/AllRoutes";
 
 function App() {
   return (
-    <Stack direction="column" w="100%" h="auto" border="1px solid blue">
+    <Stack direction="column" w="100%" h="auto">
       <Navbar />
-      {/* <AllRoutes /> */}
-      {/* <Footer /> */}
+      <AllRoutes />
+      <Footer />
     </Stack>
   );
 }

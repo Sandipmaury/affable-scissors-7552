@@ -27,31 +27,31 @@ export const navData = [
 export const lowerNav = [
   {
     title: "shop",
-    pathName: "/",
+    pathName: "#",
   },
   {
     title: "new!",
-    pathName: "/",
+    pathName: "#",
   },
   {
     title: "brands",
-    pathName: "/",
+    pathName: "#",
   },
   {
     title: "explore",
-    pathName: "/",
+    pathName: "#",
   },
   {
     title: "events",
-    pathName: "/",
+    pathName: "#",
   },
   {
     title: "bluerewards",
-    pathName: "/",
+    pathName: "#",
   },
   {
     title: "routine reboot",
-    pathName: "/",
+    pathName: "#",
   },
 ];
 

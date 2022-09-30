@@ -1,13 +1,16 @@
 import { Stack, Text, Flex, Box, Image } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export const DropDown = ({ arr }) => {
   const [index, setIndex] = useState(0);
+  useEffect(() => {
+    setIndex(0);
+  }, [arr]);
   return (
     <Stack
       position="absolute"
-      top="110px"
+      top="40px"
       left="0px"
       borderTop="1px solid lightGray"
       w="100%"
@@ -18,7 +21,6 @@ export const DropDown = ({ arr }) => {
       direction="row"
       justifyContent="center"
       gap="50px"
-      border="1px solid green"
     >
       <Box borderRight="1px solid gray" paddingRight="50px">
         {arr?.map((item, i) => (
@@ -40,7 +42,7 @@ export const DropDown = ({ arr }) => {
         {arr[index]?.data?.map((item, index) => (
           <Box key={index}>
             <Text fontWeight="bold">{item?.title}</Text>
-            {item.data?.map((el, i) => (
+            {item?.data?.map((el, i) => (
               <Link to="#">
                 <Text my="5px">{el}</Text>
               </Link>

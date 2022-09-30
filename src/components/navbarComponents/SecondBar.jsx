@@ -18,14 +18,13 @@ export const SecondBar = ({ isOpen, onToggle }) => {
   ];
 
   return (
-    <Stack w="100%" border="1px solid red">
+    <Stack>
       <Flex
-        w="70%"
+        w="100%"
         h="100%"
         alignItems="center"
         justifyContent="space-around"
         margin="auto"
-        border="1px solid blue"
       >
         {lowerNav?.map((item, index) => (
           <NavLink
