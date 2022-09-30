@@ -1,6 +1,7 @@
 .container {
-    padding: 40px;
-    background: #419be0;
+    /* padding: 40px; */
+    /* background: #419be0; */
+    /* border: 2px solid red; */
   }
   
   .slick-slide img {
@@ -8,14 +9,14 @@
   }
 
   .sliderdiv {
-    width: 98%;
-    height: 100%;
-    position: relative;
-    left: 1rem;
+    /* width: 98%; */
+    /* height: 100%; */
+    /* position: relative; */
+    /* left: 1rem; */
   }
 
   .sliderdiv img{
-    width: 100%;
+    /* width: 100%; */
   }
 
   .parent1{

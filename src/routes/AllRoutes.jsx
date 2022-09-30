@@ -6,6 +6,7 @@ import { ErrorPage } from "./ErrorPage";
 import ExplorePage from "./ExplorePage";
 import { HomePage } from "./HomePage";
 import { CartPage } from "./CartPage";
+import EventPage from "./EventPage";
 import TopTestMonial from "../Pages/ProductsPages/NewProduct/TopTestMonial";
 export const AllRoutes = () => {
   return (
@@ -18,6 +19,7 @@ export const AllRoutes = () => {
       <Route path="/newproucts" element={<ProductsNewContainer/>}/>
       <Route path="/brandProducts" element={<ProductsBrandContainer/>}/>
       <Route path="/explore" element={<ExplorePage/>} />
+      <Route path="/eventpage" element={<EventPage/>} />
     </Routes>
   );
 };
