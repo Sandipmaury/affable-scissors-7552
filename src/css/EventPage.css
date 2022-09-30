@@ -1,0 +1,27 @@
+.eventpage_firstbox_heading{
+    margin-top: 4rem
+}
+
+.eventpage_secondbox_heading{
+    margin-top: 4rem;
+}
+
+.eventfirstAnchor{
+    font-family: Montserrat Semi Bold,sans-serif;
+    font-size: 14px;
+    font-weight: 550;
+    padding-bottom: 6px;
+    text-shadow: none;
+    position: relative;
+    z-index: 3;
+    top: 2rem;
+}
+
+.eventPage_virtual{
+    font-family: Playfair Display Regular,serif;
+    text-transform: uppercase;
+    font-size: 34px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}

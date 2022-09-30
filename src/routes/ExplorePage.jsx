@@ -22,6 +22,21 @@ const ExplorePage = () => {
             top: "1rem",
           }}
         >
+
+    <div className='maindiv'>
+      {/* <h3>ExplorePage</h3> */}
+      <div style={{ width:'112%'}}>
+      <SliderOne />
+      </div>
+
+      <div className='single_box' style={{marginLeft:'4rem'}}>
+        <ul style={{
+          display: "flex",
+          justifyContent: 'space-evenly',
+          position: "relative",
+          top: '1rem'
+        }}>
+
           <li>
             <a href="">HISPANIC HERITAGE</a>
           </li>
@@ -149,6 +164,15 @@ const ExplorePage = () => {
             </a>
           </div>
         </div>
+
+        <div className='section_two_p4' style={{width:'50%', height:'50%'}}>
+          <div><h1>Blue Notes</h1></div>
+          
+            <p>Bluemercury's destination for all things olfactory. Take our quiz to figure out your perfume personality!</p>
+            <a href="" style={{color:"rgb(0, 75, 145)"}}>FIND YOUR FRAGRANCE</a>
+          </div>
+        
+     
       </div>
     </div>
   );

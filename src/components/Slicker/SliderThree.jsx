@@ -20,7 +20,7 @@ const SliderThree = () =>  {
           <Slider {...settings}>
             
                 <div className='sliderone_Three'>
-                    <div style={{width: "50%",height: "50%", border:"1px solid red"}}>
+                    <div style={{width: "50%",height: "50%",}}>
                         <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/suyb-tia-content-block_x650.jpg?v=1652906343%20[(max-width:%20640px)]%20|%20//cdn.shopify.com/s/files/1/0283/0185/2747/files/suyb-tia-content-block_1000x.jpg?v=1652906343" alt="" />
                     </div>
 
@@ -33,7 +33,7 @@ const SliderThree = () =>  {
               
                 <div className='slidertwo_Three'>
                     <div style={{width: "50%",height: "50%"}}>
-                            <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/natura-bisse-founder_dad13b40-5ef0-4305-9fc6-0af035b5db5d_x650.jpg?v=1663261582%20[(max-width:%20640px)]%20|%20//cdn.shopify.com/s/files/1/0283/0185/2747/files/natura-bisse-founder_dad13b40-5ef0-4305-9fc6-0af035b5db5d_1000x.jpg?v=1663261582" alt="" />
+                            <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/suyb-lily-content-block_x650.jpg?v=1652906190%20[(max-width:%20640px)]%20|%20//cdn.shopify.com/s/files/1/0283/0185/2747/files/suyb-lily-content-block_1000x.jpg?v=1652906190" alt="" />
                       </div>
 
                     <div style={{ width:'50%', background:"white" }} className="tataharper_heading_Three">
