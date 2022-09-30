@@ -8,6 +8,7 @@ import { HomePage } from "./HomePage";
 import { CartPage } from "./CartPage";
 import EventPage from "./EventPage";
 import { Otp } from "./Otp";
+import {Payment} from "./Payment"
 import TopTestMonial from "../Pages/ProductsPages/NewProduct/TopTestMonial";
 export const AllRoutes = () => {
   return (
@@ -22,6 +23,7 @@ export const AllRoutes = () => {
       <Route path="/explore" element={<ExplorePage />} />
       <Route path="/eventpage" element={<EventPage />} />
       <Route path="/otp" element={<Otp />} />
+        <Route path="/payment" element={<Payment />} />
     </Routes>
   );
 };
