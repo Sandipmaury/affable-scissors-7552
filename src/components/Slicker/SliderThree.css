@@ -1,0 +1,117 @@
+.tataharper_heading{
+    /* position: absolute; */
+}
+
+.tataharper_heading_Three h3{
+    /* margin-top: 3rem; */
+    font-family:Montserrat Medium,sans-serif;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    position: relative;
+    top: 12rem;
+}
+
+.tataharper_heading_Three h2{
+    font-family:Montserrat Medium,sans-serif;
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    position: relative;
+    top: 13rem;
+    color: #12284c;
+    /* letter-spacing: 1px; */
+    /* line-height: 30px; */
+}
+
+.tataharper_heading_Three a {
+    font-family:Montserrat Medium,sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    /* text-align: center; */
+    border-bottom: 2px solid #12284c;
+    position: relative;
+    top: 15rem;
+    left: 17.5rem;
+
+}
+
+.tataharper_heading_Three h4{
+    /* margin-top: 3rem; */
+    color: #12284c;
+    letter-spacing: 1px;
+    font-family:Montserrat Medium,sans-serif;
+    font-weight: 450;
+    font-size: 33px;
+    line-height: 25px;
+    text-align: center;
+    position: relative;
+    top: 12rem;
+}
+
+.tataharper_heading_Three p{
+    /* margin-top: 3rem; */
+    font-family:Montserrat Medium,sans-serif;
+    font-weight: 00;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    position: relative;
+    top: 14rem;
+}
+
+/* .makeflex{ */
+    /* position: absolute; */
+    /* left: 0px; */
+    /* transform: translateX(200%); */
+    
+/* } */
+
+.sliderone_Three{
+    display: flex !important;
+}
+.slidertwo_Three{
+    display: flex !important;
+}
+.sliderthree_Three{
+    display: flex !important;
+}
+
+/* .sliderdiv{ */
+    /* height: 100px; */
+    /* border: 2px solid red; */
+    /* display: flex; */
+/* } */
+.thirdImageWrapper_Three{
+    display: inline-block;
+    height: 100%;
+    padding-top: unset;
+    width: 50%;
+    vertical-align: top;
+    position: relative;
+
+}
+
+body {
+    font-family: Montserrat Light,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #12284c;
+    background: #fff;
+    line-height: 1.65;
+    overflow-x: hidden;
+}
+/* 
+.thirdTextWrapper{
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    vertical-align: top;
+    padding: 54px 60px;
+    white-space: normal;
+} */
