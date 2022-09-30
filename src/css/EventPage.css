@@ -16,3 +16,12 @@
     z-index: 3;
     top: 2rem;
 }
+
+.eventPage_virtual{
+    font-family: Playfair Display Regular,serif;
+    text-transform: uppercase;
+    font-size: 34px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
