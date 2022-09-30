@@ -7,6 +7,7 @@ import ExplorePage from "./ExplorePage";
 import { HomePage } from "./HomePage";
 import { CartPage } from "./CartPage";
 import EventPage from "./EventPage";
+import { Otp } from "./Otp";
 import TopTestMonial from "../Pages/ProductsPages/NewProduct/TopTestMonial";
 export const AllRoutes = () => {
   return (
@@ -16,10 +17,11 @@ export const AllRoutes = () => {
 
       <Route path="*" element={<ErrorPage />} />
 
-      <Route path="/newproucts" element={<ProductsNewContainer/>}/>
-      <Route path="/brandProducts" element={<ProductsBrandContainer/>}/>
-      <Route path="/explore" element={<ExplorePage/>} />
-      <Route path="/eventpage" element={<EventPage/>} />
+      <Route path="/newproucts" element={<ProductsNewContainer />} />
+      <Route path="/brandProducts" element={<ProductsBrandContainer />} />
+      <Route path="/explore" element={<ExplorePage />} />
+      <Route path="/eventpage" element={<EventPage />} />
+      <Route path="/otp" element={<Otp />} />
     </Routes>
   );
 };
