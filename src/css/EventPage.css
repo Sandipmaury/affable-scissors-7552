@@ -5,3 +5,14 @@
 .eventpage_secondbox_heading{
     margin-top: 4rem;
 }
+
+.eventfirstAnchor{
+    font-family: Montserrat Semi Bold,sans-serif;
+    font-size: 14px;
+    font-weight: 550;
+    padding-bottom: 6px;
+    text-shadow: none;
+    position: relative;
+    z-index: 3;
+    top: 2rem;
+}
