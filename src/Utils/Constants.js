@@ -27,31 +27,31 @@ export const navData = [
 export const lowerNav = [
   {
     title: "shop",
-    pathName: "/",
+    pathName: "#",
   },
   {
     title: "new!",
-    pathName: "/",
+    pathName: "#",
   },
   {
     title: "brands",
-    pathName: "/",
+    pathName: "#",
   },
   {
     title: "explore",
-    pathName: "/",
+    pathName: "#",
   },
   {
     title: "events",
-    pathName: "/",
+    pathName: "#",
   },
   {
     title: "bluerewards",
-    pathName: "/",
+    pathName: "#",
   },
   {
     title: "routine reboot",
-    pathName: "/",
+    pathName: "#",
   },
 ];
 
@@ -723,6 +723,120 @@ export const dropDownNew = [
         img: "https://cdn.shopify.com/s/files/1/0283/0185/2747/files/Serums_1x1_Blue_Mercury_2208_IL3794_303x303.jpg?v=1661983247",
         name: "Serums, Anyone?",
         description: "A must-have step in your skincare routine",
+      },
+    ],
+  },
+];
+
+export const footerData = [
+  {
+    header: "BLUEMERCURY",
+    data: [
+      {
+        title: "Our Company",
+        link: "#",
+      },
+      {
+        title: "Store Locator",
+        link: "#",
+      },
+      {
+        title: "In Store & Online Events",
+        link: "#",
+      },
+      {
+        title: "Spa Menu",
+        link: "#",
+      },
+      {
+        title: "Careers",
+        link: "#",
+      },
+      {
+        title: "Vendor Submissions",
+        link: "#",
+      },
+      {
+        title: "Diversity & Inclusion",
+        link: "#",
+      },
+    ],
+  },
+  {
+    header: "MY ACCOUNT",
+    data: [
+      {
+        title: "My Account",
+        link: "#",
+      },
+      {
+        title: "BlueRewards",
+        link: "#",
+      },
+      {
+        title: "Gift Card Balance Checker",
+        link: "#",
+      },
+    ],
+  },
+
+  {
+    header: "CUSTOMER SERVICE",
+    data: [
+      {
+        title: "Contact Us",
+        link: "#",
+      },
+      {
+        title: "Help & FAQ",
+        link: "#",
+      },
+      {
+        title: "Shipping, Returns & Exchanges",
+        link: "#",
+      },
+      {
+        title: "Gift Cards",
+        link: "#",
+      },
+      {
+        title: "Offers & Promotions",
+        link: "#",
+      },
+      {
+        title: "Klarna",
+        link: "#",
+      },
+    ],
+  },
+
+  {
+    header: "RESOURCES",
+
+    data: [
+      {
+        title: "Terms & Conditions",
+        link: "#",
+      },
+      {
+        title: "Privacy Notice",
+        link: "#",
+      },
+      {
+        title: "Do Not Sell My Personal Information",
+        link: "#",
+      },
+      {
+        title: "CA Privacy Rights",
+        link: "#",
+      },
+      {
+        title: "Accessibility",
+        link: "#",
+      },
+      {
+        title: "Affiliate Program",
+        link: "#",
       },
     ],
   },

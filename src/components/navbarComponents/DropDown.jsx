@@ -1,15 +1,18 @@
 import { Stack, Text, Flex, Box, Image } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export const DropDown = ({ arr }) => {
   const [index, setIndex] = useState(0);
+  useEffect(() => {
+    setIndex(0);
+  }, [arr]);
   return (
     <Stack
       position="absolute"
-      top="110px"
+      top="40px"
       left="0px"
-      borderTop="1px solid gray"
+      borderTop="1px solid lightGray"
       w="100%"
       h="auto"
       p="20px"
@@ -23,12 +26,13 @@ export const DropDown = ({ arr }) => {
         {arr?.map((item, i) => (
           <Flex
             w="200px"
-            fontWeight={i === index ? "medium" : "normal"}
+            fontWeight={i === index ? "bold" : "normal"}
             justifyContent="space-between"
             my="4px"
+            key={i}
           >
             <Link to="#">
-              <Text onMouseOver={() => setIndex(i)}>{item.category}</Text>
+              <Text onMouseEnter={() => setIndex(i)}>{item?.category}</Text>
             </Link>
             <span className="material-symbols-outlined">chevron_right</span>
           </Flex>
@@ -36,9 +40,9 @@ export const DropDown = ({ arr }) => {
       </Box>
       <Flex gap="20px">
         {arr[index]?.data?.map((item, index) => (
-          <Box>
-            <Text fontWeight="medium">{item.title}</Text>
-            {item.data?.map((el, i) => (
+          <Box key={index}>
+            <Text fontWeight="bold">{item?.title}</Text>
+            {item?.data?.map((el, i) => (
               <Link to="#">
                 <Text my="5px">{el}</Text>
               </Link>
@@ -48,11 +52,11 @@ export const DropDown = ({ arr }) => {
       </Flex>
       <Box>
         {arr[index]?.images?.map((item, index) => (
-          <Box>
+          <Box key={index}>
             <Link to="#">
-              <Image src={item.img} alt={item.name} />
-              <Text>{item.name}</Text>
-              <Text>{item.description}</Text>
+              <Image src={item?.img} alt={item?.name} />
+              <Text>{item?.name}</Text>
+              <Text>{item?.description}</Text>
             </Link>
           </Box>
         ))}
