@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, IconButton } from "@chakra-ui/react";
+import { Button, ButtonGroup } from "@chakra-ui/react";
 import { useState } from "react";
 import axios from "axios";
 const Quantity = ({ product, prod }) => {

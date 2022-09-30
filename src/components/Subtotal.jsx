@@ -1,15 +1,15 @@
 const Subtotal = ({ product }) => {
-  console.log(product);
+  // console.log(product);
 
   let sum = 0;
 
-  let final = product.forEach((item) => {
+  product.forEach((item) => {
     let total = item.ProductCard__Price.split("");
     total.shift();
 
     sum += Number(total.join("") * item.quantity);
   });
-  console.log(sum);
+  // console.log(sum);
 
   return sum;
 };
