@@ -44,7 +44,7 @@ const EventPage = () => {
         </Box>
 
         <Box paddingTop='4rem' >
-            <Text className='eventPage_virtual' fontFamily='Playfair Display Regular,serif' textAlign='center'  fontSize='3xl' >VIRTUAL EVENTS</Text>
+            <Text className='eventPage_virtual' fontFamily='Playfair Display Regular,serif' textAlign='center ' color='#12284c'  fontSize='3xl' >VIRTUAL EVENTS</Text>
         </Box>
 
 
@@ -58,7 +58,7 @@ const EventPage = () => {
                 <Box width='48%'>
                     <Text fontSize='1xl' fontFamily='Playfair Display, serif' color='#12284c'>BLUEMERCURY PRESENTS</Text>
                     <Text fontSize='3xl' fontFamily='Playfair Display, serif' color='#12284c'>Masterclass</Text>
-                    <Text fontSize='2xl' fontFamily='Playfair Display, serif' color='#12284c'>Join us for an exclusive online series of beauty  Masterclasses. Listen, learn and engage with experts from our favorite brands as they give intimate insights into their brand, products, and techniques.
+                    <Text fontSize='2xl'  fontFamily='Playfair Display, serif' color='#12284c'>Join us for an exclusive online series of beauty  Masterclasses. Listen, learn and engage with experts from our favorite brands as they give intimate insights into their brand, products, and techniques.
                     </Text>
                     <a href="" className='eventfirstAnchor' style={{ color:'#12284c', borderBottom:'2px solid'}}>RSVP & JOIN LIVE!</a>
                 </Box>
