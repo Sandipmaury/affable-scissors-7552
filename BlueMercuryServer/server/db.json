@@ -258,14 +258,7 @@
             "ProductCard__Title": "Artistique Blush",
             "ProductCard__Price": "$32"
           },
-          {
-            "id":26,
-            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/chantecaille-cheek-gelee",
-            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-lively-656509054077-1_235x.jpg?v=1658809640",
-            "ProductCard__Brand": "Chantecaille",
-            "ProductCard__Title": "Cheek Gelee",
-            "ProductCard__Price": "$46"
-          },
+    
           {
             "id":27,
             "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/kjaer-weis-lipstick",
@@ -298,14 +291,7 @@
             "ProductCard__Title": "Voyeur Waterproof Gel Eyeliner",
             "ProductCard__Price": "$28"
           },
-          {
-            "id":31,
-            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/rms-beauty-living-luminizer",
-            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-living-816248020355-1-v20220801T180618Z_235x.jpg?v=1659383261",
-            "ProductCard__Brand": "RMS Beauty",
-            "ProductCard__Title": "Living Luminizer",
-            "ProductCard__Price": "$38"
-          },
+       
           {
             "id":32,
             "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/lune-aster-cosmic-growth-mascara",

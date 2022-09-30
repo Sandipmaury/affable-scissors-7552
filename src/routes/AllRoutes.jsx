@@ -1,10 +1,12 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import ProductsNewContainer from "../Pages/ProductsPages/NewProduct/ProductsNewContainer";
+import ProductsBrandContainer from "../Pages/ProductsPages/BrandProduct/ProductsBrandContainer";
 import { ErrorPage } from "./ErrorPage";
 import ExplorePage from "./ExplorePage";
 import { HomePage } from "./HomePage";
 import { CartPage } from "./CartPage";
+import TopTestMonial from "../Pages/ProductsPages/NewProduct/TopTestMonial";
 export const AllRoutes = () => {
   return (
     <Routes>
@@ -12,11 +14,10 @@ export const AllRoutes = () => {
       <Route path="/cart" element={<CartPage />} />
 
       <Route path="*" element={<ErrorPage />} />
-<<<<<<< HEAD
+
       <Route path="/newproucts" element={<ProductsNewContainer/>}/>
-=======
+      <Route path="/brandProducts" element={<ProductsBrandContainer/>}/>
       <Route path="/explore" element={<ExplorePage/>} />
->>>>>>> eccb5f5bc7d6adfd677941e69d542e0e1cbbf9a8
     </Routes>
   );
 };

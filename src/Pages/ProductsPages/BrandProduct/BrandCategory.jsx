@@ -19,10 +19,10 @@ import {
 } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getData } from "../../../redux/AppReducer/Actions";
+import { getBrandData, getData } from "../../../redux/AppReducer/Actions";
 import { RiDislikeLine, RiStarSFill } from "react-icons/ri";
 import ReactStarRating from "react-star-ratings-component";
-import styles from "./newproduct.module.css";
+import styles from "./Brandproduct.module.css";
 import CardModal from "./ModalCart/CardModal";
 
 
@@ -37,7 +37,7 @@ const NewCategory = () => {
   const data = useSelector((state) => state.AppReducer.data);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getData())
+    dispatch(getBrandData())
     .then(res=>{
       const productCard = document.querySelectorAll(".productCard");
       productCard?.forEach((item)=>{
@@ -45,7 +45,6 @@ const NewCategory = () => {
         let button =  item.children[1].children[0].lastChild;
         button.style.bottom='0';
         button.style.opacity='1';
-        button.style.backgroundcolor='black'
         })
       })
 
@@ -54,7 +53,6 @@ const NewCategory = () => {
         let button =  item.children[1].children[0].lastChild;
         button.style.bottom='-50px';
         button.style.opacity='0';
-        
         })
       })
     })
