@@ -21,6 +21,7 @@ export const DropDown = ({ arr }) => {
       direction="row"
       justifyContent="center"
       gap="50px"
+      style={{ zIndex: 5 }}
     >
       <Box borderRight="1px solid gray" paddingRight="50px">
         {arr?.map((item, i) => (

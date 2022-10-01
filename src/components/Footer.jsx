@@ -44,7 +44,8 @@ export const Footer = () => {
     >
       <Flex
         justifyContent="space-between"
-        w={["100%", "100%", "100%", "1350px"]}
+        maxW="1350px"
+        w="100%"
         fontSize="14px"
         color="#466788"
         fontWeight="300"

@@ -9,6 +9,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { useRef, useState } from "react";
+import { useSelector } from "react-redux";
 import { navData } from "../Utils/Constants";
 import { Logo } from "./navbarComponents/Logo";
 import { NavLeft } from "./navbarComponents/NavLeft";
@@ -20,10 +21,11 @@ import { SecondBar } from "./navbarComponents/SecondBar";
 export const Navbar = () => {
   const [isNavbar, setNavbar] = useState(false);
   const { isOpen, onToggle } = useDisclosure();
+  const isAtuth = useSelector((store) => store.AuthReducer.isAtuth);
   const myRef = useRef(0);
   window.onscroll = () => {
     myRef.current = window.pageYOffset;
-    myRef.current > 120 ? setNavbar(true) : setNavbar(false);
+    myRef.current > 200 ? setNavbar(true) : setNavbar(false);
   };
   return (
     <Stack
@@ -36,6 +38,7 @@ export const Navbar = () => {
       w="100%"
       position={["sticky", "sticky", "sticky", isNavbar ? "sticky" : "static"]}
       onMouseLeave={isOpen ? onToggle : null}
+      mb="1rem"
     >
       <Box>
         {isNavbar ? (
@@ -51,7 +54,8 @@ export const Navbar = () => {
               templateRows="auto"
               templateColumns="repeat(3, 1fr)"
               margin="auto"
-              w={["100%", "100%", "100%", "1350px"]}
+              maxW="1350px"
+              w="100%"
             >
               <Box>
                 <NavLeft text={"STORE & SPA LOCATOR"} />
@@ -65,7 +69,7 @@ export const Navbar = () => {
                     <Box key={index}>
                       <NavRight
                         iconName={item.iconName}
-                        title={item.title}
+                        title={isAtuth && index === 2 ? "Account" : item.title}
                         pathName={item.pathName}
                       />
                     </Box>
@@ -75,7 +79,7 @@ export const Navbar = () => {
             </Grid>
 
             <Box position="relative" pt="10px">
-              <Box margin="auto" w={["100%", "100%", "100%", "1350px"]}>
+              <Box margin="auto" maxW="1350px" w="100%">
                 <Box w="70%" margin="auto">
                   <SecondBar isOpen={isOpen} onToggle={onToggle} />
                 </Box>
