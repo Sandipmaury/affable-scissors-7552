@@ -1,6 +1,8 @@
-import { Box, Image, Link, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Link, Text } from "@chakra-ui/react";
 import React from "react";
 import Slider from "react-slick";
+import { bestSellersProducts } from "../../Utils/Constants";
+import { SliderLeftButton, SliderRightButton } from "./SliderButton";
 export const Section7 = () => {
   const settings = {
     dots: false,
@@ -17,6 +19,8 @@ export const Section7 = () => {
         },
       },
     ],
+    nextArrow: <SliderRightButton />,
+    prevArrow: <SliderLeftButton />,
   };
 
   return (
@@ -25,150 +29,40 @@ export const Section7 = () => {
       color="#1b3053"
       fontWeight="medium"
       maxH="520px"
-      border="1px solid blue"
       overflow="hidden"
       textAlign="center"
       py="4rem"
       maxW="1350px"
       w="100%"
     >
-      <Link _hover={{ textDecoration: "none" }} href="#">
-        <Text fontSize="4xl">BEST SELLERS</Text>
-      </Link>
-      <Box cursor="grab">
+      <Flex alignItems="center" justifyContent="center">
+        <Link _hover={{ textDecoration: "none" }} href="#">
+          <Text fontSize="2xl">BEST SELLERS</Text>
+        </Link>
+      </Flex>
+      <Box mt="3rem" px="1rem" cursor="grab">
         <Slider {...settings}>
-          <Box
-            border="1px solid red"
-            bg="white"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Link href="#">
-              <Image
-                alt="sampel-contant"
-                src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-30ml-840732118327-1_235x235_crop_center.jpg?v=1663175595"
-              />
-            </Link>
-            <Text fontWeight="400">NEST NEW YORK</Text>
-            <Link href="#" _hover={{ textDecoration: "none" }}>
-              <Text color="#647ea1" my="10px">
-                Indian Jasmine Perfume
+          {bestSellersProducts?.map((item, index) => (
+            <Box
+              bg="white"
+              alignItems="center"
+              justifyContent="center"
+              key={index}
+            >
+              <Link href="#">
+                <Image alt={item?.title} src={item?.img} />
+              </Link>
+              <Text fontWeight="400">{item?.title.toUpperCase()}</Text>
+              <Link href="#" _hover={{ textDecoration: "none" }}>
+                <Text color="#647ea1" my="10px">
+                  {item?.discripton}
+                </Text>
+              </Link>
+              <Text my="10px" color="#647ea1">
+                {item?.price}
               </Text>
-            </Link>
-            <Text my="10px" color="#647ea1">
-              Oil From $35
-            </Text>
-          </Box>
-          <Box
-            border="1px solid red"
-            bg="white"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Link href="#">
-              <Image
-                alt="sampel-contant"
-                src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-30ml-840732118327-1_235x235_crop_center.jpg?v=1663175595"
-              />
-            </Link>
-            <Text fontWeight="400">NEST NEW YORK</Text>
-            <Link href="#" _hover={{ textDecoration: "none" }}>
-              <Text color="#647ea1" my="10px">
-                Indian Jasmine Perfume
-              </Text>
-            </Link>
-            <Text my="10px" color="#647ea1">
-              Oil From $35
-            </Text>
-          </Box>
-          <Box
-            border="1px solid red"
-            bg="white"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Link href="#">
-              <Image
-                alt="sampel-contant"
-                src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-30ml-840732118327-1_235x235_crop_center.jpg?v=1663175595"
-              />
-            </Link>
-            <Text fontWeight="400">NEST NEW YORK</Text>
-            <Link href="#" _hover={{ textDecoration: "none" }}>
-              <Text color="#647ea1" my="10px">
-                Indian Jasmine Perfume
-              </Text>
-            </Link>
-            <Text my="10px" color="#647ea1">
-              Oil From $35
-            </Text>
-          </Box>
-          <Box
-            border="1px solid red"
-            bg="white"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Link href="#">
-              <Image
-                alt="sampel-contant"
-                src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-30ml-840732118327-1_235x235_crop_center.jpg?v=1663175595"
-              />
-            </Link>
-            <Text fontWeight="400">NEST NEW YORK</Text>
-            <Link href="#" _hover={{ textDecoration: "none" }}>
-              <Text color="#647ea1" my="10px">
-                Indian Jasmine Perfume
-              </Text>
-            </Link>
-            <Text my="10px" color="#647ea1">
-              Oil From $35
-            </Text>
-          </Box>
-          <Box
-            border="1px solid red"
-            bg="white"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Link href="#">
-              <Image
-                alt="sampel-contant"
-                src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-30ml-840732118327-1_235x235_crop_center.jpg?v=1663175595"
-              />
-            </Link>
-            <Text fontWeight="400">NEST NEW YORK</Text>
-            <Link href="#" _hover={{ textDecoration: "none" }}>
-              <Text color="#647ea1" my="10px">
-                Indian Jasmine Perfume
-              </Text>
-            </Link>
-            <Text my="10px" color="#647ea1">
-              Oil From $35
-            </Text>
-          </Box>
-          <Box
-            border="1px solid red"
-            bg="white"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Link href="#">
-              <Image
-                alt="sampel-contant"
-                src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-30ml-840732118327-1_235x235_crop_center.jpg?v=1663175595"
-              />
-            </Link>
-            <Text fontWeight="400">NEST NEW YORK</Text>
-            <Link href="#" _hover={{ textDecoration: "none" }}>
-              <Text color="#647ea1" my="10px">
-                Indian Jasmine Perfume
-              </Text>
-            </Link>
-            <Text my="10px" color="#647ea1">
-              Oil From $35
-            </Text>
-          </Box>
+            </Box>
+          ))}
         </Slider>
       </Box>
     </Box>

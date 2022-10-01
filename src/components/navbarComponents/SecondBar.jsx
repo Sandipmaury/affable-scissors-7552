@@ -1,5 +1,4 @@
 import { Flex, Stack, Text } from "@chakra-ui/layout";
-import { Collapse } from "@chakra-ui/transition";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { dropDownNew, dropDownShop, lowerNav } from "../../Utils/Constants";
@@ -21,10 +20,10 @@ export const SecondBar = ({ isOpen, onToggle }) => {
     <Stack>
       <Flex
         w="100%"
-        h="100%"
         alignItems="center"
         justifyContent="space-around"
         margin="auto"
+        h="50px"
       >
         {lowerNav?.map((item, index) => (
           <NavLink
@@ -36,10 +35,6 @@ export const SecondBar = ({ isOpen, onToggle }) => {
             {({ isActive }) =>
               isActive ? (
                 <Text
-                  _hover={{
-                    borderBottom: "2px solid #1c2838",
-                    transition: "0.3s",
-                  }}
                   color="#647ea1"
                   fontWeight="bold"
                   borderBottom="2px solid #1c2838"
@@ -48,7 +43,7 @@ export const SecondBar = ({ isOpen, onToggle }) => {
                 </Text>
               ) : (
                 <Text
-                  borderBottom="2px solid #1c2838"
+                  borderBottom="2px solid transparent"
                   _hover={{ borderBottom: "2px solid #1c2838" }}
                 >
                   {item.title.toUpperCase()}
@@ -58,9 +53,8 @@ export const SecondBar = ({ isOpen, onToggle }) => {
           </NavLink>
         ))}
       </Flex>
-      <Collapse in={isOpen}>
-        <DropDown arr={arr[arrIndex]} />
-      </Collapse>
+
+      {isOpen ? <DropDown arr={arr[arrIndex]} /> : null}
     </Stack>
   );
 };

@@ -25,20 +25,19 @@ export const Navbar = () => {
   const myRef = useRef(0);
   window.onscroll = () => {
     myRef.current = window.pageYOffset;
-    myRef.current > 200 ? setNavbar(true) : setNavbar(false);
+    myRef.current > 130 ? setNavbar(true) : setNavbar(false);
   };
   return (
     <Stack
       top="0px"
-      pt={isNavbar ? "0px" : "10px"}
+      pt={["0px", "0px", "0px", isNavbar ? "0px" : "10px"]}
       bg="white"
       color="#647ea1"
       direction="column"
-      style={{ zIndex: 7 }}
+      zIndex="7"
       w="100%"
       position={["sticky", "sticky", "sticky", isNavbar ? "sticky" : "static"]}
       onMouseLeave={isOpen ? onToggle : null}
-      mb="1rem"
     >
       <Box>
         {isNavbar ? (
@@ -78,7 +77,7 @@ export const Navbar = () => {
               </Box>
             </Grid>
 
-            <Box position="relative" pt="10px">
+            <Box position="relative">
               <Box margin="auto" maxW="1350px" w="100%">
                 <Box w="70%" margin="auto">
                   <SecondBar isOpen={isOpen} onToggle={onToggle} />
@@ -94,8 +93,6 @@ export const Navbar = () => {
             fontWeight="medium"
             templateColumns="repeat(3, 1fr)"
             templateRows="auto"
-            position="sticky"
-            top="0px"
             alignItems="center"
           >
             <Box px="10px">

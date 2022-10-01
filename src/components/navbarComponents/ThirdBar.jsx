@@ -14,7 +14,7 @@ export const ThirdBar = () => {
 
   return (
     <Box
-      style={{ zIndex: 3 }}
+      zIndex="3"
       w="100%"
       bg="#d7ebf2"
       py="10px"

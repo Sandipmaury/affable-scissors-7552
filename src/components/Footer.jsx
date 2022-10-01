@@ -2,31 +2,18 @@ import {
   Box,
   Flex,
   Text,
-  Input,
   Icon,
   Show,
   Hide,
-  Button,
   Stack,
   Link,
-  InputGroup,
-  InputRightElement,
 } from "@chakra-ui/react";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaPinterestP,
-  FaInstagram,
-  FaYoutube,
-} from "react-icons/fa";
 import {
   Accordion,
   AccordionItem,
   AccordionButton,
   AccordionPanel,
-  AccordionIcon,
 } from "@chakra-ui/react";
-import { AiOutlineArrowRight } from "react-icons/ai";
 import { BiMinus, BiPlus } from "react-icons/bi";
 
 import { footerData } from "../Utils/Constants";

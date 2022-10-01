@@ -1,4 +1,4 @@
-import { Stack, Text } from "@chakra-ui/react";
+import { Stack } from "@chakra-ui/react";
 import React from "react";
 import { Section1 } from "../components/homePageSections/Section1";
 import { Section2 } from "../components/homePageSections/Section2";
@@ -12,12 +12,7 @@ import { ThirdBar } from "../components/navbarComponents/ThirdBar";
 
 export const HomePage = () => {
   return (
-    <Stack
-      border="1px solid blue"
-      direction="column"
-      alignItems="center"
-      style={{ zIndex: 5 }}
-    >
+    <Stack direction="column" alignItems="center" style={{ zIndex: 5 }}>
       <ThirdBar />
       <Section1 />
       <Section2 />

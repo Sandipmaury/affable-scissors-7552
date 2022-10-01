@@ -22,8 +22,9 @@ export const NavOnscroll = ({ isOpen, onToggle }) => {
       <Flex
         w={["100%", "100%", "100%", "1350px"]}
         justifyContent="space-between"
+        alignItems="center"
       >
-        <Box maxW="150px" alignSelf="end" justifySelf="center">
+        <Box maxW="150px" justifySelf="center">
           <Logo />
         </Box>
         <Box w="60%">
