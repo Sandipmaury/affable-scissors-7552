@@ -10,20 +10,20 @@ const ExplorePage = () => {
     <div
       style={{
         width: "100%",
-        border: "2px solid red",
+        // border: "2px solid red",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         // margin: "auto",
       }}
     >
-      <section style={{ border: "2px solid black", marginBottom: "3rem" }}>
+      <section className="commondiv">
         <div className="class_slider">
           <SliderOne />
         </div>
       </section>
 
-      <section style={{ border: "2px solid black", marginBottom: "4rem" }}>
+      <section className="commondiv">
         <div className="other_boxes">
           <ul
             style={{
@@ -58,7 +58,7 @@ const ExplorePage = () => {
         </div>
       </section>
 
-      <section>
+      <section className="commondiv">
         <div className="other_boxes section_two">
           <div>
             <h2>NATIONAL HISPANIC HERITAGE MONTH 2022</h2>
@@ -81,13 +81,13 @@ const ExplorePage = () => {
         </div>
       </section>
 
-      <section style={{ border: "2px solid black", marginBottom: "4rem" }}>
+      <section style={{  marginBottom: "8rem", width:'80%', margin:"auto", height:'80%' }}>
         <div className="class_slider">
           <SliderTwo />
         </div>
       </section>
 
-      <section style={{ border: "2px solid black", marginBottom: "4rem" }}>
+      <section className="commondiv">
         <div className="other_boxes sectionFour_text">
           <div>
             <h1>SALUTING MORE HISPANIC CREATORS!</h1>
@@ -105,7 +105,7 @@ const ExplorePage = () => {
         </div>
       </section>
 
-      <section style={{ border: "2px solid black", marginBottom: "4rem" }}>
+      <section className="commondiv">
         <div className="other_boxes sectionFive_text">
           <div>
             <img
@@ -125,13 +125,13 @@ const ExplorePage = () => {
         </div>
       </section>
 
-      <section>
+      <section style={{ marginBottom: "8rem", width:'80%', margin:"auto", height:'80%' }}>
         <div className="class_slider section_six_slider">
           <SliderThree />
         </div>
       </section>
 
-      <section>
+      <section className="commondiv">
         <div className="other_boxes section_seven_text">
           <div>
             <img
@@ -153,7 +153,7 @@ const ExplorePage = () => {
         </div>
       </section>
 
-    <section>
+    <section >
       <div className="other_boxes section_eight">
         <div >
           <img
