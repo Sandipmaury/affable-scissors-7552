@@ -32,6 +32,24 @@ const CartPage = () => {
     getData();
   }, [state]);
   console.log(data);
+  if (data.length === 0) {
+    return (
+      <div style={{ textAlign: "center" }}>
+        <Text margin="200px" textAlign="center" marginBottom="30px">
+          Your Bag is Empty
+        </Text>
+        <Button
+          margin="auto"
+          alignItems="center"
+          colorScheme="facebook"
+          marginBottom="30px"
+        >
+          ADD SOMETHING
+        </Button>
+      </div>
+    );
+  }
+
   return (
     <div
       className={styles.cart_main_container}
@@ -56,7 +74,7 @@ const CartPage = () => {
               letterSpacing="1px"
               lineHeight="26px"
             >
-              Your Cart (3 items)
+              {`Your Cart (${data.length} items)`}
             </Text>
             <Checkbox
               borderColor="#5e769b"
@@ -142,11 +160,7 @@ const CartPage = () => {
                       alignItems: "center",
                     }}
                   >
-                    <Image
-                      width="25%"
-                      src={item["ProductCard__Image src"]}
-                      alt=""
-                    />
+                    <Image width="25%" src={item.Image} alt="" />
                     <Text
                       color="#12284c"
                       fontSize="20px"

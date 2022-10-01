@@ -44,6 +44,7 @@ const Payment = () => {
           <Button
             onClick={() => setState((prev) => prev + 1)}
             colorScheme="facebook"
+            disabled={info1 == "" || info == ""}
           >
             NEXT
           </Button>

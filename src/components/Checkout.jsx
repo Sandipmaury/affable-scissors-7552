@@ -35,7 +35,7 @@ const Checkout = ({ radio }) => {
             >
               <img
                 style={{ width: "80px" }}
-                src={item["ProductCard__Image src"]}
+                src={item.Image}
                 alt="product"
               />
               <h4 style={{ fontWeight: "bold" }}>{item.ProductCard__Brand}</h4>
