@@ -1,30 +1,35 @@
+.class_slider{
+    width: 100%;
+}
+
+.other_boxes{
+    max-width: 1350px;
+    margin: auto;
+    border: 2px solid blue;
+}
 .single_box{
     border: 1px solid gray;
-    width: 80%;
     height: 60px;
     position: relative;
     top: 4rem;
-    /* align-items: center; */
-    left: 8rem;
+  
+}
+
+.styling_li{
+    border-right: 1px solid gray;
+    padding-right: 2rem;
 }
 
 .maindiv{
+    /* width: 100%; */
     max-width: 1350px;
     margin: auto;
+    border: 2px solid red;
 }
 
-.section_two{
-    /* border: 2px solid red; */
-    width: 70%;
-    height: 200px;
-    position: relative;
-    top: 10rem;
-    left: 10rem;
-}
 
 .section_two  h2{
-    /* width: 98%; */
-    margin-left: 21rem;
+    text-align: center;
     font-size: 18px;
     font-family: Montserrat Semi Bold, sans-serif; 
     letter-spacing: 0.05em; 
@@ -34,27 +39,24 @@
 
 .section_two  h1{
     font-size: 55px;
+    text-align: center;
     font-family: Playfair Display, serif;
     text-transform: uppercase;
     line-height: 1;
     margin-bottom: 0.25em;
     margin-top: 0;
-    /* font-size: inherit; */
     font-weight: inherit;
-    position: relative;
-    left: 6rem;
     margin-top: 1rem;
 }
 
 .section_two_p{
     display: block;
+    text-align: center;
     max-width: 50rem;
     margin: 0 auto 1rem;
     padding: 0 1rem;
     font-size: 18px;
     color: #a9b0be;
-    position: relative;
-    left: 5rem;
 }
 
 .section_two_p a{
@@ -80,19 +82,7 @@ a {
     text-align: center;
 }
 
-.section_three{
-    padding-top: 20rem;
-    margin-left: 11rem;
-}
 
-.sectionFour_text{
-    /* border: 2px solid red; */
-    max-width: 1200px;
-    /* height: 200px; */
-    position: relative;
-    top: 8rem;
-    left: 7rem;
-}
 
 .sectionFour_text  h1{
     font-size: 55px;
@@ -134,19 +124,9 @@ a {
     margin-top: 1rem;
 }
 
-.sectionFive_text{
-    /* border: 2px solid red; */
-    width: 75%;
-    position: relative;
-    top: 14rem;
-    left: 14rem;
-}
-
 .sectionFive_text img{
     width: 65%;
-    position: relative;
-    left: 10rem;
-
+    margin: auto;
 }
 
 .section_two_p2 {
@@ -174,26 +154,18 @@ a {
     margin-top: 1rem;
 }
 
-.section_six_slider{
-    padding-top: 20rem;
-    /* padding-left: 8rem; */
-    position: relative;
-    left: 5rem;
-}
 
 .section_seven_text{
-    /* border: 2px solid red; */
-    width: 75%;
-    position: relative;
-    top: 10rem;
-    left: 14rem;
+    border: 2px solid red;
+    width: 100%;
+    
+    margin: auto;
+    margin-top: 6rem;
 }
 
 .section_seven_text img{
     width: 65%;
-    position: relative;
-    left: 10rem;
-
+    margin: auto;
 }
 
 .section_two_p3 {
@@ -223,28 +195,22 @@ a {
 
 .section_eight{
     display: flex;
-    width: 90%;
-    /* height: 40%; */
-    position: relative;
-    top: 18rem;
-    left: 8rem;
-    /* border: 2px solid black; */
 }
 
 .section_eight img{
     width: 100%;
-    height: 70%;
+    height:50%;
 }
 
-.section_two_p4 h1{
+/* .section_two_p4 h1{
     padding-top: 18rem;
-    /* text-align: center; */
+    text-align: center;
     font-size: 2rem;
     color: #12284c;
-}
+} */
 
 
-.section_two_p4 {
+/* .section_two_p4 {
     display: block;
     width: 100%;
     text-align: center;
@@ -258,8 +224,7 @@ a {
     font-size: 18px;
     color: #a9b0be;
     position: relative;
-    left: 3rem;
-    /* font-weight: 500; */
+    left: 3rem; 
 }
 
 .section_two_p4 a{
@@ -270,4 +235,4 @@ a {
     text-transform: uppercase;
     border-bottom: 2px solid #12284c;
     margin-top: 1rem;
-}
+} */
