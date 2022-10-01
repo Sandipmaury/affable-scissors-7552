@@ -1,10 +1,11 @@
-import { Box,Text, Image,Button, Flex, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, useDisclosure, Heading, MenuButton, MenuList, MenuItem, Menu } from '@chakra-ui/react'
+import { Box,Text, Image,Button, Flex, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, useDisclosure, Heading, MenuButton, MenuList, MenuItem, Menu, Alert } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import styles from '../newproduct.module.css';
 import ReactStarRating from "react-star-ratings-component";
 import { ChevronDownIcon } from '@chakra-ui/icons';
 import { RiDislikeLine } from "react-icons/ri";
 import { BsFillBagPlusFill } from "react-icons/bs";
+import {AlertIcon,AlertTitle,AlertDescription,} from '@chakra-ui/react'
 const CardModal = ({props}) => {
     const [data,setData] = useState();
     const [countInc,setCountInc] = useState(0)
@@ -18,12 +19,14 @@ const CardModal = ({props}) => {
     console.log(props)
 
     const handleAddtoCart=(item)=>{
+     
       let tempObj={
           itemId:item.id,
           quantity:0
       }
       setData([...data,tempObj])
       localStorage.setItem("BlueMercurycart",JSON.stringify(data))
+      alert("ADDED TO CART")
     }
   return (
     <>
@@ -39,7 +42,7 @@ const CardModal = ({props}) => {
         <ModalCloseButton />
         <ModalBody>
           <Flex>
-            <Box width="13000px">
+            <Box width="1100px">
                 <Image width='400px'  src={props.Image} />
             </Box>
             <Box>
