@@ -20,7 +20,7 @@ const CardModal = ({props}) => {
       // alert('alert')
       let tempObj={
           itemId:item.id,
-          quantity:0
+          itemQuantity:1
       }
       setData([...data,tempObj])
       localStorage.setItem("BlueMercurycart",JSON.stringify(data))
@@ -39,7 +39,7 @@ const CardModal = ({props}) => {
         <ModalCloseButton />
         <ModalBody>
           <Flex>
-            <Box width="13000px">
+            <Box width="1200px">
                 <Image width='400px'  src={props.Image} />
             </Box>
             <Box>

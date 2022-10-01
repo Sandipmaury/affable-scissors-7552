@@ -6,9 +6,9 @@ const ProductsNewContainer = () => {
   return (
     <div>
           {/* <Box><TopTestMonial/></Box> */}
-        <Flex width="80%" margin="auto" gap="25px">
-          <Box padding='50px 0px' width="18%"><FilterNew/></Box>
-            <Box  width="75%"><NewCategory/></Box>
+        <Flex width="1400px" margin="auto" gap="50px">
+          <Box padding='50px 0px' width="300px"><FilterNew/></Box>
+            <Box  width="1100px"><NewCategory/></Box>
         </Flex>
     </div>
   )

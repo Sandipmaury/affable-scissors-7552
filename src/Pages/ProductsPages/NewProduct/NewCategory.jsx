@@ -16,51 +16,71 @@ import {
   Switch,
   Text,
   useDisclosure,
+  useStatStyles,
 } from "@chakra-ui/react";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getData } from "../../../redux/AppReducer/Actions";
 import { RiDislikeLine, RiStarSFill } from "react-icons/ri";
 import ReactStarRating from "react-star-ratings-component";
 import styles from "./newproduct.module.css";
 import CardModal from "./ModalCart/CardModal";
-
-
-// productCard?.map((item)=>{
-//   item.addEventListner('click',()=>{
-//     console.log('clicke item')
-//   })
-// })
+import { useSearchParams } from "react-router-dom";
 
 const NewCategory = () => {
+  const [searchParams,setSearchParams] = useSearchParams();
+  const initialCategory = searchParams.getAll('category')
+  const [category,setCategory] = useState(initialCategory || []);
+
+
+  const [sort,setSort] = useState('ASC')
   const {  onOpen } = useDisclosure()
   const data = useSelector((state) => state.AppReducer.data);
   const dispatch = useDispatch();
+  let params={
+    _sort:"ProductCard__Price",
+    _order:sort
+  }
   useEffect(() => {
-    dispatch(getData())
-    .then(res=>{
-      const productCard = document.querySelectorAll(".productCard");
-      productCard?.forEach((item)=>{
-        item.addEventListener("mouseenter",()=>{
-        let button =  item.children[1].children[0].lastChild;
-        button.style.bottom='0';
-        button.style.opacity='1';
-        button.style.backgroundcolor='black'
+    if(category){
+      category && (params.category=category);
+      setSearchParams(params)
+      dispatch(getData(params))
+      .then(res=>{
+        const productCard = document.querySelectorAll(".productCard");
+        productCard?.forEach((item)=>{
+          item.addEventListener("mouseenter",()=>{
+          let button =  item.children[1].children[0].lastChild;
+          button.style.bottom='0';
+          button.style.opacity='1';
+          button.style.backgroundcolor='black'
+          })
+        })
+  
+        productCard?.forEach((item)=>{
+          item.addEventListener("mouseleave",()=>{
+          let button =  item.children[1].children[0].lastChild;
+          button.style.bottom='-50px';
+          button.style.opacity='0';
+          
+          })
         })
       })
-
-      productCard?.forEach((item)=>{
-        item.addEventListener("mouseleave",()=>{
-        let button =  item.children[1].children[0].lastChild;
-        button.style.bottom='-50px';
-        button.style.opacity='0';
-        
-        })
-      })
-    })
-  }, []);
+    }
+   
+  }, [sort]);
   // console.log("datahere", data);
   
+  const handelCheckboxChange=(e)=>{
+    const newCategory = [...category];
+    if(newCategory.includes(e.target.value)){
+      newCategory.splice(newCategory.indexOf(e.target.value),1)
+    }
+    else{
+      newCategory.push(e.target.value)
+    }
+    setCategory(newCategory)
+  }
  
   
  
@@ -106,8 +126,8 @@ const NewCategory = () => {
                     <MenuItem>Featured</MenuItem>
                     <MenuItem>New Arrivals</MenuItem>
                     <MenuItem>Best Sellers</MenuItem>
-                    <MenuItem>Price Low to High</MenuItem>
-                    <MenuItem>Price High to Low</MenuItem>
+                    <MenuItem onClick={()=>setSort('ASC')}>Price Low to High</MenuItem>
+                    <MenuItem onClick={()=>setSort('DESC')}>Price High to Low</MenuItem>
                   </MenuList>
                 </Menu>
               </Box>
@@ -166,7 +186,7 @@ const NewCategory = () => {
                  <Text color="#2f5899">{item.ProductCard__Brand}</Text> <br></br>
                 {item.ProductCard__Title}
                 <br></br>
-                {item.ProductCard__Price}
+                ${item.ProductCard__Price}
                 <ReactStarRating
                   padding="0px 10px"
                   numberOfStar={5}
