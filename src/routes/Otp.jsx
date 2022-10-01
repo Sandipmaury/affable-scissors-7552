@@ -12,7 +12,6 @@ const Otp = () => {
   useEffect(() => {
     axios.get("http://localhost:8080/cart").then((r) => {
       setData(r.data);
-      // console.log(data);
     });
   }, []);
   for (let i = 0; i < data.length; i++) {
@@ -20,7 +19,7 @@ const Otp = () => {
   }
   console.log(idArray);
   const handleClick = () => {
-    // alert("Order Placed");
+    alert("Order Placed");
 
     idArray.forEach((item) => {
       axios.delete(`http://localhost:8080/cart/${item}`);
