@@ -32,3 +32,13 @@ graph TD;
     ProductPage-->CartPage;
      CartPage-->PaymentPage; 
 ```
+
+## Home Page
+### Authors of this page
+
+-  [Sandip Maurya](https://github.com/Sandipmaury)
+
+This is home page with navbar and footer. This page has sliders, some links and some other 
+sections. Here you can see demo products.
+
+![Logo](https://i.im.ge/2022/10/02/1WbcEy.sfddsfsdfsdfs.png)
