@@ -8,7 +8,7 @@ import { HomePage } from "./HomePage";
 import { CartPage } from "./CartPage";
 import EventPage from "./EventPage";
 import { Otp } from "./Otp";
-import {Payment} from "./Payment"
+import { Payment } from "./Payment";
 import TopTestMonial from "../Pages/ProductsPages/NewProduct/TopTestMonial";
 import LoginPage from "./LoginPage";
 import SignupPage from "./SignupPage";
@@ -19,19 +19,16 @@ export const AllRoutes = () => {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/cart" element={<CartPage />} />
-
       <Route path="*" element={<ErrorPage />} />
-
       <Route path="/newproucts" element={<ProductsNewContainer />} />
       <Route path="/brandProducts" element={<ProductsBrandContainer />} />
-      {/* <Route path="/explore" element={<ExplorePage />} /> */}
+      <Route path="/explore" element={<ExplorePage />} />
       <Route path="/eventpage" element={<EventPage />} />
       <Route path="/otp" element={<Otp />} />
       <Route path="/payment" element={<Payment />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/user" element={<UserPage />} />
-
     </Routes>
   );
 };
