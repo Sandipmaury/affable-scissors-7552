@@ -1,0 +1,18 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;   
+}
+.container{
+    width: 1350px;
+}
+.mainDiv{
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    color: #12284C;
+}
+.usericon{
+    width: 50px;
+    height: 45px;
+}
