@@ -3,11 +3,13 @@ import React from "react";
 import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
 import { AllRoutes } from "./routes/AllRoutes";
+import { ThirdBar } from "./components/navbarComponents/ThirdBar";
 
 function App() {
   return (
     <Stack direction="column" w="100%" h="auto">
       <Navbar />
+      <ThirdBar />
       <AllRoutes />
       <Footer />
     </Stack>

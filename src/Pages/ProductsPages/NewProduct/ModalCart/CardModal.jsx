@@ -1,49 +1,75 @@
-import { Box,Text, Image,Button, Flex, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, useDisclosure, Heading, MenuButton, MenuList, MenuItem, Menu } from '@chakra-ui/react'
-import React, { useEffect, useState } from 'react'
-import styles from '../newproduct.module.css';
+import {
+  Box,
+  Text,
+  Image,
+  Button,
+  Flex,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalOverlay,
+  useDisclosure,
+  Heading,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  Menu,
+} from "@chakra-ui/react";
+import React, { useEffect, useState } from "react";
+import styles from "../newproduct.module.css";
 import ReactStarRating from "react-star-ratings-component";
-import { ChevronDownIcon } from '@chakra-ui/icons';
+import { ChevronDownIcon } from "@chakra-ui/icons";
 import { RiDislikeLine } from "react-icons/ri";
 import { BsFillBagPlusFill } from "react-icons/bs";
-const CardModal = ({props}) => {
-    const [data,setData] = useState()
-    // const CartData = JSON.parse(localStorage.getItem('BlueMercurycart')) || [];
-    // localStorage.setItem('BlueMercurycart', JSON.stringify(data));
+import axios from "axios";
+const CardModal = ({ props }) => {
+  const [data, setData] = useState();
+  // const CartData = JSON.parse(localStorage.getItem('BlueMercurycart')) || [];
+  // localStorage.setItem('BlueMercurycart', JSON.stringify(data));
 
-  useEffect(()=>{
-    setData(JSON.parse(localStorage.getItem("BlueMercurycart")) || [])  
-  },[])
-    const { onOpen,isOpen, onClose } = useDisclosure()
-    console.log(props)
+  useEffect(() => {
+    setData(JSON.parse(localStorage.getItem("BlueMercurycart")) || []);
+  }, []);
+  const { onOpen, isOpen, onClose } = useDisclosure();
+  console.log(props);
 
-    const handleAddtoCart=(item)=>{
-      // alert('alert')
-      let tempObj={
-          itemId:item.id,
-          itemQuantity:1
-      }
-      setData([...data,tempObj])
-      localStorage.setItem("BlueMercurycart",JSON.stringify(data))
-    }
+  const handleAddtoCart = (item) => {
+    // alert('alert')
+    let tempObj = {
+      ...item,
+      itemQuantity: 1,
+    };
+    setData([...data, tempObj]);
+    localStorage.setItem("BlueMercurycart", JSON.stringify(data));
+    axios.post("http://localhost:8080/cart", tempObj);
+  };
   return (
     <>
-    <button onClick={()=>{
-        return onOpen()
-    }}  className={styles.productViewButton + " " + "productViewButton"}>
+      <button
+        onClick={() => {
+          return onOpen();
+        }}
+        className={styles.productViewButton + " " + "productViewButton"}
+      >
         Quick View
-    </button>
-    <Modal onClose={onClose} size={'3xl'} isOpen={isOpen}>
-      <ModalOverlay />
-      <ModalContent>
-        <ModalHeader>{}</ModalHeader>
-        <ModalCloseButton />
-        <ModalBody>
-          <Flex>
-            <Box width="1200px">
-                <Image width='400px'  src={props.Image} />
-            </Box>
-            <Box>
-                <Heading as='h4' size='md'>{props.ProductCard__Title}</Heading>
+      </button>
+      <Modal onClose={onClose} size={"3xl"} isOpen={isOpen}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>{}</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <Flex>
+              <Box width="1200px">
+                <Image width="400px" src={props.Image} />
+              </Box>
+              <Box>
+                <Heading as="h4" size="md">
+                  {props.ProductCard__Title}
+                </Heading>
                 <Text>{props.ProductCard__Brand}</Text>
                 <ReactStarRating
                   padding="0px 10px"
@@ -60,43 +86,66 @@ const CardModal = ({props}) => {
                   }}
                 />
                 <Text>BEST SELLER CONSCIOUS BEAUTY</Text>
-                <Text padding="10px 0px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur rerum placeat modi molestiae numquam tempore doloremque doloribus aliquam suscipit voluptates.</Text>
-                 <Box>
-                 <Menu>
-                    <MenuButton width="100%" as={Button} rightIcon={<ChevronDownIcon />}>
-                        Actions
+                <Text padding="10px 0px">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur rerum placeat modi molestiae numquam tempore
+                  doloremque doloribus aliquam suscipit voluptates.
+                </Text>
+                <Box>
+                  <Menu>
+                    <MenuButton
+                      width="100%"
+                      as={Button}
+                      rightIcon={<ChevronDownIcon />}
+                    >
+                      Actions
                     </MenuButton>
-                    <MenuList >
-                        <MenuItem width="100%"></MenuItem>
-                        <MenuItem>small</MenuItem>
-                        <MenuItem>Meidium</MenuItem>
-                        <MenuItem>Large</MenuItem>
-                        <MenuItem>Extra Large</MenuItem>
+                    <MenuList>
+                      <MenuItem width="100%"></MenuItem>
+                      <MenuItem>small</MenuItem>
+                      <MenuItem>Meidium</MenuItem>
+                      <MenuItem>Large</MenuItem>
+                      <MenuItem>Extra Large</MenuItem>
                     </MenuList>
-                    </Menu>
-                 </Box>
-                 <Flex padding="10px 30px" alignItems="center" justifyContent="space-between">
-                    <Box>
-                        <Button border="0.5px solid black">-</Button>
-                        <Button border="0.5px solid black">1</Button>
-                        <Button border="0.5px solid black">+</Button>
-                    </Box>
-                    <Box>
-                    <Flex gap="12px"> <RiDislikeLine />  WishList</Flex>
-                    </Box>
-                 </Flex>
-                 <Button onClick={()=>handleAddtoCart(props)} margin='8px 0px' bgColor='#12284C' color='white' width="100%"><BsFillBagPlusFill />&#xFEFF;&#xFEFF; Add To Bag</Button>
-            </Box>
-          </Flex>
-        </ModalBody>
-        <ModalFooter>
-          {/* <Button onClick={onClose}>Close</Button> */}
-        </ModalFooter>
-      </ModalContent>
-    </Modal>
-  </>
-  )
-}
+                  </Menu>
+                </Box>
+                <Flex
+                  padding="10px 30px"
+                  alignItems="center"
+                  justifyContent="space-between"
+                >
+                  <Box>
+                    <Button border="0.5px solid black">-</Button>
+                    <Button border="0.5px solid black">1</Button>
+                    <Button border="0.5px solid black">+</Button>
+                  </Box>
+                  <Box>
+                    <Flex gap="12px">
+                      {" "}
+                      <RiDislikeLine /> WishList
+                    </Flex>
+                  </Box>
+                </Flex>
+                <Button
+                  onClick={() => handleAddtoCart(props)}
+                  margin="8px 0px"
+                  bgColor="#12284C"
+                  color="white"
+                  width="100%"
+                >
+                  <BsFillBagPlusFill />
+                  &#xFEFF;&#xFEFF; Add To Bag
+                </Button>
+              </Box>
+            </Flex>
+          </ModalBody>
+          <ModalFooter>
+            {/* <Button onClick={onClose}>Close</Button> */}
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+    </>
+  );
+};
 
-export default CardModal
-
+export default CardModal;

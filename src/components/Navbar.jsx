@@ -21,7 +21,7 @@ import { SecondBar } from "./navbarComponents/SecondBar";
 export const Navbar = () => {
   const [isNavbar, setNavbar] = useState(false);
   const { isOpen, onToggle } = useDisclosure();
-  const isAtuth = useSelector((store) => store.AuthReducer.isAtuth);
+  const isAuth = useSelector((store) => store.AuthReducer.isAuth);
   const myRef = useRef(0);
   window.onscroll = () => {
     myRef.current = window.pageYOffset;
@@ -68,8 +68,10 @@ export const Navbar = () => {
                     <Box key={index}>
                       <NavRight
                         iconName={item.iconName}
-                        title={isAtuth && index === 2 ? "Account" : item.title}
-                        pathName={item.pathName}
+                        title={isAuth && index === 2 ? "Account" : item.title}
+                        pathName={
+                          isAuth && index === 2 ? "/user" : item.pathName
+                        }
                       />
                     </Box>
                   ))}

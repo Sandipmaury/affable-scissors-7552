@@ -20,7 +20,7 @@ const Otp = () => {
   }
   console.log(idArray);
   const handleClick = () => {
-    // alert("Order Placed");
+    alert("Order Placed");
 
     idArray.forEach((item) => {
       axios.delete(`http://localhost:8080/cart/${item}`);
@@ -67,7 +67,7 @@ const Otp = () => {
         />
         <InputRightElement width="4.5rem">
           <Button
-            disabled={otp !== 1234}
+            disabled={otp != 1234}
             h="1.75rem"
             size="sm"
             onClick={() => handleClick()}

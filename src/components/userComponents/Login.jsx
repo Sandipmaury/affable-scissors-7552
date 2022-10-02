@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
-import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import {
   Box,
   Heading,
@@ -9,52 +8,44 @@ import {
   Text,
   Link,
   Stack,
+  useToast,
 } from "@chakra-ui/react";
-import UserPage from "./UserPage";
-import { useRef } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getUserData } from "../../redux/AuthReducer/Actions";
 
 const Login = () => {
-  const [user, setUser] = useState({});
-  const token = useRef(JSON.parse(localStorage.getItem("token")));
-  const [isAuth, setIsAuth] = useState(false);
+  const navigate = useNavigate();
+  const toast = useToast();
+  const token = useSelector((store) => store.AuthReducer.token);
+  const user = useSelector((store) => store.AuthReducer.user);
+  const dispatch = useDispatch();
   const [formValue, setFormValue] = useState({
     email: "",
     password: "",
   });
 
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    getData();
-  }, []);
-
-  const getData = async () => {
-    return await axios
-      .get(`https://62a8b465943591102ba84f08.mockapi.io/crud`)
-      .then(({ data }) => {
-        setUser(data.find((el) => el.token === token.current));
-      });
-  };
-
   const handleChange = (e) => {
     const { name, value, type } = e.target;
-
     const val = type === "number" ? Number(value) : value;
-
     setFormValue({ ...formValue, [name]: val });
-    //console.log(formValue)
   };
+
+  useEffect(() => {
+    dispatch(getUserData(token));
+  }, []);
 
   const handleCheckUser = (e) => {
     e.preventDefault();
     user.email === formValue.email && user.password === formValue.password
-      ? navigate("/userpage")
-      : alert("Invalid Email or Password");
+      ? navigate("/user")
+      : toast({
+          title: "Invalid email address or password",
+          status: "error",
+          isClosable: true,
+        });
   };
 
-  return isAuth ? (
-    <Navigate to="/userpage" />
-  ) : (
+  return (
     <Stack fontFamily="sans-serif">
       <Box m="auto" w="500px" textAlign="center" pt="50px" pb="50px">
         <Heading fontWeight="500" color="#12284C" size="xl" mb="20px">

@@ -1,45 +1,58 @@
 import React, { useState } from "react";
-import axios from "axios";
-import { Box, Heading, FormControl, Input, Text, Link } from "@chakra-ui/react";
-import { useNavigate } from "react-router-dom";
+import {
+  Box,
+  Heading,
+  FormControl,
+  Input,
+  Text,
+  Link,
+  useToast,
+} from "@chakra-ui/react";
+import { Navigate, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { userSignup } from "../../redux/AuthReducer/Actions";
 
 const Signup = () => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const isAuth = useSelector((store) => store.AuthReducer.isAuth);
+  const toast = useToast();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [token, setToken] = useState("");
-
-  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-    setToken(firstName + Date.now().toString());
-    axios
-      .post(`https://62a8b465943591102ba84f08.mockapi.io/crud`, {
-        email: email,
-        password: password,
-        firstName: firstName,
-        lastName: lastName,
-        token: token,
-      })
-      .then(() => {
-        alert("You are Logged In");
-        setEmail("");
-        setFirstName("");
-        setLastName("");
-        setPassword("");
-
-        navigate("/userpage");
-      });
-    saveData("token", token);
-    // console.log(token)
+    if (email && password && firstName && lastName) {
+      dispatch(
+        userSignup({
+          email: email,
+          password: password,
+          firstName: firstName,
+          lastName: lastName,
+          token: firstName + Date.now().toString(),
+        })
+      )
+        .then(() => {
+          toast({
+            title: "Authentication successful!",
+            status: "success",
+            isClosable: true,
+          });
+        })
+        .catch(() => {
+          toast({
+            title: "Something went wrong",
+            status: "error",
+            isClosable: true,
+          });
+        });
+    }
   };
 
-  const saveData = (key, value) => {
-    localStorage.setItem(key, JSON.stringify(value));
-  };
-
-  return (
+  return isAuth ? (
+    <Navigate to="/user" />
+  ) : (
     <div>
       <Box m="auto" w="500px" textAlign="center" pt="50px" pb="50px">
         <Heading fontWeight="500" color="#12284C" size="xl" mb="20px">
@@ -112,13 +125,14 @@ const Signup = () => {
               borderRadius="0px"
               color="white"
               fontWeight="700"
+              _hover={{ cursor: "pointer" }}
             />
           </FormControl>
         </Box>
         <Box mt="30px" alignItems="center">
           <Text color="gray" fontSize="sm">
             Already have a bluemercury.com account?
-            <span onClick={() => navigate("/")}>
+            <span onClick={() => navigate("/login")}>
               <Link
                 fontSize="sm"
                 color="#12284C"

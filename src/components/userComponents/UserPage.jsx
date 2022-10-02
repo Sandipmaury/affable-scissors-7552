@@ -1,26 +1,22 @@
-import React, { useEffect, useRef, useState } from "react";
 import styles from "./UserPage.module.css";
 import { FaRegUserCircle } from "react-icons/fa";
-import axios from "axios";
 import { Box, Heading, Text, HStack, Button } from "@chakra-ui/react";
+import { useDispatch, useSelector } from "react-redux";
+import { getUserData, logOut } from "../../redux/AuthReducer/Actions";
+import { Navigate } from "react-router-dom";
+import { useEffect } from "react";
 
-const UserPage = () => {
-  const [user, setUser] = useState({});
-  const token = useRef(JSON.parse(localStorage.getItem("token")));
-
+const UserComponent = () => {
+  const isAuth = useSelector((store) => store.AuthReducer.isAuth);
+  const token = useSelector((store) => store.AuthReducer.token);
+  const user = useSelector((store) => store.AuthReducer.user);
+  const dispatch = useDispatch();
   useEffect(() => {
-    getData();
+    if (isAuth) dispatch(getUserData(token));
   }, []);
-
-  const getData = async () => {
-    return await axios
-      .get(`https://62a8b465943591102ba84f08.mockapi.io/crud`)
-      .then(({ data }) => {
-        setUser(data.find((el) => el.token === token.current));
-      });
-  };
-
-  return (
+  return !isAuth ? (
+    <Navigate to="/login" />
+  ) : (
     <div className={styles.container}>
       <div className={styles.mainDiv}>
         <Box borderBottom="2px" borderColor="lightgray" pb="20px" pt="20px">
@@ -36,12 +32,13 @@ const UserPage = () => {
               </Box>
               <Box>
                 <Heading size="md">
-                  {user.firstName} {user.lastName}
+                  {user?.firstName} {user?.lastName}
                 </Heading>
                 <Text
                   textDecoration="underline"
+                  _hover={{ cursor: "pointer" }}
                   mt="5px"
-                  onClick={changeAuthentication}
+                  onClick={() => dispatch(logOut)}
                 >
                   Logout
                 </Text>
@@ -159,13 +156,13 @@ const UserPage = () => {
                 DEFAULT SHIPPING ADDRESS
               </Text>
               <Text color="gray" size="md">
-                {user.firstName} {user.lastName}
+                {user?.firstName} {user?.lastName}
               </Text>
               <Text color="#12284C" fontWeight="bold" mt="20px">
                 EMAIL
               </Text>
               <Text color="gray" size="md">
-                {user.email}
+                {user?.email}
               </Text>
             </Box>
           </Box>
@@ -174,5 +171,4 @@ const UserPage = () => {
     </div>
   );
 };
-
-export { UserPage };
+export default UserComponent;

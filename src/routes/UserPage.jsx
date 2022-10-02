@@ -1,8 +1,12 @@
 import React from "react";
-// import {UserPage} from '../components/userComponents/Signup'
+import UserComponent from "../components/userComponents/UserPage";
 
 const UserPage = () => {
-  return <div>{/* <UserPage /> */}</div>;
+  return (
+    <div>
+      <UserComponent />
+    </div>
+  );
 };
 
 export default UserPage;

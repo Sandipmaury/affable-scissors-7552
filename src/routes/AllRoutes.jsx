@@ -9,7 +9,6 @@ import { CartPage } from "./CartPage";
 import EventPage from "./EventPage";
 import { Otp } from "./Otp";
 import { Payment } from "./Payment";
-import TopTestMonial from "../Pages/ProductsPages/NewProduct/TopTestMonial";
 import LoginPage from "./LoginPage";
 import SignupPage from "./SignupPage";
 import UserPage from "./UserPage";
