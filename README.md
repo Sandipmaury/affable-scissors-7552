@@ -18,3 +18,17 @@ $ npm run start
 - Redux
 - NodeJS
 - Chakra UI
+
+
+## Flow
+
+```mermaid
+graph TD;
+    HomePage-->ProductPage;
+    HomePage-->loginPage;
+    loginPage-->SignUpPage;
+      SignUpPage-->loginPage;
+       loginPage-->HomePage;
+    ProductPage-->CartPage;
+     CartPage-->PaymentPage; 
+```
