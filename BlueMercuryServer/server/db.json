@@ -919,3 +919,928 @@
     }
   ]
 }
+    "bestSeller":[
+        {
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/chantecaille-anti-aging-face-tint",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-635494263008-1_450x.jpg",
+            "ProductCard__Brand": "Skinceuticals",
+            "ProductCard__Title": "C E Ferulic",
+            "ProductCard__Price": "$169"
+        },
+        {
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/chantecaille-anti-aging-face-tint",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-30treatments-817237011774-1_450x.jpg?v=1661285417",
+            "ProductCard__Brand": "M-61",
+            "ProductCard__Title": "PowerGlow® Peel",
+            "ProductCard__Price": "$32"
+        },
+        {
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/chantecaille-anti-aging-face-tint",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-814309023024-1_450x.jpg",
+            "ProductCard__Brand": "bluemercury",
+            "ProductCard__Title": "The Summer Beauty ",
+            "ProductCard__Price": "$375"
+        },
+        {
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/chantecaille-anti-aging-face-tint",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-819869029028-1_450x.jpg",
+            "ProductCard__Brand": "KJAER WEIS",
+            "ProductCard__Title": "The Beautiful Eye ",
+            "ProductCard__Price": "$65"
+        },
+        {
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/chantecaille-anti-aging-face-tint",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-885609026893-1_450x.jpg",
+            "ProductCard__Brand": "DYSON",
+            "ProductCard__Title": "Airwrap™ Multi-Styler ",
+            "ProductCard__Price": "$599"
+        },
+        {
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/chantecaille-anti-aging-face-tint",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-390205025008-1_450x.jpg",
+            "ProductCard__Brand": "eltamd",
+            "ProductCard__Title": "UV Clear Broad-Spectrum ",
+            "ProductCard__Price": "$39"
+        },
+        {
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/chantecaille-anti-aging-face-tint",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3606000434967-1_450x.jpg",
+            "ProductCard__Brand": "skinceuticals",
+            "ProductCard__Title": "Triple Lipid Restore ",
+            "ProductCard__Price": "$136"
+        },
+        {
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/chantecaille-anti-aging-face-tint",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-translucent-747930089063-1_450x.jpg?v=1658820974",
+            "ProductCard__Brand": "la mer",
+            "ProductCard__Title": "The Sheer Pressed ",
+            "ProductCard__Price": "$100"
+        }
+    ],
+    "glowyMakeupData":[
+        {   
+           "id":1,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/chantecaille-anti-aging-face-tint",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-656509057009-1_235x.jpg?v=1659038152",
+            "ProductCard__Brand": "Chantecaille",
+            "ProductCard__Title": "Anti-Aging Face Tint",
+            "ProductCard__Price": "$77"
+          },
+          {
+            "id":2,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/wander-beauty-double-date-lip-and-cheek",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-bemineswipe-852367006962-1_235x.jpg?v=1660192215",
+            "ProductCard__Brand": "Wander Beauty",
+            "ProductCard__Title": "Double Date Lip and Cheek",
+            "ProductCard__Price": "$24"
+          },
+          {
+            "id":3,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/nars-summer-unrated-blush-bronzer-duo",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-orgasmxcasino-194251130231-1_235x.jpg?v=1660188945",
+            "ProductCard__Brand": "NARS",
+            "ProductCard__Title": "Summer Unrated Blush",
+            "ProductCard__Price": "$45"
+          },
+          {
+            "id":4,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/lilah-b-bluemercury-exclusive-edit",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-850004421710-1_235x.jpg?v=1658823189",
+            "ProductCard__Brand": "lilah b.",
+            "ProductCard__Title": "Bluemercury Exclusive",
+            "ProductCard__Price": "$122"
+          },
+          {
+            "id":5,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/rodial-soft-focus-glow-drops",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-5060027067771-1_235x.jpg?v=1658872783",
+            "ProductCard__Brand": "Rodial",
+            "ProductCard__Title": "Soft Focus Glow Drops",
+            "ProductCard__Price": "$60"
+          },
+          {
+            "id":6,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/sisley-paris-ombre-clat-liquide",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-4coral-3473311867049-1_235x.jpg?v=1658873230",
+            "ProductCard__Brand": "Sisley-Paris",
+            "ProductCard__Title": "Ombre Éclat Liquide Eyeshadow",
+            "ProductCard__Price": "$58"
+          },
+          {
+            "id":7,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/bobbi-brown-nude-finish-tinted-moisturizer-spf-15",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-mediumtodarktint-716170167565-1_235x.jpg?v=1658807652",
+            "ProductCard__Brand": "Bobbi Brown",
+            "ProductCard__Title": "Nude Finish Tinted Moisturizer",
+            "ProductCard__Price": "$48"
+          },
+          {
+            "id":8,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/lilah-b-glisten-and-glow-skin-illuminator",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-benchanting-851078006599-1_235x.jpg?v=1658823247",
+            "ProductCard__Brand": "lilah b.",
+            "ProductCard__Title": "Glisten  Illuminator",
+            "ProductCard__Price": "$60"
+          },
+          {
+            "id":9,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/kjaer-weis-cream-blush",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-embrace-040232024252-1_235x.jpg?v=1658818917",
+            "ProductCard__Brand": "Kjaer Weis",
+            "ProductCard__Title": "Cream Blush",
+            "ProductCard__Price": "$56"
+          },
+          {
+            "id":10,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/kosas-wet-lip-oil-gloss",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-dip-810021890197-1_235x.jpg?v=1658820665",
+            "ProductCard__Brand": "Kosas",
+            "ProductCard__Title": "Wet Lip Oil Gloss",
+            "ProductCard__Price": "$22"
+          },
+          {
+            "id":11,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/kosas-10-second-eye-gel-watercolor-eyeshadow",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-electric-810021892603-1_235x.jpg?v=1658820116",
+            "ProductCard__Brand": "Kosas",
+            "ProductCard__Title": " Eye  Watercolor Eyeshadow",
+            "ProductCard__Price": "$15"
+          },
+          {
+            "id":12,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/chantecaille-future-skin",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-wheat-656509014088-1_235x.jpg?v=1658809713",
+            "ProductCard__Brand": "Chantecaille",
+            "ProductCard__Title": "Future Skin",
+            "ProductCard__Price": "$82"
+          },
+          {
+            "id":13,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/lune-aster-hydraglow-concealer",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-goldenhoney-814309022577-1_235x.jpg?v=1660187704",
+            "ProductCard__Brand": "Lune+Aster",
+            "ProductCard__Title": "HydraGlow Concealer",
+            "ProductCard__Price": "$26"
+          },
+          {
+            "id":14,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/sisley-paris-le-phyto-gloss",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-8milkyway-babypink-3473311754080-1_235x.jpg?v=1658873084",
+            "ProductCard__Brand": "Sisley-Paris",
+            "ProductCard__Title": "Le Phyto Gloss",
+            "ProductCard__Price": "$60"
+          },
+          {
+            "id":15,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/lune-aster-moonrise-contour-glow-duo",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-814309022669-1_235x.jpg?v=1660624131",
+            "ProductCard__Brand": "Lune+Aster",
+            "ProductCard__Title": "Moonrise Contour & Glow Duo",
+            "ProductCard__Price": "$46"
+          },
+          {
+            "id":16,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/roen-beauty-roglow-skin-stick-highlighter",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-glazed-850010474359-1_235x.jpg?v=1658872935",
+            "ProductCard__Brand": "RÓEN BEAUTY",
+            "ProductCard__Title": "RoGlow Skin Stick Highlighter",
+            "ProductCard__Price": "$39"
+          },
+          {
+            "id":17,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/rms-beauty-eyelights-cream-eyeshadow",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-sunbeam-816248025008-1_235x.jpg?v=1658872218",
+            "ProductCard__Brand": "RMS Beauty",
+            "ProductCard__Title": "Eyelights Cream Eyeshadow",
+            "ProductCard__Price": "$26"
+          },
+          {
+            "id":18,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/nars-hardwired-eyeshadow",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-earthshine-607845053422-1_235x.jpg?v=1658825767",
+            "ProductCard__Brand": "NARS",
+            "ProductCard__Title": "Hardwired Eyeshadow",
+            "ProductCard__Price": "$22"
+          },
+          {
+            "id":19,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/rms-beauty-buriti-bronzer",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-title-defaulttitle-816248020362-1_235x.jpg?v=1658872187",
+            "ProductCard__Brand": "RMS Beauty",
+            "ProductCard__Title": "Buriti Bronzer",
+            "ProductCard__Price": "$28"
+          },
+          {
+            "id":20,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/chantecaille-sunbeam-cheek-and-eye-shade",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-656509051519-1_235x.jpg?v=1658810255",
+            "ProductCard__Brand": "Chantecaille",
+            "ProductCard__Title": "Sunbeam Cheek and Eye Shade",
+            "ProductCard__Price": "$82"
+          },
+          {
+            "id":21,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/kosas-the-sun-show-moisturizing-baked-bronzer",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-deep-810021890746-1_235x.jpg?v=1658820566",
+            "ProductCard__Brand": "Kosas",
+            "ProductCard__Title": "The Sun Show Moisturizing Baked Bronzer",
+            "ProductCard__Price": "$34"
+          },
+          {
+            "id":22,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/kjaer-weis-feathertouch-brow-gel",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-blonde-819869028434-1_235x.jpg?v=1659442198",
+            "ProductCard__Brand": "Kjaer Weis",
+            "ProductCard__Title": "FeatherTouch Brow Gel",
+            "ProductCard__Price": "$30 - $38"
+          },
+          {
+            "id":23,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/bobbi-brown-crushed-oil-infused-gloss-shimmer",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-baresparkle-716170257167-1_235x.jpg?v=1660180438",
+            "ProductCard__Brand": "Bobbi Brown",
+            "ProductCard__Title": "Crushed Oil-Infused Gloss Shimmer",
+            "ProductCard__Price": "$32"
+          },
+          {
+            "id":24,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/jillian-dempsey-khol-eyeliner",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-jetblack-861390000106-1_235x.jpg?v=1658817542",
+            "ProductCard__Brand": "Jillian Dempsey",
+            "ProductCard__Title": "Khôl Eyeliner",
+            "ProductCard__Price": "$20"
+          },
+          {
+            "id":25,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/surratt-artistique-blush",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-grisaillecontour-617037661250-1_235x.jpg?v=1660190727",
+            "ProductCard__Brand": "Surratt",
+            "ProductCard__Title": "Artistique Blush",
+            "ProductCard__Price": "$32"
+          },
+    
+          {
+            "id":27,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/kjaer-weis-lipstick",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-adore-040232291715-1_235x.jpg?v=1659082070",
+            "ProductCard__Brand": "Kjaer Weis",
+            "ProductCard__Title": "Lipstick",
+            "ProductCard__Price": "$48"
+          },
+          {
+            "id":28,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/lune-and-aster-vitamin-c-and-e-lip-gloss",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-changemaker-814309020405-1_235x.jpg?v=1658823826",
+            "ProductCard__Brand": "Lune+Aster",
+            "ProductCard__Title": "Vitamin C+E Lip Gloss",
+            "ProductCard__Price": "$16"
+          },
+          {
+            "id":29, 
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/laura-mercier-tinted-moisturizer-light-revealer-natural-skin-illuminator-broad-spectrum-spf-25",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-tan-194250040456-1_235x.jpg?v=1658822768",
+            "ProductCard__Brand": "Laura Mercier",
+            "ProductCard__Title": "Tinted Moisturizer Light Revealer Natural Skin Illuminator Broad Spectrum SPF 25",
+            "ProductCard__Price": "$49"
+          },
+          {
+            "id":30,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/hourglass-voyeur-waterproof-gel-eyeliner",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-chestnut-856798008199-1_235x.jpg?v=1658815906",
+            "ProductCard__Brand": "Hourglass",
+            "ProductCard__Title": "Voyeur Waterproof Gel Eyeliner",
+            "ProductCard__Price": "$28"
+          },
+       
+          {
+            "id":32,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/lune-aster-cosmic-growth-mascara",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-814309022683-1_235x.jpg?v=1659384275",
+            "ProductCard__Brand": "Lune+Aster",
+            "ProductCard__Title": "Cosmic Growth Mascara",
+            "ProductCard__Price": "$26"
+          },
+          {
+            "id":33,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/kjaer-weis-the-beautiful-tint",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-10-810083840574-1_235x.jpg?v=1658819772",
+            "ProductCard__Brand": "Kjaer Weis",
+            "ProductCard__Title": "The Beautiful Tint",
+            "ProductCard__Price": "$45"
+          },
+          {
+            "id":34,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/nars-radiant-creamy-concealer",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-hazelnutmd4-607845012702-1_235x.jpg?v=1660188890",
+            "ProductCard__Brand": "NARS",
+            "ProductCard__Title": "Radiant Creamy Concealer",
+            "ProductCard__Price": "$31"
+          },
+          {
+            "id":35,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/sisley-paris-phyto-teint-nude",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-7ncaramel-3473311809216-1_235x.jpg?v=1658873605",
+            "ProductCard__Brand": "Sisley-Paris",
+            "ProductCard__Title": "Phyto-Teint Nude Foundation",
+            "ProductCard__Price": "$100"
+          },
+          {
+            "id":36,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/sisley-paris-phyto-blush-twist",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-2fushia-3473311879028-1_235x.jpg?v=1660695301",
+            "ProductCard__Brand": "Sisley-Paris",
+            "ProductCard__Title": "Phyto-Blush Twist",
+            "ProductCard__Price": "$76"
+          },
+          {
+            "id":37,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/lune-aster-hydraglow-serum-primer",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-814309022645-1_235x.jpg?v=1660187725",
+            "ProductCard__Brand": "Lune+Aster",
+            "ProductCard__Title": "HydraGlow Serum Primer",
+            "ProductCard__Price": "$36"
+          },
+          {
+            "id":38,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/sisley-paris-phyto-khol-star-waterproof",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-10mysticplum-3473311874290-1_235x.jpg?v=1658873381",
+            "ProductCard__Brand": "Sisley-Paris",
+            "ProductCard__Title": "Phyto-Khol Star Waterproof Eye Pencil",
+            "ProductCard__Price": "$62"
+          },
+          {
+            "id":39,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/lune-aster-tinted-lip-balm",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-pavetheway-814309021754-1_235x.jpg?v=1658824131",
+            "ProductCard__Brand": "Lune+Aster",
+            "ProductCard__Title": "Tinted Lip Balm",
+            "ProductCard__Price": "$16"
+          },
+          {
+            "id":40,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/chantecaille-brow-definer",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-oakbrown-656509074181-1_235x.jpg?v=1658809623",
+            "ProductCard__Brand": "Chantecaille",
+            "ProductCard__Title": "Waterproof Brow Definer",
+            "ProductCard__Price": "$39"
+          },
+          {
+            "id":41,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/wander-beauty-mile-high-club-volume-and-length-mascara",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-857571008450-1_235x.jpg?v=1661386114",
+            "ProductCard__Brand": "Wander Beauty",
+            "ProductCard__Title": "Mile High Club Volume and Length Mascara",
+            "ProductCard__Price": "$26"
+          },
+          {
+            "id":42,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/tom-ford-emotionproof-concealer",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-30paledune-888066086295-1_235x.jpg?v=1660191357",
+            "ProductCard__Brand": "Tom Ford",
+            "ProductCard__Title": "Emotionproof Concealer",
+            "ProductCard__Price": "$54 - $60"
+          },
+          {
+            "id":43,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/laura-mercier-tinted-moisturizer-blush",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-provence-194250018509-1_235x.jpg?v=1658822730",
+            "ProductCard__Brand": "Laura Mercier",
+            "ProductCard__Title": "Tinted Moisturizer Blush",
+            "ProductCard__Price": "$28"
+          },
+          {
+            "id":44,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/by-terry-mascara-terrybly-waterproof",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3700076441727-1_235x.jpg?v=1660181798",
+            "ProductCard__Brand": "BY TERRY",
+            "ProductCard__Title": "Mascara Terrybly Waterproof",
+            "ProductCard__Price": "$45"
+          },
+          {
+            "id":45,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/lilah-b-lovingly-lip-tinted-lip-oil",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-bbrilliant-850004421239-1_235x.jpg?v=1658823260",
+            "ProductCard__Brand": "lilah b.",
+            "ProductCard__Title": "Lovingly Lip ™ Tinted Lip Oil",
+            "ProductCard__Price": "$30"
+          },
+          {
+            "id":46,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/laura-mercier-flawless-fusion-ultra-longwear-foundation",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-2n1-cashew-736150156709-1_235x.jpg?v=1660187070",
+            "ProductCard__Brand": "Laura Mercier",
+            "ProductCard__Title": "Flawless Fusion Ultra-Longwear Foundation",
+            "ProductCard__Price": "$49"
+          },
+          {
+            "id":47,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/lune-aster-eclipse-volumizing-curling-mascara",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-814309021556-1_235x.jpg?v=1659036899",
+            "ProductCard__Brand": "Lune+Aster",
+            "ProductCard__Title": "Eclipse Volumizing & Curling Mascara",
+            "ProductCard__Price": "$24"
+          },
+          {
+            "id":48,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/roen-beauty-kiss-my-liquid-lip-balm",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-shimmerrumor-850010474274-1_235x.jpg?v=1658872917",
+            "ProductCard__Brand": "RÓEN BEAUTY",
+            "ProductCard__Title": "Kiss My Liquid Lip Balm",
+            "ProductCard__Price": "$26"
+          },
+          {
+            "id":49,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/mara-soft-coral-sea-silk-lip-balm",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-850019760132-1_235x.jpg?v=1658938594",
+            "ProductCard__Brand": "Mara",
+            "ProductCard__Title": "Soft Coral Sea Silk Lip Balm",
+            "ProductCard__Price": "$26"
+          },
+          {
+            "id":50,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/lilah-b-aglow-skin-prep-discovery-set",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-850004421208-1_235x.jpg?v=1660187444",
+            "ProductCard__Brand": "lilah b.",
+            "ProductCard__Title": "Aglow™ Skin Prep Discovery Set",
+            "ProductCard__Price": "$42"
+          }
+        
+    ],
+    "newArrivalData":[
+        {   
+          "id":51,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/balmlabs-clearbalm-power-elixir",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-195893475407-1_235x.jpg?v=1659989243",
+            "ProductCard__Brand": "BalmLabs",
+            "ProductCard__Title": "ClearBalm Power Elixir",
+            "ProductCard__Price": "$58"
+          },
+          {
+            "id":52,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/hum-nutrition-daily-cleanse-clear-skin-and-acne-supplement",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-855514005030-1_235x.jpg?v=1660838903",
+            "ProductCard__Brand": "Hum Nutrition",
+            "ProductCard__Title": "Daily Cleanse® Clear Skin  ",
+            "ProductCard__Price": "$26"
+          },
+          {
+            "id":53,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/sisley-paris-exfoliating-enzyme-mask",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3473311524355-1_235x.jpg?v=1660069778",
+            "ProductCard__Brand": "Sisley-Paris",
+            "ProductCard__Title": "Exfoliating Enzyme Mask",
+            "ProductCard__Price": "$135"
+          },
+          {
+            "id":54,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/eltamd-uv-clear-tinted-broad-spectrum-spf-46",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-390205025206-1_235x.jpg?v=1660229578",
+            "ProductCard__Brand": "EltaMD",
+            "ProductCard__Title": "UV Clear Tinted Broad-Spectrum",
+            "ProductCard__Price": "$41"
+          },
+          {
+            "id":55,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/lake-skye-11-11-eau-de-parfum",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-17oz-087327005284-1_235x.jpg?v=1659760712",
+            "ProductCard__Brand": "Lake & Skye",
+            "ProductCard__Title": "11 11 Eau de Parfum",
+            "ProductCard__Price": "$36 - $98"
+          },
+          {
+            "id":56,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/lake-skye-11-11-candle",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-087327005291-1_235x.jpg?v=1659760709",
+            "ProductCard__Brand": "Lake & Skye",
+            "ProductCard__Title": "11 11 Candle",
+            "ProductCard__Price": "$48"
+          },
+          {
+            "id":57,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/oribe-limited-edition-dry-texturizing-spray",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-840035217833-1_235x.jpg?v=1660205955",
+            "ProductCard__Brand": "Oribe",
+            "ProductCard__Title": "Limited  Texturizing Spray",
+            "ProductCard__Price": "$49"
+          },
+          {
+            "id":58,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/lune-aster-sunset-eyeshadow-palette",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-814309022799-1_235x.jpg?v=1660624151",
+            "ProductCard__Brand": "Lune+Aster",
+            "ProductCard__Title": "Sunset Eyeshadow Palette",
+            "ProductCard__Price": "$48"
+          },
+          {
+            "id":59,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/lune-aster-sunset-bronzer-blush-duo",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-814309022829-1_235x.jpg?v=1660624144",
+            "ProductCard__Brand": "Lune+Aster",
+            "ProductCard__Title": "Sunset Bronzer Blush Duo",
+            "ProductCard__Price": "$46"
+          },
+          {
+            "id":60,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/sana-jardin-tiger-by-her-side-eau-de-parfum-10ml",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-17floz50ml-5060541430440-1_235x.jpg?v=1659978170",
+            "ProductCard__Brand": "Sana Jardin",
+            "ProductCard__Title": "Tiger By  Side  Parfum",
+            "ProductCard__Price": "$30 - $225"
+          },
+          {
+            "id":61,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/sana-jardin-berber-blonde-candle",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-5060541430266-1_235x.jpg?v=1659978275",
+            "ProductCard__Brand": "Sana Jardin",
+            "ProductCard__Title": "Berber Blonde Candle",
+            "ProductCard__Price": "$65"
+          },
+          {
+            "id":62,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/r-co-labyrinth-3-in-1-texturizing-shampoo-conditioner-styler",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-810374029725-1_235x.jpg?v=1660835443",
+            "ProductCard__Brand": "R+Co",
+            "ProductCard__Title": "Labyrinth  Shampoo",
+            "ProductCard__Price": "$28"
+          },
+          {
+            "id":63,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/la-mer-the-micro-peel",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-747930101543-1_235x.jpg?v=1661271052",
+            "ProductCard__Brand": "La Mer",
+            "ProductCard__Title": "The Micro Peel",
+            "ProductCard__Price": "$270"
+          },
+          {
+            "id":64,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/sunday-ii-sunday-root-refresh-micellar-rinse",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-810031550265-1_235x.jpg?v=1658874258",
+            "ProductCard__Brand": "Sunday II Sunday",
+            "ProductCard__Title": "Root Refresh Rinse",
+            "ProductCard__Price": "$31"
+          },
+          {
+            "id":65,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/sunday-ii-sunday-revive-me-daily-moisturizing-spray",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-810031550272-1_235x.jpg?v=1658874255",
+            "ProductCard__Brand": "Sunday II Sunday",
+            "ProductCard__Title": "Revive Me Daily Spray",
+            "ProductCard__Price": "$31"
+          },
+          {
+            "id":66,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/pca-skin-vitamin-b3-brightening-serum",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-812025018607-1_235x.jpg?v=1658871070",
+            "ProductCard__Brand": "PCA Skin",
+            "ProductCard__Title": "Vitamin Brightening Serum",
+            "ProductCard__Price": "$120"
+          },
+          {
+            "id":67,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/nest-new-york-pumpkin-chai-classic-candle-8-oz",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-840732116408-1_235x.jpg?v=1660189404",
+            "ProductCard__Brand": "NEST New York",
+            "ProductCard__Title": "Pumpkin Chai Classic",
+            "ProductCard__Price": "$46"
+          },
+          {
+            "id":68,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/zitsticka-killa-kit-deep-zit-microdart-patch",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-9353371000003-1_235x.jpg?v=1660147838",
+            "ProductCard__Brand": "ZitSticka",
+            "ProductCard__Title": "KILLA™ Kit    Patch",
+            "ProductCard__Price": "$29"
+          },
+        
+          {
+            "id":70,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/holy-curls-shampoo",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-5060708480004-1_235x.jpg?v=1659242386",
+            "ProductCard__Brand": "Holy Curls",
+            "ProductCard__Title": "Shampoo",
+            "ProductCard__Price": "$34"
+          },
+          {
+            "id":71,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/holy-curls-conditioner",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-5060708480011-1_235x.jpg?v=1659242378",
+            "ProductCard__Brand": "Holy Curls",
+            "ProductCard__Title": "Conditioner",
+            "ProductCard__Price": "$34"
+          },
+          {
+            "id":72,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/lavant-fresh-linen-high-performing-dish-soap",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-glassbottle16oz-860003715321-1_235x.jpg?v=1660237556",
+            "ProductCard__Brand": "L'AVANT",
+            "ProductCard__Title": "Fresh    Dish Soap",
+            "ProductCard__Price": "$6 - $26"
+          },
+          {
+            "id":73,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/lavant-natural-wood-dish-scrubber",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-850029533139-1_235x.jpg?v=1659553711",
+            "ProductCard__Brand": "L'AVANT",
+            "ProductCard__Title": "Natural Wood Dish Scrubber",
+            "ProductCard__Price": "$10"
+          },
+          {
+            "id":76,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/clearbalm-3-step-system-bundle",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-bundle_balm-labs_clearbalm-3-step-system_072622-1_235x.jpg?v=1659385894",
+            "ProductCard__Brand": "BalmLabs",
+            "ProductCard__Title": "ClearBalm 3-Step System",
+            "ProductCard__Price": "$149"
+          },
+         
+          {
+            "id":78,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/esker-terrazzo-plantable-candle",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-857177007239-1_235x.jpg?v=1660139458",
+            "ProductCard__Brand": "Esker",
+            "ProductCard__Title": "Terrazzo Plantable Candle",
+            "ProductCard__Price": "$85"
+          },
+          {
+            "id":79,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/nest-new-york-autumn-plum-reed-diffuser",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-840732116439-1_235x.jpg?v=1660278052",
+            "ProductCard__Brand": "NEST New York",
+            "ProductCard__Title": "Autumn Plum Reed Diffuser",
+            "ProductCard__Price": "$58"
+          },
+          {
+            "id":80,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/nest-new-york-autumn-plum-classic-candle",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-840732116392-1_235x.jpg?v=1660249871",
+            "ProductCard__Brand": "NEST New York",
+            "ProductCard__Title": "Autumn  Classic Candle",
+            "ProductCard__Price": "$46"
+          },
+          {
+            "id":81,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/zitsticka-goo-getter-surface-zit-hydrocolloid-patch",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-9353371000096-1_235x.jpg?v=1660147826",
+            "ProductCard__Brand": "ZitSticka",
+            "ProductCard__Title": "GOO Hydrocolloid Patch",
+            "ProductCard__Price": "$16"
+          },
+          {
+            "id":82,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/zitsticka-face-map-surface-area-extraction-patches",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-9353371000348-1_235x.jpg?v=1660147813",
+            "ProductCard__Brand": "ZitSticka",
+            "ProductCard__Title": "FACE MAP   extraction ",
+            "ProductCard__Price": "$18"
+          },
+          {
+            "id":83,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/boucleme-curl-cream",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-5060403580108-1_235x.jpg?v=1658808333",
+            "ProductCard__Brand": "Bouclème",
+            "ProductCard__Title": "Curl Cream",
+            "ProductCard__Price": "$32"
+          },
+          {
+            "id":84,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/boucleme-curl-defining-gel",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-5060403580023-1_235x.jpg?v=1658808336",
+            "ProductCard__Brand": "Bouclème",
+            "ProductCard__Title": "Curl Defining Gel",
+            "ProductCard__Price": "$25"
+          },
+          {
+            "id":85,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/hourglass-ambient-soft-glow-foundation",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-1-810063690168-1_235x.jpg?v=1660366029",
+            "ProductCard__Brand": "Hourglass",
+            "ProductCard__Title": "Ambient   Foundation",
+            "ProductCard__Price": "$58"
+          },
+          {
+            "id":86,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/the-maker-libertine-eau-de-parfum",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-850032889247-1_235x.jpg?v=1661040442",
+            "ProductCard__Brand": "The Maker",
+            "ProductCard__Title": "Libertine Eau de Parfum",
+            "ProductCard__Price": "$175"
+          },
+          {
+            "id":87,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/the-maker-spiritus-candle",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-850032889322-1_235x.jpg?v=1661201824",
+            "ProductCard__Brand": "The Maker",
+            "ProductCard__Title": "Spiritus Candle",
+            "ProductCard__Price": "$80"
+          },
+          {
+            "id":88,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/lavant-fresh-linen-multipurpose-cleaner",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-trial2oz-850029533122-1_235x.jpg?v=1660237576",
+            "ProductCard__Brand": "L'AVANT",
+            "ProductCard__Title": "Fresh Multipurpose Cleaner",
+            "ProductCard__Price": "$6 - $14"
+          },
+          {
+            "id":89,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/lavant-fresh-linen-candle",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-white-850029533016-1_235x.jpg?v=1660019240",
+            "ProductCard__Brand": "L'AVANT",
+            "ProductCard__Title": "Fresh Linen Candle",
+            "ProductCard__Price": "$38"
+          },
+          {
+            "id":90,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/welleco-the-pms-elixir",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-794712182320-1_235x.jpg?v=1658880859",
+            "ProductCard__Brand": "WelleCo",
+            "ProductCard__Title": "The PMS Elixir",
+            "ProductCard__Price": "$55"
+          },
+          {
+            "id":91,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/eltamd-uv-daily-broad-spectrum-spf-40",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-390205022892-1_235x.jpg?v=1660227599",
+            "ProductCard__Brand": "EltaMD",
+            "ProductCard__Title": "UV Daily Broad-Spectrum",
+            "ProductCard__Price": "$32.50"
+          },
+          {
+            "id":92,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/pca-skin-collagen-hydrator",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-812025010052-1_235x.jpg?v=1658870946",
+            "ProductCard__Brand": "PCA Skin",
+            "ProductCard__Title": "Collagen Hydrator",
+            "ProductCard__Price": "$53"
+          },
+          {
+            "id":93,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/balmlabs-clearbalm-gentle-foam-cleanser",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-195893577385-1_235x.jpg?v=1659989249",
+            "ProductCard__Brand": "BalmLabs",
+            "ProductCard__Title": "ClearBalm Gentle  Cleanser",
+            "ProductCard__Price": "$34"
+          },
+          {
+            "id":94,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/balmlabs-clearbalm-serum-hydrator",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-195893098132-1_235x.jpg?v=1659989238",
+            "ProductCard__Brand": "BalmLabs",
+            "ProductCard__Title": "ClearBalm Serum Hydrator",
+            "ProductCard__Price": "$84"
+          },
+          {
+            "id":95,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/rms-beauty-reevolve-natural-finish-liquid-foundation",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-111-816248022380-1_235x.jpg?v=1659470976",
+            "ProductCard__Brand": "RMS Beauty",
+            "ProductCard__Title": "ReEvolve  Foundation",
+            "ProductCard__Price": "$48"
+          },
+          {
+            "id":96,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/zitsticka-megashade-breakout-proof-spf-serum",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-9353371000164-1_235x.jpg?v=1660579675",
+            "ProductCard__Brand": "ZitSticka",
+            "ProductCard__Title": "MEGASHADE™ Breakout",
+            "ProductCard__Price": "$40"
+          },
+          {
+            "id":97,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/nars-laguna-bronzing-cream",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-laguna01-194251134482-1_235x.jpg?v=1658826033",
+            "ProductCard__Brand": "NARS",
+            "ProductCard__Title": "Laguna Bronzing Cream",
+            "ProductCard__Price": "$38"
+          },
+          {
+            "id":98,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/nest-new-york-pumpkin-chai-3-wick-candle-2-oz",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-840732116514-1_235x.jpg?v=1660189400",
+            "ProductCard__Brand": "NEST New York",
+            "ProductCard__Title": "Pumpkin Chai 3 Wick",
+            "ProductCard__Price": "$78"
+          },
+          {
+            "id":99,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/nest-new-york-pumpkin-chai-reed-diffuser-5-fl-oz",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-840732116446-1_235x.jpg?v=1660189416",
+            "ProductCard__Brand": "NEST New York",
+            "ProductCard__Title": "Pumpkin Chai  Diffuser",
+            "ProductCard__Price": "$58"
+          },
+          {
+            "id":100,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/frizz-free-styler-trio-bundle",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-bundle_virtue_frizz-free-styler-trio_071222-1_235x.jpg?v=1659368319",
+            "ProductCard__Brand": "VIRTUE",
+            "ProductCard__Title": "Frizz-Free Styler Trio",
+            "ProductCard__Price": "$104"
+          },
+          {
+            "id":101,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/bumble-and-bumble-thickening-plumping-mask",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-685428000117-1_235x.jpg?v=1659970153",
+            "ProductCard__Brand": "Bumble and bumble",
+            "ProductCard__Title": "Thickening Plumping Mask",
+            "ProductCard__Price": "$43"
+          },
+          {
+            "id":102,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/r-co-lost-treasure-apple-cider-vinegar-almond-milk-conditioner",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-810374029664-1_235x.jpg?v=1658871700",
+            "ProductCard__Brand": "R+Co",
+            "ProductCard__Title": "Lost Treasure Apple Cider  ",
+            "ProductCard__Price": "$39"
+          },
+          {
+            "id":103,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/elta-md-uv-clear-broad-spectrum-spf-46",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-390205025008-1_235x.jpg?v=1660229618",
+            "ProductCard__Brand": "EltaMD",
+            "ProductCard__Title": "UV Clear Broad-Spectrum ",
+            "ProductCard__Price": "$39"
+          },
+          {
+            "id":104,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/pca-skin-hyaluronic-acid-boosting-serum",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-812025016924-1_235x.jpg?v=1658870982",
+            "ProductCard__Brand": "PCA Skin",
+            "ProductCard__Title": "Hyaluronic Acid Boosting ",
+            "ProductCard__Price": "$120"
+          },
+          {
+            "id":105,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/jane-iredale-smooth-affair-mattifying-face-primer",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-670959114709-1_235x.jpg?v=1659456510",
+            "ProductCard__Brand": "Jane Iredale",
+            "ProductCard__Title": "Smooth Affair Mattifying ",
+            "ProductCard__Price": "$50"
+          },
+          {
+            "id":106,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/solawave-advanced-skincare-wand-with-red-light-therapy-ombre-color",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-matteblack-860004981176-1_235x.jpg?v=1658421893",
+            "ProductCard__Brand": "Solawave",
+            "ProductCard__Title": "Advanced Skincare Wand with Red ",
+            "ProductCard__Price": "$149"
+          },
+          {
+            "id":107,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/eltamd-uv-glow-tinted-broad-spectrum-spf-36",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-390205077540-1_235x.jpg?v=1660228271",
+            "ProductCard__Brand": "EltaMD",
+            "ProductCard__Title": "UV  Tinted Broad-Spectrum  ",
+            "ProductCard__Price": "$40.50"
+          },
+          {
+            "id":108,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/eltamd-renew-eye-gel",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-090205022983-1_235x.jpg?v=1660226676",
+            "ProductCard__Brand": "EltaMD",
+            "ProductCard__Title": "Renew Eye Gel",
+            "ProductCard__Price": "$59"
+          },
+          {
+            "id":109,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/eltamd-am-therapy-facial-moisturizer",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-090205025335-1_235x.jpg?v=1660226494",
+            "ProductCard__Brand": "EltaMD",
+            "ProductCard__Title": "AM Therapy  Moisturizer",
+            "ProductCard__Price": "$39"
+          },
+          {
+            "id":110,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/eltamd-pm-therapy-facial-moisturizer",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-090205025403-1_235x.jpg?v=1660226615",
+            "ProductCard__Brand": "EltaMD",
+            "ProductCard__Title": "PM Therapy  Moisturizer",
+            "ProductCard__Price": "$39"
+          },
+          {
+            "id":111,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/eltamd-moisturizer",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-090205025434-1_235x.jpg?v=1660226852",
+            "ProductCard__Brand": "EltaMD",
+            "ProductCard__Title": "Moisturizer",
+            "ProductCard__Price": "$14.50"
+          },
+          {
+            "id":112,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/sunday-ii-sunday-tea-tree-essential-oil",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-810031550326-1_235x.jpg?v=1658874269",
+            "ProductCard__Brand": "Sunday II Sunday",
+            "ProductCard__Title": "Tea Tree Essential Oil",
+            "ProductCard__Price": "$15"
+          },
+          {
+            "id":113,
+            "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/sunday-ii-sunday-argan-essential-oil",
+            "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-810031550333-1_235x.jpg?v=1658874248",
+            "ProductCard__Brand": "Sunday II Sunday",
+            "ProductCard__Title": "Argan Essential Oil",
+            "ProductCard__Price": "$15"
+          }
+        
+    ]
+}
