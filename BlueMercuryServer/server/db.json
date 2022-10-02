@@ -57,6 +57,7 @@
             "ProductCard__Price": "$100"
         }
     ],
+  "cart": [],
     "glowyMakeupData":[
         {   
            "id":1,
