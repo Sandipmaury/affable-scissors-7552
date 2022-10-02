@@ -16,11 +16,11 @@ import { Quantity } from "../components/Quantity";
 import { CartTotal } from "../components/CartTotal";
 import { Remove } from "../components/Remove";
 import { Subtotal } from "../components/Subtotal";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 const CartPage = () => {
+  const navigate = useNavigate();
   const [state, setState] = useState(0);
   const [data, setData] = useState([]);
-  console.log(state);
 
   const getData = () => {
     return axios.get("http://localhost:8080/cart").then((r) => {
@@ -43,6 +43,7 @@ const CartPage = () => {
           alignItems="center"
           colorScheme="facebook"
           marginBottom="30px"
+          onClick={() => navigate("/brandProducts")}
         >
           ADD SOMETHING
         </Button>

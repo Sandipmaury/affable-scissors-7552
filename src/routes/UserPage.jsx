@@ -1,12 +1,12 @@
-import React from 'react';
-import {UserPage} from '../components/userComponents/Signup'
+import React from "react";
+import UserComponent from "../components/userComponents/UserPage";
 
 const UserPage = () => {
   return (
     <div>
-        <UserPage />
+      <UserComponent />
     </div>
-  )
-}
+  );
+};
 
-export default UserPage
+export default UserPage;

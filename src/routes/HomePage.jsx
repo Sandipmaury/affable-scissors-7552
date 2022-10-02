@@ -8,16 +8,10 @@ import { Section5 } from "../components/homePageSections/Section5";
 import { Section6 } from "../components/homePageSections/Section6";
 import { Section7 } from "../components/homePageSections/Section7";
 import { Section8 } from "../components/homePageSections/Section8";
-import { ThirdBar } from "../components/navbarComponents/ThirdBar";
-import axios from "axios";
 
 export const HomePage = () => {
-  axios.get("https://bluemercy.p.rapidapi.com/%7BPATH%7D").then((res) => {
-    console.log(res);
-  });
   return (
     <Stack direction="column" alignItems="center" style={{ zIndex: 5 }}>
-      <ThirdBar />
       <Section1 />
       <Section2 />
       <Section3 />

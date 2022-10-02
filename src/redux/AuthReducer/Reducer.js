@@ -1,25 +1,26 @@
-import { useFormControlStyles } from "@chakra-ui/react";
+import { getFromLS, saveToLS } from "../../Utils/Constants";
 import * as ways from "./ActionsType";
 
 const initialState = {
-  isAuth: false,
+  isAuth: getFromLS("token") || false,
   isLoding: false,
   isError: false,
-  token: "",
+  user: {},
+  token: getFromLS("token") || "",
 };
-
 function Reducer(state = initialState, { type, payload }) {
   switch (type) {
     case ways.GET_AUTH_REQUEST:
       return { ...state, isLoding: true };
     case ways.GET_AUTH_SUCCESS:
+      saveToLS("token", payload.token);
       return {
         ...state,
         isLoding: false,
-        token: payload,
         isAuth: true,
         isError: false,
-        data: payload,
+        user: payload,
+        token: payload.token,
       };
     case ways.GET_AUTH_FAILURE:
       return {
@@ -29,6 +30,10 @@ function Reducer(state = initialState, { type, payload }) {
         isAuth: false,
         isLoding: false,
       };
+    case ways.LOGOUT:
+      return { ...state, isAuth: false, user: {} };
+    case ways.CHECK_AUTH:
+      return { ...state, isAuth: state.user.firstName ? true : false };
     default:
       return state;
   }
