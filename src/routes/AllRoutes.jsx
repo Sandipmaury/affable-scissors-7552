@@ -10,6 +10,10 @@ import EventPage from "./EventPage";
 import { Otp } from "./Otp";
 import {Payment} from "./Payment"
 import TopTestMonial from "../Pages/ProductsPages/NewProduct/TopTestMonial";
+import LoginPage from "./LoginPage";
+import SignupPage from "./SignupPage";
+import UserPage from "./UserPage";
+
 export const AllRoutes = () => {
   return (
     <Routes>
@@ -23,7 +27,11 @@ export const AllRoutes = () => {
       {/* <Route path="/explore" element={<ExplorePage />} /> */}
       <Route path="/eventpage" element={<EventPage />} />
       <Route path="/otp" element={<Otp />} />
-        <Route path="/payment" element={<Payment />} />
+      <Route path="/payment" element={<Payment />} />
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/signup" element={<SignupPage />} />
+      <Route path="/user" element={<UserPage />} />
+
     </Routes>
   );
 };
