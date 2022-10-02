@@ -13,6 +13,7 @@ import TopTestMonial from "../Pages/ProductsPages/NewProduct/TopTestMonial";
 import LoginPage from "./LoginPage";
 import SignupPage from "./SignupPage";
 import UserPage from "./UserPage";
+import BlueReawardsPage from "./BlueReawardsPage";
 
 export const AllRoutes = () => {
   return (
@@ -31,7 +32,7 @@ export const AllRoutes = () => {
       <Route path="/login" element={<LoginPage />} />
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/user" element={<UserPage />} />
-
+      <Route path="/bluerewards" element={<BlueReawardsPage />} />
     </Routes>
   );
 };
