@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { BiMinus, BiPlus } from "react-icons/bi";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const NavSidebar = ({ onToggle, isOpen }) => {
   return (
@@ -30,12 +30,14 @@ export const NavSidebar = ({ onToggle, isOpen }) => {
         alignItems="center"
         p="10px"
       >
-        <Flex gap="10px">
-          <span onClick={onToggle} className="material-symbols-outlined">
-            account_circle
-          </span>
-          <Text>SIGN IN/UP</Text>
-        </Flex>
+        <NavLink to="/signup">
+          <Flex gap="10px">
+            <span onClick={onToggle} className="material-symbols-outlined">
+              account_circle
+            </span>
+            <Text>SIGN IN/UP</Text>
+          </Flex>
+        </NavLink>
         <span onClick={onToggle} className="material-symbols-outlined">
           close
         </span>

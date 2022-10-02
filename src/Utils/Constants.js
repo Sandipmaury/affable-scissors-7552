@@ -15,12 +15,12 @@ export const navData = [
   {
     title: "sign in/up",
     iconName: "account_circle",
-    pathName: "/",
+    pathName: "/signup",
   },
   {
     title: "bag",
     iconName: "shopping_bag",
-    pathName: "/",
+    pathName: "/cart",
   },
 ];
 
@@ -31,27 +31,27 @@ export const lowerNav = [
   },
   {
     title: "new!",
-    pathName: "#",
+    pathName: "/newproucts",
   },
   {
     title: "brands",
-    pathName: "#",
+    pathName: "/brandProducts",
   },
   {
     title: "explore",
-    pathName: "#",
+    pathName: "/explore",
   },
   {
     title: "events",
-    pathName: "#",
+    pathName: "/eventpage",
   },
   {
     title: "bluerewards",
-    pathName: "#",
+    pathName: "/bluerewards",
   },
   {
     title: "routine reboot",
-    pathName: "#",
+    pathName: "/routine",
   },
 ];
 
