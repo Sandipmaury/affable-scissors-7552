@@ -17,13 +17,14 @@ import {
   Text,
   useDisclosure,
 } from "@chakra-ui/react";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getBrandData, getData } from "../../../redux/AppReducer/Actions";
 import { RiDislikeLine, RiStarSFill } from "react-icons/ri";
 import ReactStarRating from "react-star-ratings-component";
 import styles from "./Brandproduct.module.css";
 import CardModal from "./ModalCart/CardModal";
+import { useSearchParams } from "react-router-dom";
 
 
 // productCard?.map((item)=>{
@@ -33,30 +34,45 @@ import CardModal from "./ModalCart/CardModal";
 // })
 
 const NewCategory = () => {
+  const [searchParams,setSearchParams] = useSearchParams();
+  const initialCategory = searchParams.getAll('category')
+  const [category,setCategory] = useState(initialCategory || []);
+  const [sort,setSort] = useState('ASC')
   const {  onOpen } = useDisclosure()
   const data = useSelector((state) => state.AppReducer.data);
   const dispatch = useDispatch();
+  let params={
+    _sort:"ProductCard__Price",
+    _order:sort
+  }
   useEffect(() => {
-    dispatch(getBrandData())
-    .then(res=>{
-      const productCard = document.querySelectorAll(".productCard");
-      productCard?.forEach((item)=>{
-        item.addEventListener("mouseenter",()=>{
-        let button =  item.children[1].children[0].lastChild;
-        button.style.bottom='0';
-        button.style.opacity='1';
+    if(category){
+      category && (params.category=category);
+      setSearchParams(params)
+      dispatch(getBrandData(params))
+      .then(res=>{
+        const productCard = document.querySelectorAll(".productCard");
+        productCard?.forEach((item)=>{
+          item.addEventListener("mouseenter",()=>{
+          let button =  item.children[1].children[0].lastChild;
+          button.style.bottom='0';
+          button.style.opacity='1';
+          button.style.backgroundcolor='black'
+          })
+        })
+  
+        productCard?.forEach((item)=>{
+          item.addEventListener("mouseleave",()=>{
+          let button =  item.children[1].children[0].lastChild;
+          button.style.bottom='-50px';
+          button.style.opacity='0';
+          
+          })
         })
       })
-
-      productCard?.forEach((item)=>{
-        item.addEventListener("mouseleave",()=>{
-        let button =  item.children[1].children[0].lastChild;
-        button.style.bottom='-50px';
-        button.style.opacity='0';
-        })
-      })
-    })
-  }, []);
+    }
+   
+  }, [sort]);
   // console.log("datahere", data);
   
  
@@ -104,8 +120,8 @@ const NewCategory = () => {
                     <MenuItem>Featured</MenuItem>
                     <MenuItem>New Arrivals</MenuItem>
                     <MenuItem>Best Sellers</MenuItem>
-                    <MenuItem>Price Low to High</MenuItem>
-                    <MenuItem>Price High to Low</MenuItem>
+                    <MenuItem onClick={()=>setSort('ASC')}>Price Low to High</MenuItem>
+                    <MenuItem onClick={()=>setSort('DESC')}>Price High to Low</MenuItem>
                   </MenuList>
                 </Menu>
               </Box>

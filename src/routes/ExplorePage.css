@@ -5,8 +5,22 @@
 .other_boxes{
     max-width: 1350px;
     margin: auto;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
+
+.commondiv{
+    /* border: 2px solid black; */
+     margin-bottom: 4rem
+}
+
+.maindiv{
+    /* width: 100%; */
+    max-width: 1350px;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+
+
 .single_box{
     border: 1px solid gray;
     height: 60px;
@@ -20,12 +34,6 @@
     padding-right: 2rem;
 }
 
-.maindiv{
-    /* width: 100%; */
-    max-width: 1350px;
-    margin: auto;
-    border: 2px solid red;
-}
 
 
 .section_two  h2{
@@ -91,11 +99,8 @@ a {
     line-height: 1;
     margin-bottom: 0.25em;
     margin-top: 0;
-    /* font-size: inherit; */
-    font-weight: inherit;
-    position: relative;
-    left: 5rem;
     margin-top: 1rem;
+    text-align: center;
 
 }
 
@@ -107,7 +112,7 @@ a {
 
 .section_two_p1{
     display: block;
-    max-width: 50rem;
+    max-width: 57rem;
     margin: 0 auto 1rem;
     padding: 0 1rem;
     font-size: 18px;
@@ -118,10 +123,11 @@ a {
 .section_two_p1 a{
     display: inline-block;
     font-family: Montserrat Semi Bold,sans-serif;
-    font-weight: 400;
+    font-weight: 550;
     text-transform: uppercase;
     border-bottom: 2px solid #12284c;
     margin-top: 1rem;
+    font-size: 14px;
 }
 
 .sectionFive_text img{
@@ -137,7 +143,7 @@ a {
 
 .section_two_p2{
     display: block;
-    max-width: 30rem;
+    max-width: 34rem;
     margin: 0 auto 1rem;
     padding: 0 1rem;
     font-size: 18px;
@@ -156,7 +162,7 @@ a {
 
 
 .section_seven_text{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
     
     margin: auto;
@@ -164,7 +170,7 @@ a {
 }
 
 .section_seven_text img{
-    width: 65%;
+    width: 55%;
     margin: auto;
 }
 
@@ -176,10 +182,10 @@ a {
 
 .section_two_p3{
     display: block;
-    max-width: 43rem;
+    max-width: 45rem;
     margin: 0 auto 1rem;
     padding: 0 1rem;
-    font-size: 18px;
+    font-size: 16px;
     color: #a9b0be;
     /* font-weight: 500; */
 }
@@ -195,22 +201,19 @@ a {
 
 .section_eight{
     display: flex;
+    width: 80%;
+    height: 50%;
 }
 
-.section_eight img{
-    width: 100%;
-    height:50%;
-}
-
-/* .section_two_p4 h1{
-    padding-top: 18rem;
+.section_two_p4 h1{
+    padding-top: 12rem;
     text-align: center;
     font-size: 2rem;
     color: #12284c;
-} */
+}
 
 
-/* .section_two_p4 {
+.section_two_p4 {
     display: block;
     width: 100%;
     text-align: center;
@@ -221,10 +224,8 @@ a {
     max-width: 43rem;
     margin: 0 auto 1rem;
     padding: 0 1rem;
-    font-size: 18px;
+    font-size: 16px;
     color: #a9b0be;
-    position: relative;
-    left: 3rem; 
 }
 
 .section_two_p4 a{
@@ -235,4 +236,4 @@ a {
     text-transform: uppercase;
     border-bottom: 2px solid #12284c;
     margin-top: 1rem;
-} */
+}
