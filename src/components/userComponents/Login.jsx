@@ -1,8 +1,15 @@
 import React, { useEffect, useState } from "react";
-import styles from "../Styles/login.module.css";
 import { Navigate, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { Box, Heading, FormControl, Input, Text, Link,Stack } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  FormControl,
+  Input,
+  Text,
+  Link,
+  Stack,
+} from "@chakra-ui/react";
 import UserPage from "./UserPage";
 import { useRef } from "react";
 
@@ -17,17 +24,16 @@ const Login = () => {
 
   const navigate = useNavigate();
 
-  useEffect(()=>{
-      getData();
-  },[])
+  useEffect(() => {
+    getData();
+  }, []);
 
   const getData = async () => {
-    return await axios.get(
-      `https://62a8b465943591102ba84f08.mockapi.io/crud`
-    ).then(({data})=>{
-      setUser(data.find((el)=> el.token === token.current))
-
-    })
+    return await axios
+      .get(`https://62a8b465943591102ba84f08.mockapi.io/crud`)
+      .then(({ data }) => {
+        setUser(data.find((el) => el.token === token.current));
+      });
   };
 
   const handleChange = (e) => {
@@ -41,14 +47,15 @@ const Login = () => {
 
   const handleCheckUser = (e) => {
     e.preventDefault();
-    user.email  === formValue.email && user.password === formValue.password ? navigate("/userpage") : alert("Invalid Email or Password");
-  
-  }
+    user.email === formValue.email && user.password === formValue.password
+      ? navigate("/userpage")
+      : alert("Invalid Email or Password");
+  };
 
   return isAuth ? (
     <Navigate to="/userpage" />
   ) : (
-    <Stack fontFamily="sans-serif" >
+    <Stack fontFamily="sans-serif">
       <Box m="auto" w="500px" textAlign="center" pt="50px" pb="50px">
         <Heading fontWeight="500" color="#12284C" size="xl" mb="20px">
           LOGIN
