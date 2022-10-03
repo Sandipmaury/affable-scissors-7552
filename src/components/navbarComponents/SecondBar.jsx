@@ -43,7 +43,7 @@ export const SecondBar = ({ isOpen, onToggle }) => {
                 </Text>
               ) : (
                 <Text
-                  borderBottom="2px solid white"
+                  borderBottom="2px solid transparent"
                   _hover={{ borderBottom: "2px solid #1c2838" }}
                 >
                   {item.title.toUpperCase()}

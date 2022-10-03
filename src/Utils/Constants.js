@@ -27,7 +27,7 @@ export const navData = [
 export const lowerNav = [
   {
     title: "shop",
-    pathName: "#",
+    pathName: "/",
   },
   {
     title: "new!",

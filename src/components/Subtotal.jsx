@@ -7,7 +7,7 @@ const Subtotal = ({ product }) => {
     let total = item.ProductCard__Price.split("");
     total.shift();
 
-    sum += Number(total.join("") * item.quantity);
+    sum += Number(total.join("") * (item.quantity || product.itemQuantity));
   });
   // console.log(sum);
 
