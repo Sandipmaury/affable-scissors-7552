@@ -31,7 +31,7 @@ const CartPage = () => {
   useEffect(() => {
     getData();
   }, [state]);
-  console.log(data);
+  // console.log(data);
   if (data.length === 0) {
     return (
       <div style={{ textAlign: "center" }}>

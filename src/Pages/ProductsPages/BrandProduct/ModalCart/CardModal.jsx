@@ -17,6 +17,7 @@ import {
   MenuList,
   MenuItem,
   Menu,
+  useToast,
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import styles from "../Brandproduct.module.css";
@@ -26,6 +27,7 @@ import { RiDislikeLine } from "react-icons/ri";
 import { BsFillBagPlusFill } from "react-icons/bs";
 import axios from "axios";
 const CardModal = ({ props }) => {
+  const toast = useToast();
   const [data, setData] = useState();
   // const CartData = JSON.parse(localStorage.getItem('BlueMercurycart')) || [];
   // localStorage.setItem('BlueMercurycart', JSON.stringify(data));
@@ -37,7 +39,12 @@ const CardModal = ({ props }) => {
   console.log(props);
 
   const handleAddtoCart = (item) => {
-    alert("Product Add to your cart");
+    toast({
+      title: "Product add to cart!",
+      status: "success",
+      isClosable: true,
+    });
+    onClose();
     let tempObj = {
       ...item,
       quantity: 1,
