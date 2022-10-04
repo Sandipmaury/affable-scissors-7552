@@ -7,7 +7,7 @@ import { ThirdBar } from "./components/navbarComponents/ThirdBar";
 
 function App() {
   return (
-    <Stack direction="column" w="100%" h="auto">
+    <Stack direction="column" w="100%" h="auto" bg="white">
       <Navbar />
       <ThirdBar />
       <AllRoutes />

@@ -44,10 +44,11 @@ export const Section2 = () => {
       <Box mt="3rem" px="1rem" cursor="grab">
         <Slider {...settings}>
           {newArrivalProducts?.map((item, index) => (
-            <Box
+            <Flex
               bg="white"
               alignItems="center"
               justifyContent="center"
+              flexDirection="column"
               key={index}
             >
               <Link href="#">
@@ -62,7 +63,7 @@ export const Section2 = () => {
               <Text my="10px" color="#647ea1">
                 {item?.price}
               </Text>
-            </Box>
+            </Flex>
           ))}
         </Slider>
       </Box>
