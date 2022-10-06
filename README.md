@@ -55,3 +55,8 @@ sections. Here you can see demo products of bluemercury.com.
 | Ajit Shelake | [![github](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ashelake)| 
 | Shani Sonkar | [![github](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shanikkt)| 
 
+
+
+## Deployed Link
+ [![deployed link](https://img.shields.io/badge/Deployed_Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://affable-scissors-7552-psi.vercel.app/)
+
