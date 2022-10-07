@@ -15,6 +15,12 @@ $ npm install
 $ npm run start
 ```
 
+## Run Json-server
+```
+$ cd BlueMercuryServer/server/
+$ npm install
+$ npm start
+```
 ## Teck Stack
 
 - React
