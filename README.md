@@ -51,6 +51,12 @@ sections. Here you can see demo products of bluemercury.com.
 
 ![Logo](https://i.im.ge/2022/10/02/1WbcEy.sfddsfsdfsdfs.png)
 
+-  [Aman Jha](https://github.com/jhaaman1)
+
+This is an Event Page where you can see some fashion specialist review.
+
+![Logo]()
+
 ## 🔗 Collaborators Profile Links
 | Collaborators  | Github  |  Linkedin   | Portfolio   |
 | ---------- | -----------|------------|---------- |
