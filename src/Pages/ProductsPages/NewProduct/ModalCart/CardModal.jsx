@@ -48,7 +48,7 @@ const CardModal = ({ props }) => {
     onClose();
     let tempObj = {
       ...item,
-      itemQuantity: 1,
+      quantity: 1,
     };
     setData([...data, tempObj]);
     localStorage.setItem("BlueMercurycart", JSON.stringify(data));
