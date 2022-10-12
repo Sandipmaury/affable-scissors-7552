@@ -33,13 +33,32 @@ export const userSignup = (payload) => async (dispatch) => {
     });
 };
 
+export const userLogin = (payload) => async (dispatch) => {
+  dispatch(isAuthLoding);
+  return axios
+    .get(`https://62a8b465943591102ba84f08.mockapi.io/crud`)
+    .then(({ data }) => {
+      dispatch(
+        isAuthSuccess(
+          data.find(
+            (el) =>
+              el.email === payload.email && el.password === payload.password
+          )
+        )
+      );
+    })
+    .catch((err) => {
+      dispatch(isAuthFailed);
+      throw err;
+    });
+};
+
 export const getUserData = (payload) => async (dispatch) => {
   dispatch(isAuthLoding);
   return axios
     .get(`https://62a8b465943591102ba84f08.mockapi.io/crud`)
     .then(({ data }) => {
       dispatch(isAuthSuccess(data.find((el) => el.token === payload)));
-      console.log(data, payload);
     })
     .catch(() => {
       dispatch(isAuthFailed);

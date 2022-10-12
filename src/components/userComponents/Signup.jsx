@@ -54,7 +54,14 @@ const Signup = () => {
     <Navigate to="/user" />
   ) : (
     <div>
-      <Box m="auto" w="500px" textAlign="center" pt="50px" pb="50px">
+      <Box
+        m="auto"
+        w="100%"
+        maxW="500px"
+        textAlign="center"
+        pt="50px"
+        pb="50px"
+      >
         <Heading fontWeight="500" color="#12284C" size="xl" mb="20px">
           CREATE ACCOUNT
         </Heading>

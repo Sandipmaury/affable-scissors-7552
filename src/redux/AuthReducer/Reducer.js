@@ -2,7 +2,7 @@ import { getFromLS, saveToLS } from "../../Utils/Constants";
 import * as ways from "./ActionsType";
 
 const initialState = {
-  isAuth: getFromLS("token") || false,
+  isAuth: getFromLS("token") ? true : false,
   isLoding: false,
   isError: false,
   user: {},
@@ -31,6 +31,7 @@ function Reducer(state = initialState, { type, payload }) {
         isLoding: false,
       };
     case ways.LOGOUT:
+      saveToLS("token", false);
       return { ...state, isAuth: false, user: {} };
     case ways.CHECK_AUTH:
       return { ...state, isAuth: state.user.firstName ? true : false };

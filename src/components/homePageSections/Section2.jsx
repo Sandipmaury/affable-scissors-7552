@@ -1,5 +1,6 @@
 import { Box, Flex, Image, Link, Text } from "@chakra-ui/react";
 import React from "react";
+// import { BiImageAdd } from "react-icons/bi";
 import Slider from "react-slick";
 import { newArrivalProducts } from "../../Utils/Constants";
 import { SliderLeftButton, SliderRightButton } from "./SliderButton";
@@ -40,7 +41,6 @@ export const Section2 = () => {
           <Text fontSize="2xl">NEW ARRIVALS</Text>
         </Link>
       </Flex>
-
       <Box mt="3rem" px="1rem" cursor="grab">
         <Slider {...settings}>
           {newArrivalProducts?.map((item, index) => (
