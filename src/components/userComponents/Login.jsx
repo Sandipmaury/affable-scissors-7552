@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   Box,
@@ -11,13 +11,11 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
-import { getUserData } from "../../redux/AuthReducer/Actions";
+import { userLogin } from "../../redux/AuthReducer/Actions";
 
 const Login = () => {
   const navigate = useNavigate();
   const toast = useToast();
-  const token = useSelector((store) => store.AuthReducer.token);
-  const user = useSelector((store) => store.AuthReducer.user);
   const dispatch = useDispatch();
   const [formValue, setFormValue] = useState({
     email: "",
@@ -30,24 +28,38 @@ const Login = () => {
     setFormValue({ ...formValue, [name]: val });
   };
 
-  useEffect(() => {
-    dispatch(getUserData(token));
-  }, []);
-
   const handleCheckUser = (e) => {
     e.preventDefault();
-    user.email === formValue.email && user.password === formValue.password
-      ? navigate("/user")
-      : toast({
+    dispatch(
+      userLogin({ email: formValue.email, password: formValue.password })
+    )
+      .then(() => {
+        navigate("/user");
+        toast({
+          title: "Authentication successful!",
+          status: "success",
+          isClosable: true,
+        });
+      })
+      .catch((err) => {
+        toast({
           title: "Invalid email address or password",
           status: "error",
           isClosable: true,
         });
+      });
   };
 
   return (
-    <Stack fontFamily="sans-serif">
-      <Box m="auto" w="500px" textAlign="center" pt="50px" pb="50px">
+    <Stack w="100%" maxW="1350px" margin="auto">
+      <Box
+        m="auto"
+        w="100%"
+        maxW="500px"
+        textAlign="center"
+        pt="50px"
+        pb="50px"
+      >
         <Heading fontWeight="500" color="#12284C" size="xl" mb="20px">
           LOGIN
         </Heading>
@@ -91,6 +103,7 @@ const Login = () => {
               borderRadius="0px"
               color="white"
               fontWeight="bold"
+              _hover={{ cursor: "pointer" }}
             />
           </FormControl>
         </Box>
@@ -103,6 +116,7 @@ const Login = () => {
                 color="#12284C"
                 fontWeight="bold"
                 textDecoration="underline"
+                to="/signup"
               >
                 Create One
               </Link>

@@ -32,7 +32,7 @@ const CartPage = () => {
     getData();
   }, [state]);
   // console.log(data);
-  if (data.length === 0) {
+  if (data?.length === 0) {
     return (
       <div style={{ textAlign: "center" }}>
         <Text margin="200px" textAlign="center" marginBottom="30px">

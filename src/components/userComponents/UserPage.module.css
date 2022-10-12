@@ -5,6 +5,7 @@
 }
 .container{
     width: 1350px;
+    margin: auto;
 }
 .mainDiv{
     width: 90%;

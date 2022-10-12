@@ -12,7 +12,7 @@ const UserComponent = () => {
   const user = useSelector((store) => store.AuthReducer.user);
   const dispatch = useDispatch();
   useEffect(() => {
-    if (isAuth) dispatch(getUserData(token));
+    if (token) dispatch(getUserData(token));
   }, []);
   return !isAuth ? (
     <Navigate to="/login" />
