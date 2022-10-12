@@ -8,7 +8,6 @@ import {
   HStack,
 } from "@chakra-ui/react";
 import { useState } from "react";
-// import { CartData } from "../components/CartData";
 import axios from "axios";
 import styles from "../css/CartPage.module.css";
 import { useEffect } from "react";
@@ -24,15 +23,13 @@ const CartPage = () => {
 
   const getData = () => {
     return axios.get("http://localhost:8080/cart").then((r) => {
-      // console.log(r.data);
       setData(r.data);
     });
   };
   useEffect(() => {
     getData();
-  }, [state]);
-  // console.log(data);
-  if (data?.length === 0) {
+  }, [state, data.length]);
+  if (data.length === 0) {
     return (
       <div style={{ textAlign: "center" }}>
         <Text margin="200px" textAlign="center" marginBottom="30px">

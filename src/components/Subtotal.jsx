@@ -9,7 +9,6 @@ const Subtotal = ({ product }) => {
 
     sum += Number(total.join("") * (item.quantity || product.itemQuantity));
   });
-  // console.log(sum);
 
   return sum;
 };

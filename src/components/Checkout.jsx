@@ -7,12 +7,9 @@ const Checkout = ({ radio }) => {
   const [data, setData] = useState([]);
   const getData = () => {
     return axios.get("http://localhost:8080/cart").then((r) => {
-      // console.log(r.data);
       setData(r.data);
     });
   };
-
-  console.log(radio);
   useEffect(() => {
     getData();
   }, []);
@@ -33,11 +30,7 @@ const Checkout = ({ radio }) => {
                 display: "flex",
               }}
             >
-              <img
-                style={{ width: "80px" }}
-                src={item.Image}
-                alt="product"
-              />
+              <img style={{ width: "80px" }} src={item.Image} alt="product" />
               <h4 style={{ fontWeight: "bold" }}>{item.ProductCard__Brand}</h4>
               <p>-</p>
               <p style={{ marginRight: "200px" }}>{item.ProductCard__Title}</p>

@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 const Quantity = ({ product, prod }) => {
   const [state, setState] = useState(product.quantity || product.itemQuantity);
+
   const handleClickReduce = (id) => {
     setState((prev) => prev - 1);
     prod((prev) => prev + 1);
@@ -36,7 +37,7 @@ const Quantity = ({ product, prod }) => {
       >
         -
       </Button>
-      <Button>{state}</Button>
+      <Button>{product.quantity}</Button>
       <Button onClick={() => handleClickAdd(product.id)}>+</Button>
     </ButtonGroup>
   );

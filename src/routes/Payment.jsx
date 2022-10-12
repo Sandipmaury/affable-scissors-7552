@@ -13,7 +13,6 @@ const Payment = () => {
   const [info1, setInfo1] = useState("");
   const [radio, setRadio] = useState(1);
   const navigate = useNavigate();
-  console.log(radio);
   const PageDisplay = () => {
     if (state === 0) {
       return <CustomerInfo information={setInfo} information1={setInfo1} />;
