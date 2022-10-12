@@ -27,7 +27,7 @@ export const checkAuthenticaion = {
 export const userSignup = (payload) => async (dispatch) => {
   dispatch(isAuthLoding);
   return axios
-    .post(`https://62a8b465943591102ba84f08.mockapi.io/crud`, payload)
+    .post(`http://localhost:8080/usersData`, payload)
     .then(({ data }) => {
       dispatch(isAuthSuccess(data));
     });
@@ -36,7 +36,7 @@ export const userSignup = (payload) => async (dispatch) => {
 export const userLogin = (payload) => async (dispatch) => {
   dispatch(isAuthLoding);
   return axios
-    .get(`https://62a8b465943591102ba84f08.mockapi.io/crud`)
+    .get(`http://localhost:8080/usersData`)
     .then(({ data }) => {
       dispatch(
         isAuthSuccess(
@@ -53,12 +53,12 @@ export const userLogin = (payload) => async (dispatch) => {
     });
 };
 
-export const getUserData = (payload) => async (dispatch) => {
+export const getUserData = (token) => async (dispatch) => {
   dispatch(isAuthLoding);
   return axios
-    .get(`https://62a8b465943591102ba84f08.mockapi.io/crud`)
+    .get(`http://localhost:8080/usersData/${token}`)
     .then(({ data }) => {
-      dispatch(isAuthSuccess(data.find((el) => el.token === payload)));
+      dispatch(isAuthSuccess(data));
     })
     .catch(() => {
       dispatch(isAuthFailed);

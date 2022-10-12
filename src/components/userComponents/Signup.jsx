@@ -30,7 +30,6 @@ const Signup = () => {
           password: password,
           firstName: firstName,
           lastName: lastName,
-          token: firstName + Date.now().toString(),
         })
       )
         .then(() => {

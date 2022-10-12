@@ -13,14 +13,14 @@ function Reducer(state = initialState, { type, payload }) {
     case ways.GET_AUTH_REQUEST:
       return { ...state, isLoding: true };
     case ways.GET_AUTH_SUCCESS:
-      saveToLS("token", payload.token);
+      saveToLS("token", payload.id);
       return {
         ...state,
         isLoding: false,
         isAuth: true,
         isError: false,
         user: payload,
-        token: payload.token,
+        token: payload.id,
       };
     case ways.GET_AUTH_FAILURE:
       return {

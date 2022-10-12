@@ -33,7 +33,7 @@ export const SecondBar = ({ isOpen, onToggle }) => {
             to={item.pathName}
           >
             {({ isActive }) =>
-              isActive ? (
+              isActive && item.pathName !== "/" ? (
                 <Text
                   color="#647ea1"
                   fontWeight="bold"

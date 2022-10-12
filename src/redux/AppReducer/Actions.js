@@ -17,25 +17,13 @@ const isDataLodingFailed = {
 };
 
 export const getData = (params) => (dispatch) => {
-  dispatch({ type: type.GET_DATA_REQUEST });
+  dispatch(isDataLoding);
   return axios
-    .get("http://localhost:8080/newArrivalData", { params })
-    .then((res) => {
-      return dispatch({ type: type.GET_DATA_SUCCESS, payload: res.data });
+    .get("http://localhost:8080/products", { params })
+    .then(({ data }) => {
+      return dispatch(isDataLodingSuccess(data));
     })
     .catch((err) => {
-      dispatch({ type: type.GET_DATA_FAILURE, err });
-    });
-};
-
-export const getBrandData = (params) => (dispatch) => {
-  dispatch({ type: type.GET_DATA_REQUEST });
-  return axios
-    .get("http://localhost:8080/glowyMakeupData", { params })
-    .then((res) => {
-      return dispatch({ type: type.GET_DATA_SUCCESS, payload: res.data });
-    })
-    .catch((err) => {
-      dispatch({ type: type.GET_DATA_FAILURE, err });
+      dispatch(isDataLodingFailed);
     });
 };

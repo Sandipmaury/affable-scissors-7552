@@ -12,13 +12,11 @@ import axios from "axios";
 import styles from "../css/CartPage.module.css";
 import { useEffect } from "react";
 import { Quantity } from "../components/Quantity";
-import { CartTotal } from "../components/CartTotal";
 import { Remove } from "../components/Remove";
 import { Subtotal } from "../components/Subtotal";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 const CartPage = () => {
   const navigate = useNavigate();
-  const [state, setState] = useState(0);
   const [data, setData] = useState([]);
 
   const getData = () => {
@@ -28,7 +26,7 @@ const CartPage = () => {
   };
   useEffect(() => {
     getData();
-  }, [state, data.length]);
+  }, [data.length]);
   if (data.length === 0) {
     return (
       <div style={{ textAlign: "center" }}>
@@ -193,7 +191,7 @@ const CartPage = () => {
                         lineHeight="26px"
                         marginRight="150px"
                       >
-                        <Quantity product={{ ...item }} prod={setState} />
+                        <Quantity item={{ ...item }} getData={getData} />
                       </Text>
 
                       <Text
@@ -203,7 +201,7 @@ const CartPage = () => {
                           cursor: "pointer",
                         }}
                       >
-                        <Remove prop={item.id} get={getData} />
+                        <Remove id={item.id} getData={getData} />
                       </Text>
                     </Stack>
                     <Text
@@ -212,7 +210,7 @@ const CartPage = () => {
                       letterSpacing="1px"
                       lineHeight="26px"
                     >
-                      <CartTotal product={{ ...item }} />
+                      <div>{+item.ProductCard__Price.slice(1) * item.qty}</div>
                     </Text>
                   </div>
                 </div>

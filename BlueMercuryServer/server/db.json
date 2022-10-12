@@ -1,6 +1,74 @@
 {
-  "cart": [],
-  "bestSeller": [
+  "usersData": [
+    {
+      "email": "sandipmaurya7619@gmail.com",
+      "password": "12",
+      "firstName": "Sandip",
+      "lastName": "Maurya",
+      "id": 1
+    }
+  ],
+  "cart": [
+    {
+      "id": 53,
+      "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3473311524355-1_235x.jpg?v=1660069778",
+      "ProductCard__Brand": "Sisley-Paris",
+      "ProductCard__Title": "Exfoliating Enzyme Mask",
+      "ProductCard__Price": "$135",
+      "qty": 8
+    }
+  ],
+  "newArrivalProducts": [
+    {
+      "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-deepalmond-814309023086-1_235x.jpg?v=1663805161",
+      "ProductCard__Brand": "Lune+Aster",
+      "ProductCard__Title": "Dawn to Dusk Foundation Stick",
+      "ProductCard__Price": "$52"
+    },
+    {
+      "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-005floz15ml-893689003826-1_235x.jpg?v=1663618246",
+      "ProductCard__Brand": "REVITALASH",
+      "ProductCard__Title": "Revitabrow Advanced Eyebrow Conditioner",
+      "ProductCard__Price": "$58-$110"
+    },
+    {
+      "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-633222211079-1_235x.jpg?v=1662557663",
+      "ProductCard__Brand": "RéVive",
+      "ProductCard__Title": "Fermitif Neck Renewal Serum Firming Treatment",
+      "ProductCard__Price": "$195"
+    },
+    {
+      "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-6treatments-633222213967-1_235x.jpg?v=1664208872",
+      "ProductCard__Brand": "RéVive",
+      "ProductCard__Title": "Masque Des Yeux Instant De-Puffing Gel Eye Mask",
+      "ProductCard__Price": "$28-$95"
+    },
+    {
+      "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-810081492522-1_235x.jpg?v=1663939982",
+      "ProductCard__Brand": "R+Co BLEU",
+      "ProductCard__Title": "F-Layer Deep Conditioning Serum",
+      "ProductCard__Price": "$64"
+    },
+    {
+      "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-05floz15ml-840216931336-1_235x.jpg?v=1663618199",
+      "ProductCard__Brand": "Living Proof",
+      "ProductCard__Title": "Triple Bond Complex",
+      "ProductCard__Price": "$20-$45"
+    },
+    {
+      "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-17floz50ml-5060541430440-1_235x.jpg?v=1662538920",
+      "ProductCard__Brand": "Sana Jardin",
+      "ProductCard__Title": "Tiger By Her Side Eau De Parfum",
+      "ProductCard__Price": "$30-$225"
+    },
+    {
+      "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-5060552904893-1_235x.jpg?v=1663862860",
+      "ProductCard__Brand": "Augustinus Bader",
+      "ProductCard__Title": "The Neem Comb With Handle",
+      "ProductCard__Price": "$28"
+    }
+  ],
+  "bestSellers": [
     {
       "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-635494263008-1_450x.jpg",
       "ProductCard__Brand": "Skinceuticals",
@@ -50,7 +118,7 @@
       "ProductCard__Price": "$100"
     }
   ],
-  "glowyMakeupData": [
+  "products": [
     {
       "id": 1,
       "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-656509057009-1_235x.jpg?v=1659038152",
@@ -203,7 +271,7 @@
       "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-blonde-819869028434-1_235x.jpg?v=1659442198",
       "ProductCard__Brand": "Kjaer Weis",
       "ProductCard__Title": "FeatherTouch Brow Gel",
-      "ProductCard__Price": "$30 - $38"
+      "ProductCard__Price": "$38"
     },
     {
       "id": 23,
@@ -329,7 +397,7 @@
       "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-30paledune-888066086295-1_235x.jpg?v=1660191357",
       "ProductCard__Brand": "Tom Ford",
       "ProductCard__Title": "Emotionproof Concealer",
-      "ProductCard__Price": "$54 - $60"
+      "ProductCard__Price": "$60"
     },
     {
       "id": 43,
@@ -386,9 +454,7 @@
       "ProductCard__Brand": "lilah b.",
       "ProductCard__Title": "Aglow™ Skin Prep Discovery Set",
       "ProductCard__Price": "$42"
-    }
-  ],
-  "newArrivalData": [
+    },
     {
       "id": 51,
       "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-195893475407-1_235x.jpg?v=1659989243",
@@ -422,7 +488,7 @@
       "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-17oz-087327005284-1_235x.jpg?v=1659760712",
       "ProductCard__Brand": "Lake & Skye",
       "ProductCard__Title": "11 11 Eau de Parfum",
-      "ProductCard__Price": "$36 - $98"
+      "ProductCard__Price": "$98"
     },
     {
       "id": 56,
@@ -457,7 +523,7 @@
       "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-17floz50ml-5060541430440-1_235x.jpg?v=1659978170",
       "ProductCard__Brand": "Sana Jardin",
       "ProductCard__Title": "Tiger By  Side  Parfum",
-      "ProductCard__Price": "$30 - $225"
+      "ProductCard__Price": "$125"
     },
     {
       "id": 61,
@@ -534,7 +600,7 @@
       "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-glassbottle16oz-860003715321-1_235x.jpg?v=1660237556",
       "ProductCard__Brand": "L'AVANT",
       "ProductCard__Title": "Fresh    Dish Soap",
-      "ProductCard__Price": "$6 - $26"
+      "ProductCard__Price": "$26"
     },
     {
       "id": 73,

@@ -1,4 +1,4 @@
-import { Button } from "@chakra-ui/react";
+import { Button, Flex, Stack } from "@chakra-ui/react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -28,31 +28,33 @@ const Payment = () => {
     }
   };
   return (
-    <div style={{ display: "flex" }}>
-      <div style={{ width: "50%" }}>
-        <div>{PageDisplay()}</div>
+    <Stack>
+      <Flex margin="auto" maxW="1350px" w="100%">
+        <div style={{ width: "50%" }}>
+          <div>{PageDisplay()}</div>
 
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            margin: "30px",
-          }}
-        >
-          <p> </p>
-          <Button
-            onClick={() => setState((prev) => prev + 1)}
-            colorScheme="facebook"
-            disabled={info1 == "" || info == ""}
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              margin: "30px",
+            }}
           >
-            NEXT
-          </Button>
+            <p> </p>
+            <Button
+              onClick={() => setState((prev) => prev + 1)}
+              colorScheme="facebook"
+              disabled={info1 == "" || info == ""}
+            >
+              NEXT
+            </Button>
+          </div>
+        </div>{" "}
+        <div style={{ width: "50%" }}>
+          <Checkout radio={radio} />
         </div>
-      </div>
-      <div style={{ width: "50%" }}>
-        <Checkout radio={radio} />
-      </div>
-    </div>
+      </Flex>
+    </Stack>
   );
 };
 export { Payment };
