@@ -1,15 +1,5 @@
 {
-  "cart": [
-    {
-      "id": 78,
-      "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/esker-terrazzo-plantable-candle",
-      "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-857177007239-1_235x.jpg?v=1660139458",
-      "ProductCard__Brand": "Esker",
-      "ProductCard__Title": "Terrazzo Plantable Candle",
-      "ProductCard__Price": "$85",
-      "itemQuantity": 1
-    }
-  ],
+  "cart": [],
   "bestSeller": [
     {
       "ProductCard__ImageWrapperhref": "https://bluemercury.com/products/chantecaille-anti-aging-face-tint",
@@ -929,4 +919,3 @@
     }
   ]
 }
-

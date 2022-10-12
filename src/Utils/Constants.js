@@ -15,7 +15,7 @@ export const navData = [
   {
     title: "sign in/up",
     iconName: "account_circle",
-    pathName: "/signup",
+    pathName: "/login",
   },
   {
     title: "bag",
@@ -31,27 +31,27 @@ export const lowerNav = [
   },
   {
     title: "new!",
-    pathName: "/newproucts",
+    pathName: "/newproucts/",
   },
   {
     title: "brands",
-    pathName: "/brandProducts",
+    pathName: "/brandProducts/",
   },
   {
     title: "explore",
-    pathName: "/explore",
+    pathName: "/explore/",
   },
   {
     title: "events",
-    pathName: "/eventpage",
+    pathName: "/eventpage/",
   },
   {
     title: "bluerewards",
-    pathName: "/bluerewards",
+    pathName: "/bluerewards/",
   },
   {
     title: "routine reboot",
-    pathName: "/routine",
+    pathName: "/routine/",
   },
 ];
 
