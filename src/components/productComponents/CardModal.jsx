@@ -27,7 +27,7 @@ import { RiDislikeLine } from "react-icons/ri";
 import { BsFillBagPlusFill } from "react-icons/bs";
 import axios from "axios";
 const CardModal = ({ props }) => {
-  const [qty, setQty] = useState(1);
+  const [qty, setQty] = useState(props?.qty ? props.qty : 1);
   const toast = useToast();
   const { onOpen, isOpen, onClose } = useDisclosure();
 
@@ -42,7 +42,7 @@ const CardModal = ({ props }) => {
         });
       });
     } else {
-      item.qty = item.qty + qty;
+      item.qty = qty;
       axios.patch(`http://localhost:8080/cart/${item.id}`, item).then(() => {
         toast({
           title: "Product add to cart!",

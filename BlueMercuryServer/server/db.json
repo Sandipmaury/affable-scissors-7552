@@ -2,22 +2,20 @@
   "usersData": [
     {
       "email": "sandipmaurya7619@gmail.com",
-      "password": "12",
+      "password": "12345",
       "firstName": "Sandip",
       "lastName": "Maurya",
       "id": 1
-    }
-  ],
-  "cart": [
+    },
     {
-      "id": 53,
-      "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3473311524355-1_235x.jpg?v=1660069778",
-      "ProductCard__Brand": "Sisley-Paris",
-      "ProductCard__Title": "Exfoliating Enzyme Mask",
-      "ProductCard__Price": "$135",
-      "qty": 8
+      "email": "sandipmaurya7619@gmail.com",
+      "password": "cityslicka",
+      "firstName": "Sandip",
+      "lastName": "Maurya",
+      "id": 2
     }
   ],
+  "cart": [],
   "newArrivalProducts": [
     {
       "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-deepalmond-814309023086-1_235x.jpg?v=1663805161",

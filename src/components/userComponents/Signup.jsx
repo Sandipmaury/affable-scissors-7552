@@ -74,6 +74,7 @@ const Signup = () => {
               id="email"
               mb="15px"
               name="email"
+              required
               onChange={(e) => setEmail(e.target.value)}
               value={email}
               type="email"
