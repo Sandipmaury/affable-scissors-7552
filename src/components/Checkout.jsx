@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Button, Input } from "@chakra-ui/react";
-import { CartTotal } from "./CartTotal";
 import { Subtotal } from "./Subtotal";
 const Checkout = ({ radio }) => {
   const [data, setData] = useState([]);
@@ -41,7 +40,7 @@ const Checkout = ({ radio }) => {
               }}
             >
               <p>$</p>
-              <CartTotal product={{ ...item }} />
+              <div>{+item.ProductCard__Price.slice(1) * item.qty}</div>
             </div>
           </div>
         ))}

@@ -30,7 +30,6 @@ const Signup = () => {
           password: password,
           firstName: firstName,
           lastName: lastName,
-          token: firstName + Date.now().toString(),
         })
       )
         .then(() => {
@@ -75,6 +74,7 @@ const Signup = () => {
               id="email"
               mb="15px"
               name="email"
+              required
               onChange={(e) => setEmail(e.target.value)}
               value={email}
               type="email"

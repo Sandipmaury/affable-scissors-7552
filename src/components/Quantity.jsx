@@ -1,44 +1,21 @@
 import { Button, ButtonGroup } from "@chakra-ui/react";
 import { useState } from "react";
 import axios from "axios";
-const Quantity = ({ product, prod }) => {
-  const [state, setState] = useState(product.quantity || product.itemQuantity);
-
-  const handleClickReduce = (id) => {
-    setState((prev) => prev - 1);
-    prod((prev) => prev + 1);
-    let payload = {
-      quantity: state - 1,
-    };
-    axios.patch(`http://localhost:8080/cart/${id}`, payload, {
-      headers: {
-        "Content-Type": "application/json",
-      },
+const Quantity = ({ item, getData }) => {
+  const handleClick = (data, operation) => {
+    if (operation === "inc") data.qty += 1;
+    else data.qty -= 1;
+    axios.patch(`http://localhost:8080/cart/${data.id}`, data).then(() => {
+      getData();
     });
   };
-  const handleClickAdd = (id) => {
-    setState((prev) => prev + 1);
-    prod((prev) => prev + 1);
-    let payload = {
-      quantity: state + 1,
-    };
-    axios.patch(`http://localhost:8080/cart/${id}`, payload, {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-  };
-
   return (
     <ButtonGroup size="sm" isAttached variant="outline">
-      <Button
-        disabled={state == 1}
-        onClick={() => handleClickReduce(product.id)}
-      >
+      <Button disabled={item.qty == 1} onClick={() => handleClick(item, "dec")}>
         -
       </Button>
-      <Button>{product.quantity}</Button>
-      <Button onClick={() => handleClickAdd(product.id)}>+</Button>
+      <Button>{item.qty}</Button>
+      <Button onClick={() => handleClick(item, "inc")}>+</Button>
     </ButtonGroup>
   );
 };

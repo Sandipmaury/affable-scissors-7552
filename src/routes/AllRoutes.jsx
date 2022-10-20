@@ -1,7 +1,5 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import ProductsNewContainer from "../Pages/ProductsPages/NewProduct/ProductsNewContainer";
-import ProductsBrandContainer from "../Pages/ProductsPages/BrandProduct/ProductsBrandContainer";
 import { ErrorPage } from "./ErrorPage";
 import ExplorePage from "./ExplorePage";
 import { HomePage } from "./HomePage";
@@ -13,6 +11,8 @@ import LoginPage from "./LoginPage";
 import SignupPage from "./SignupPage";
 import UserPage from "./UserPage";
 import { Routine } from "./Routine";
+import BrandPage from "./BrandPage";
+import NewArrivalPage from "./NewArrivalPage";
 
 export const AllRoutes = () => {
   return (
@@ -20,8 +20,8 @@ export const AllRoutes = () => {
       <Route path="/" element={<HomePage />} />
       <Route path="/cart" element={<CartPage />} />
       <Route path="*" element={<ErrorPage />} />
-      <Route path="/newproucts" element={<ProductsNewContainer />} />
-      <Route path="/brandProducts" element={<ProductsBrandContainer />} />
+      <Route path="/newproucts" element={<NewArrivalPage />} />
+      <Route path="/brandProducts" element={<BrandPage />} />
       <Route path="/explore" element={<ExplorePage />} />
       <Route path="/eventpage" element={<EventPage />} />
       <Route path="/otp" element={<Otp />} />

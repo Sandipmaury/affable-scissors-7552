@@ -156,7 +156,7 @@ const UserComponent = () => {
                 DEFAULT SHIPPING ADDRESS
               </Text>
               <Text color="gray" size="md">
-                {user?.firstName} {user?.lastName}
+                {user?.address ? user.address : ""}
               </Text>
               <Text color="#12284C" fontWeight="bold" mt="20px">
                 EMAIL

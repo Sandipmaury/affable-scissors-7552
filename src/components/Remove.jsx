@@ -1,11 +1,10 @@
 import axios from "axios";
-const Remove = ({ prop, get }) => {
-  const handleDelet = (id) => {
-    console.log(id);
-    axios.delete(`http://localhost:8080/cart/${id}`).then((r) => {
-      get();
+const Remove = ({ id, getData }) => {
+  const handleDelete = (id) => {
+    axios.delete(`http://localhost:8080/cart/${id}`).then(() => {
+      getData();
     });
   };
-  return <div onClick={() => handleDelet(prop)}>Remove</div>;
+  return <div onClick={() => handleDelete(id)}>Remove</div>;
 };
 export { Remove };
