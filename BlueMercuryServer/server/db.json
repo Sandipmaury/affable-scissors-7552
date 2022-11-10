@@ -2,20 +2,30 @@
   "usersData": [
     {
       "email": "sandipmaurya7619@gmail.com",
-      "password": "12345",
+      "password": "1234",
       "firstName": "Sandip",
       "lastName": "Maurya",
       "id": 1
-    },
-    {
-      "email": "sandipmaurya7619@gmail.com",
-      "password": "cityslicka",
-      "firstName": "Sandip",
-      "lastName": "Maurya",
-      "id": 2
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": 53,
+      "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3473311524355-1_235x.jpg?v=1660069778",
+      "ProductCard__Brand": "Sisley-Paris",
+      "ProductCard__Title": "Exfoliating Enzyme Mask",
+      "ProductCard__Price": "$135",
+      "qty": 5
+    },
+    {
+      "id": 4,
+      "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-850004421710-1_235x.jpg?v=1658823189",
+      "ProductCard__Brand": "lilah b.",
+      "ProductCard__Title": "Bluemercury Exclusive",
+      "ProductCard__Price": "$122",
+      "qty": 3
+    }
+  ],
   "newArrivalProducts": [
     {
       "Image": "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-deepalmond-814309023086-1_235x.jpg?v=1663805161",
